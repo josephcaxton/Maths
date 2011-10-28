@@ -1742,7 +1742,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7CD0B960145AAFEC004B8BF2 /* Maths.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maths.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CD0B960145AAFEC004B8BF2 /* iTest U.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iTest U.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD0B964145AAFEC004B8BF2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7CD0B966145AAFEC004B8BF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7CD0B968145AAFEC004B8BF2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -3521,6 +3521,7 @@
 		7CE8C743145AC107000E8EEE /* Results.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Results.xml; sourceTree = "<group>"; };
 		7CE8C744145AC107000E8EEE /* AttributionIpad.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AttributionIpad.pdf; sourceTree = "<group>"; };
 		7CE8C745145AC107000E8EEE /* copyrightlicense_agreement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = copyrightlicense_agreement.pdf; sourceTree = "<group>"; };
+		7CE8C74A145AC21C000E8EEE /* Maths.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Maths.entitlements; path = Maths/Maths.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3548,6 +3549,7 @@
 		7CD0B955145AAFEC004B8BF2 = {
 			isa = PBXGroup;
 			children = (
+				7CE8C74A145AC21C000E8EEE /* Maths.entitlements */,
 				7CD0B999145AB151004B8BF2 /* Settings.bundle */,
 				7CD0B998145AB131004B8BF2 /* AppFiles */,
 				7CD0B997145AB119004B8BF2 /* Classes */,
@@ -3569,7 +3571,7 @@
 		7CD0B961145AAFEC004B8BF2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7CD0B960145AAFEC004B8BF2 /* Maths.app */,
+				7CD0B960145AAFEC004B8BF2 /* iTest U.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -5460,7 +5462,7 @@
 			);
 			name = Maths;
 			productName = Maths;
-			productReference = 7CD0B960145AAFEC004B8BF2 /* Maths.app */;
+			productReference = 7CD0B960145AAFEC004B8BF2 /* iTest U.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -7247,6 +7249,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph caxton (99S98QLWW3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -7261,7 +7264,8 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "150ECF15-89C2-4DEA-AF5E-5C3E9956E614";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -7272,15 +7276,18 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Theta Computer Services Limited";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Theta Computer Services Limited";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "50F0BC2C-4F5E-4B91-B39D-6FBC50D2ED1A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "50F0BC2C-4F5E-4B91-B39D-6FBC50D2ED1A";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -7290,10 +7297,13 @@
 		7CD0B98D145AAFED004B8BF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Maths/Maths.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joseph caxton (99S98QLWW3)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Maths/Maths-Prefix.pch";
 				INFOPLIST_FILE = "Maths/Maths-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "iTest U";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "150ECF15-89C2-4DEA-AF5E-5C3E9956E614";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -7301,10 +7311,11 @@
 		7CD0B98E145AAFED004B8BF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Maths/Maths.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Maths/Maths-Prefix.pch";
 				INFOPLIST_FILE = "Maths/Maths-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "iTest U";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
