@@ -521,7 +521,7 @@ static UIWebView *QuestionHeaderBox = nil;
 		 
          
 
-			if (ShowAnswer && indexPath.section == 1  && Specialflag == TRUE) {
+			if (ShowAnswer && Specialflag == TRUE && indexPath.section == 1) {
 				
                 //remove the textField
                 [TextField removeFromSuperview];

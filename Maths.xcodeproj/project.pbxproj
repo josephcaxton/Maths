@@ -3597,8 +3597,8 @@
 		7CD0B96A145AAFEC004B8BF2 /* Main Window */ = {
 			isa = PBXGroup;
 			children = (
-				7CD0B9AB145AB25F004B8BF2 /* EvaluatorAppDelegate.m */,
 				7CD0B9AC145AB25F004B8BF2 /* EvaluatorAppDelegate.h */,
+				7CD0B9AB145AB25F004B8BF2 /* EvaluatorAppDelegate.m */,
 				7CD0B9AE145AB275004B8BF2 /* ActivityIndicator.m */,
 				7CD0B9AF145AB275004B8BF2 /* ActivityIndicator.h */,
 				7CD0B9B1145AB287004B8BF2 /* TabBar.m */,
