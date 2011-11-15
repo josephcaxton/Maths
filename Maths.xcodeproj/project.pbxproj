@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C2758DF145EC393001E48AA /* GCSEMaths.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7C2758DE145EC393001E48AA /* GCSEMaths.sqlite */; };
 		7C462C361468076000E4F6AC /* 46.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C462C351468076000E4F6AC /* 46.pdf */; };
 		7C462C381468077900E4F6AC /* 256.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C462C371468077900E4F6AC /* 256.pdf */; };
 		7C462C3A1468078B00E4F6AC /* 283.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C462C391468078B00E4F6AC /* 283.pdf */; };
 		7C462C3C146807A000E4F6AC /* 424.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C462C3B146807A000E4F6AC /* 424.pdf */; };
+		7CA7162214726DD6003D65A9 /* GCSEMaths.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7CA7162114726DD6003D65A9 /* GCSEMaths.sqlite */; };
 		7CD0B965145AAFEC004B8BF2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD0B964145AAFEC004B8BF2 /* UIKit.framework */; };
 		7CD0B967145AAFEC004B8BF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD0B966145AAFEC004B8BF2 /* Foundation.framework */; };
 		7CD0B969145AAFEC004B8BF2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD0B968145AAFEC004B8BF2 /* CoreGraphics.framework */; };
@@ -1742,11 +1742,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7C2758DE145EC393001E48AA /* GCSEMaths.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = GCSEMaths.sqlite; sourceTree = "<group>"; };
 		7C462C351468076000E4F6AC /* 46.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 46.pdf; sourceTree = "<group>"; };
 		7C462C371468077900E4F6AC /* 256.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 256.pdf; sourceTree = "<group>"; };
 		7C462C391468078B00E4F6AC /* 283.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 283.pdf; sourceTree = "<group>"; };
 		7C462C3B146807A000E4F6AC /* 424.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 424.pdf; sourceTree = "<group>"; };
+		7CA7162114726DD6003D65A9 /* GCSEMaths.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = GCSEMaths.sqlite; sourceTree = "<group>"; };
 		7CD0B960145AAFEC004B8BF2 /* iTest U.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iTest U.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD0B964145AAFEC004B8BF2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7CD0B966145AAFEC004B8BF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -5436,7 +5436,7 @@
 				7CE8C0E2145ABEBD000E8EEE /* 1624.pdf */,
 				7CE8C0E3145ABEBD000E8EEE /* 1625.pdf */,
 				7CE8C0E4145ABEBD000E8EEE /* 1626.pdf */,
-				7C2758DE145EC393001E48AA /* GCSEMaths.sqlite */,
+				7CA7162114726DD6003D65A9 /* GCSEMaths.sqlite */,
 				7CE8C742145AC107000E8EEE /* DescriptiveAnswers.xml */,
 				7CE8C743145AC107000E8EEE /* Results.xml */,
 				7CE8C744145AC107000E8EEE /* AttributionIpad.pdf */,
@@ -7162,7 +7162,6 @@
 				7CE8C747145AC107000E8EEE /* Results.xml in Resources */,
 				7CE8C748145AC107000E8EEE /* AttributionIpad.pdf in Resources */,
 				7CE8C749145AC107000E8EEE /* copyrightlicense_agreement.pdf in Resources */,
-				7C2758DF145EC393001E48AA /* GCSEMaths.sqlite in Resources */,
 				7CD22E75145ED24200B07E57 /* 35.pdf in Resources */,
 				7CD22E77145ED25E00B07E57 /* 795.pdf in Resources */,
 				7CD22E79145ED28400B07E57 /* 1538.pdf in Resources */,
@@ -7172,6 +7171,7 @@
 				7C462C381468077900E4F6AC /* 256.pdf in Resources */,
 				7C462C3A1468078B00E4F6AC /* 283.pdf in Resources */,
 				7C462C3C146807A000E4F6AC /* 424.pdf in Resources */,
+				7CA7162214726DD6003D65A9 /* GCSEMaths.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
