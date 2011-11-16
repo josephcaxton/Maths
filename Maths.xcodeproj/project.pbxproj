@@ -1417,7 +1417,6 @@
 		7CE8C60A145ABEBF000E8EEE /* 1318.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BFB0145ABEBB000E8EEE /* 1318.pdf */; };
 		7CE8C60B145ABEBF000E8EEE /* 1319.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BFB1145ABEBB000E8EEE /* 1319.pdf */; };
 		7CE8C60C145ABEBF000E8EEE /* 1320.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BFB2145ABEBB000E8EEE /* 1320.pdf */; };
-		7CE8C60E145ABEBF000E8EEE /* 1322.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BFB4145ABEBC000E8EEE /* 1322.pdf */; };
 		7CE8C60F145ABEBF000E8EEE /* 1323.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BFB5145ABEBC000E8EEE /* 1323.pdf */; };
 		7CE8C610145ABEBF000E8EEE /* 1324.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BFB6145ABEBC000E8EEE /* 1324.pdf */; };
 		7CE8C611145ABEBF000E8EEE /* 1325.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BFB7145ABEBC000E8EEE /* 1325.pdf */; };
@@ -1739,6 +1738,7 @@
 		7CF6EAE01473F27C00CCBD6E /* 1353.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF6EADF1473F27C00CCBD6E /* 1353.pdf */; };
 		7CF6EAE21473F29900CCBD6E /* 871.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF6EAE11473F29900CCBD6E /* 871.pdf */; };
 		7CF6EB0C1474042900CCBD6E /* GCSEMaths.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7CF6EB0B1474042900CCBD6E /* GCSEMaths.sqlite */; };
+		7CF6EB1A14740F0C00CCBD6E /* 1322.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF6EB1914740F0C00CCBD6E /* 1322.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -3199,7 +3199,6 @@
 		7CE8BFB0145ABEBB000E8EEE /* 1318.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1318.pdf; sourceTree = "<group>"; };
 		7CE8BFB1145ABEBB000E8EEE /* 1319.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1319.pdf; sourceTree = "<group>"; };
 		7CE8BFB2145ABEBB000E8EEE /* 1320.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1320.pdf; sourceTree = "<group>"; };
-		7CE8BFB4145ABEBC000E8EEE /* 1322.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1322.pdf; sourceTree = "<group>"; };
 		7CE8BFB5145ABEBC000E8EEE /* 1323.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1323.pdf; sourceTree = "<group>"; };
 		7CE8BFB6145ABEBC000E8EEE /* 1324.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1324.pdf; sourceTree = "<group>"; };
 		7CE8BFB7145ABEBC000E8EEE /* 1325.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1325.pdf; sourceTree = "<group>"; };
@@ -3522,6 +3521,7 @@
 		7CF6EADF1473F27C00CCBD6E /* 1353.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1353.pdf; sourceTree = "<group>"; };
 		7CF6EAE11473F29900CCBD6E /* 871.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 871.pdf; sourceTree = "<group>"; };
 		7CF6EB0B1474042900CCBD6E /* GCSEMaths.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = GCSEMaths.sqlite; sourceTree = "<group>"; };
+		7CF6EB1914740F0C00CCBD6E /* 1322.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1322.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -5131,7 +5131,7 @@
 				7CE8BFB1145ABEBB000E8EEE /* 1319.pdf */,
 				7CE8BFB2145ABEBB000E8EEE /* 1320.pdf */,
 				7CD22E7C145ED3F700B07E57 /* 1321.pdf */,
-				7CE8BFB4145ABEBC000E8EEE /* 1322.pdf */,
+				7CF6EB1914740F0C00CCBD6E /* 1322.pdf */,
 				7CE8BFB5145ABEBC000E8EEE /* 1323.pdf */,
 				7CE8BFB6145ABEBC000E8EEE /* 1324.pdf */,
 				7CE8BFB7145ABEBC000E8EEE /* 1325.pdf */,
@@ -6841,7 +6841,6 @@
 				7CE8C60A145ABEBF000E8EEE /* 1318.pdf in Resources */,
 				7CE8C60B145ABEBF000E8EEE /* 1319.pdf in Resources */,
 				7CE8C60C145ABEBF000E8EEE /* 1320.pdf in Resources */,
-				7CE8C60E145ABEBF000E8EEE /* 1322.pdf in Resources */,
 				7CE8C60F145ABEBF000E8EEE /* 1323.pdf in Resources */,
 				7CE8C610145ABEBF000E8EEE /* 1324.pdf in Resources */,
 				7CE8C611145ABEBF000E8EEE /* 1325.pdf in Resources */,
@@ -7172,6 +7171,7 @@
 				7CF6EAE01473F27C00CCBD6E /* 1353.pdf in Resources */,
 				7CF6EAE21473F29900CCBD6E /* 871.pdf in Resources */,
 				7CF6EB0C1474042900CCBD6E /* GCSEMaths.sqlite in Resources */,
+				7CF6EB1A14740F0C00CCBD6E /* 1322.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
