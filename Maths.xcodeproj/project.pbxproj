@@ -11,6 +11,7 @@
 		7C462C381468077900E4F6AC /* 256.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C462C371468077900E4F6AC /* 256.pdf */; };
 		7C462C3A1468078B00E4F6AC /* 283.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C462C391468078B00E4F6AC /* 283.pdf */; };
 		7C462C3C146807A000E4F6AC /* 424.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C462C3B146807A000E4F6AC /* 424.pdf */; };
+		7CC980C41483E73700A358BB /* GCSEMaths.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7CC980C31483E73700A358BB /* GCSEMaths.sqlite */; };
 		7CD0B965145AAFEC004B8BF2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD0B964145AAFEC004B8BF2 /* UIKit.framework */; };
 		7CD0B967145AAFEC004B8BF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD0B966145AAFEC004B8BF2 /* Foundation.framework */; };
 		7CD0B969145AAFEC004B8BF2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD0B968145AAFEC004B8BF2 /* CoreGraphics.framework */; };
@@ -1737,7 +1738,6 @@
 		7CF6EADE1473F25F00CCBD6E /* 1360.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF6EADD1473F25F00CCBD6E /* 1360.pdf */; };
 		7CF6EAE01473F27C00CCBD6E /* 1353.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF6EADF1473F27C00CCBD6E /* 1353.pdf */; };
 		7CF6EAE21473F29900CCBD6E /* 871.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF6EAE11473F29900CCBD6E /* 871.pdf */; };
-		7CF6EB0C1474042900CCBD6E /* GCSEMaths.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7CF6EB0B1474042900CCBD6E /* GCSEMaths.sqlite */; };
 		7CF6EB1A14740F0C00CCBD6E /* 1322.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF6EB1914740F0C00CCBD6E /* 1322.pdf */; };
 /* End PBXBuildFile section */
 
@@ -1746,6 +1746,7 @@
 		7C462C371468077900E4F6AC /* 256.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 256.pdf; sourceTree = "<group>"; };
 		7C462C391468078B00E4F6AC /* 283.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 283.pdf; sourceTree = "<group>"; };
 		7C462C3B146807A000E4F6AC /* 424.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 424.pdf; sourceTree = "<group>"; };
+		7CC980C31483E73700A358BB /* GCSEMaths.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = GCSEMaths.sqlite; sourceTree = "<group>"; };
 		7CD0B960145AAFEC004B8BF2 /* iTest U.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iTest U.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD0B964145AAFEC004B8BF2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7CD0B966145AAFEC004B8BF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -3520,7 +3521,6 @@
 		7CF6EADD1473F25F00CCBD6E /* 1360.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1360.pdf; sourceTree = "<group>"; };
 		7CF6EADF1473F27C00CCBD6E /* 1353.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1353.pdf; sourceTree = "<group>"; };
 		7CF6EAE11473F29900CCBD6E /* 871.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 871.pdf; sourceTree = "<group>"; };
-		7CF6EB0B1474042900CCBD6E /* GCSEMaths.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = GCSEMaths.sqlite; sourceTree = "<group>"; };
 		7CF6EB1914740F0C00CCBD6E /* 1322.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1322.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -5436,7 +5436,7 @@
 				7CE8C0E2145ABEBD000E8EEE /* 1624.pdf */,
 				7CE8C0E3145ABEBD000E8EEE /* 1625.pdf */,
 				7CE8C0E4145ABEBD000E8EEE /* 1626.pdf */,
-				7CF6EB0B1474042900CCBD6E /* GCSEMaths.sqlite */,
+				7CC980C31483E73700A358BB /* GCSEMaths.sqlite */,
 				7CE8C742145AC107000E8EEE /* DescriptiveAnswers.xml */,
 				7CE8C743145AC107000E8EEE /* Results.xml */,
 				7CE8C744145AC107000E8EEE /* AttributionIpad.pdf */,
@@ -7170,8 +7170,8 @@
 				7CF6EADE1473F25F00CCBD6E /* 1360.pdf in Resources */,
 				7CF6EAE01473F27C00CCBD6E /* 1353.pdf in Resources */,
 				7CF6EAE21473F29900CCBD6E /* 871.pdf in Resources */,
-				7CF6EB0C1474042900CCBD6E /* GCSEMaths.sqlite in Resources */,
 				7CF6EB1A14740F0C00CCBD6E /* 1322.pdf in Resources */,
+				7CC980C41483E73700A358BB /* GCSEMaths.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
