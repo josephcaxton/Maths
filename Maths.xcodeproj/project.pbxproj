@@ -14,7 +14,7 @@
 		7C522E7114850141006524FF /* 1550.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C522E7014850141006524FF /* 1550.pdf */; };
 		7C522E731485015C006524FF /* 1552.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C522E721485015C006524FF /* 1552.pdf */; };
 		7C522E751485016F006524FF /* 1553.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C522E741485016F006524FF /* 1553.pdf */; };
-		7CC980C41483E73700A358BB /* GCSEMaths.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7CC980C31483E73700A358BB /* GCSEMaths.sqlite */; };
+		7C522E8714851F96006524FF /* GCSEMaths.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7C522E8614851F96006524FF /* GCSEMaths.sqlite */; };
 		7CC980DD1483F17D00A358BB /* 291.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC980DC1483F17D00A358BB /* 291.pdf */; };
 		7CC980DF1483F19D00A358BB /* 1549.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC980DE1483F19D00A358BB /* 1549.pdf */; };
 		7CC980E11483F1B200A358BB /* 1551.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC980E01483F1B200A358BB /* 1551.pdf */; };
@@ -1749,7 +1749,7 @@
 		7C522E7014850141006524FF /* 1550.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1550.pdf; sourceTree = "<group>"; };
 		7C522E721485015C006524FF /* 1552.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1552.pdf; sourceTree = "<group>"; };
 		7C522E741485016F006524FF /* 1553.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1553.pdf; sourceTree = "<group>"; };
-		7CC980C31483E73700A358BB /* GCSEMaths.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = GCSEMaths.sqlite; sourceTree = "<group>"; };
+		7C522E8614851F96006524FF /* GCSEMaths.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = GCSEMaths.sqlite; sourceTree = "<group>"; };
 		7CC980DC1483F17D00A358BB /* 291.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 291.pdf; sourceTree = "<group>"; };
 		7CC980DE1483F19D00A358BB /* 1549.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1549.pdf; sourceTree = "<group>"; };
 		7CC980E01483F1B200A358BB /* 1551.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1551.pdf; sourceTree = "<group>"; };
@@ -5436,7 +5436,7 @@
 				7CE8C0E2145ABEBD000E8EEE /* 1624.pdf */,
 				7CE8C0E3145ABEBD000E8EEE /* 1625.pdf */,
 				7CE8C0E4145ABEBD000E8EEE /* 1626.pdf */,
-				7CC980C31483E73700A358BB /* GCSEMaths.sqlite */,
+				7C522E8614851F96006524FF /* GCSEMaths.sqlite */,
 				7CE8C742145AC107000E8EEE /* DescriptiveAnswers.xml */,
 				7CE8C743145AC107000E8EEE /* Results.xml */,
 				7CE8C744145AC107000E8EEE /* AttributionIpad.pdf */,
@@ -7165,13 +7165,13 @@
 				7CF6EAE01473F27C00CCBD6E /* 1353.pdf in Resources */,
 				7CF6EAE21473F29900CCBD6E /* 871.pdf in Resources */,
 				7CF6EB1A14740F0C00CCBD6E /* 1322.pdf in Resources */,
-				7CC980C41483E73700A358BB /* GCSEMaths.sqlite in Resources */,
 				7CC980DD1483F17D00A358BB /* 291.pdf in Resources */,
 				7CC980DF1483F19D00A358BB /* 1549.pdf in Resources */,
 				7CC980E11483F1B200A358BB /* 1551.pdf in Resources */,
 				7C522E7114850141006524FF /* 1550.pdf in Resources */,
 				7C522E731485015C006524FF /* 1552.pdf in Resources */,
 				7C522E751485016F006524FF /* 1553.pdf in Resources */,
+				7C522E8714851F96006524FF /* GCSEMaths.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7250,7 +7250,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph caxton (99S98QLWW3)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joseph caxton (99S98QLWW3)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -7266,6 +7266,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PROVISIONING_PROFILE = "150ECF15-89C2-4DEA-AF5E-5C3E9956E614";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "150ECF15-89C2-4DEA-AF5E-5C3E9956E614";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -7286,8 +7287,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "50F0BC2C-4F5E-4B91-B39D-6FBC50D2ED1A";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "50F0BC2C-4F5E-4B91-B39D-6FBC50D2ED1A";
+				PROVISIONING_PROFILE = "AD1607B3-B334-4173-8E37-BAE322E7CEE1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AD1607B3-B334-4173-8E37-BAE322E7CEE1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -7312,10 +7313,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Maths/Maths.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Theta Computer Services Limited";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Maths/Maths-Prefix.pch";
 				INFOPLIST_FILE = "Maths/Maths-Info.plist";
 				PRODUCT_NAME = "iTest U";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AD1607B3-B334-4173-8E37-BAE322E7CEE1";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
