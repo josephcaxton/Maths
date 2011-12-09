@@ -14,7 +14,6 @@
 		7C522E7114850141006524FF /* 1550.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C522E7014850141006524FF /* 1550.pdf */; };
 		7C522E731485015C006524FF /* 1552.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C522E721485015C006524FF /* 1552.pdf */; };
 		7C522E751485016F006524FF /* 1553.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C522E741485016F006524FF /* 1553.pdf */; };
-		7C522E8714851F96006524FF /* GCSEMaths.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7C522E8614851F96006524FF /* GCSEMaths.sqlite */; };
 		7CC980DD1483F17D00A358BB /* 291.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC980DC1483F17D00A358BB /* 291.pdf */; };
 		7CC980DF1483F19D00A358BB /* 1549.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC980DE1483F19D00A358BB /* 1549.pdf */; };
 		7CC980E11483F1B200A358BB /* 1551.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC980E01483F1B200A358BB /* 1551.pdf */; };
@@ -1749,7 +1748,6 @@
 		7C522E7014850141006524FF /* 1550.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1550.pdf; sourceTree = "<group>"; };
 		7C522E721485015C006524FF /* 1552.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1552.pdf; sourceTree = "<group>"; };
 		7C522E741485016F006524FF /* 1553.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1553.pdf; sourceTree = "<group>"; };
-		7C522E8614851F96006524FF /* GCSEMaths.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = GCSEMaths.sqlite; sourceTree = "<group>"; };
 		7CC980DC1483F17D00A358BB /* 291.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 291.pdf; sourceTree = "<group>"; };
 		7CC980DE1483F19D00A358BB /* 1549.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1549.pdf; sourceTree = "<group>"; };
 		7CC980E01483F1B200A358BB /* 1551.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1551.pdf; sourceTree = "<group>"; };
@@ -5436,7 +5434,6 @@
 				7CE8C0E2145ABEBD000E8EEE /* 1624.pdf */,
 				7CE8C0E3145ABEBD000E8EEE /* 1625.pdf */,
 				7CE8C0E4145ABEBD000E8EEE /* 1626.pdf */,
-				7C522E8614851F96006524FF /* GCSEMaths.sqlite */,
 				7CE8C742145AC107000E8EEE /* DescriptiveAnswers.xml */,
 				7CE8C743145AC107000E8EEE /* Results.xml */,
 				7CE8C744145AC107000E8EEE /* AttributionIpad.pdf */,
@@ -7171,7 +7168,6 @@
 				7C522E7114850141006524FF /* 1550.pdf in Resources */,
 				7C522E731485015C006524FF /* 1552.pdf in Resources */,
 				7C522E751485016F006524FF /* 1553.pdf in Resources */,
-				7C522E8714851F96006524FF /* GCSEMaths.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
