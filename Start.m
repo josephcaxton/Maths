@@ -11,7 +11,7 @@
 
 @implementation Start
 
-@synthesize FirstView, SecondView,FirstTable,SecondTable,QuestionPickerView,CustomDataSource,Sound,ShowAnswers,logoView,Copyright,WebText,StartPractice,btnStartTest;
+@synthesize FirstView, SecondView,FirstTable,SecondTable,QuestionPickerView,CustomDataSource,Sound,ShowAnswers,logoView,Copyright,WebText,StartPractice,btnStartTest,Instruction;
 
 
 #define SCREEN_WIDTH 768
@@ -580,8 +580,20 @@
                 
                 case 5:
                 
-                cell.textLabel.text = @"Please note: Most questions are best viewed in portrait mode due to limited space on your device";
+                if(Instruction == nil){
+                    
+                Instruction = [[UILabel alloc] initWithFrame:CGRectMake(10, 13, 600, 20)];
                 
+                }
+                Instruction.font = [UIFont boldSystemFontOfSize: 12.0];
+                Instruction.textColor = [UIColor purpleColor];
+                Instruction.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleHeight;
+                Instruction.backgroundColor = [UIColor clearColor];
+                [cell.contentView addSubview: Instruction];
+
+                
+                Instruction.text = @"Please note: Some questions are best viewed in portrait mode due to limited space on your iPad.";
+               
                 
                 break;
 				
@@ -676,6 +688,7 @@
 	[CustomDataSource release];
 	[Sound release];
 	[ShowAnswers release];
+    [Instruction release];
 	//[logoView release];
     [super dealloc];
 }
