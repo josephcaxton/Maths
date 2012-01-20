@@ -396,7 +396,7 @@
 	}
 	
 	else {
-		count = 6;
+		count = 7;
 	}
 
 	 
@@ -577,8 +577,15 @@
 				[ShowAnswers addTarget:self action:@selector(switchAction:) forControlEvents:UIControlEventValueChanged];
 				[cell addSubview:ShowAnswers];
 				break;
+                
+                case 5:
+                
+                cell.textLabel.text = @"Please note: Most questions are best viewed in portrait mode due to limited space on your device";
+                
+                
+                break;
 				
-				case 5:
+				case 6:
 					
 					if (btnStartTest == nil) {
 						
