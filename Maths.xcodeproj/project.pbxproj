@@ -16,6 +16,7 @@
 		7C522E751485016F006524FF /* 1553.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C522E741485016F006524FF /* 1553.pdf */; };
 		7C77DA6B149216280075FFDA /* ITest U Video.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7C77DA6A149216280075FFDA /* ITest U Video.m4v */; };
 		7C847A0514D93D3700EDABF2 /* GCSEMaths.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7C847A0414D93D3700EDABF2 /* GCSEMaths.sqlite */; };
+		7C98AFAB14E291C900EBAD97 /* 1152.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C98AFAA14E291C900EBAD97 /* 1152.pdf */; };
 		7CC8287A14B6145000E841BE /* Maths.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8287914B6145000E841BE /* Maths.m4v */; };
 		7CC980DD1483F17D00A358BB /* 291.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC980DC1483F17D00A358BB /* 291.pdf */; };
 		7CC980DF1483F19D00A358BB /* 1549.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC980DE1483F19D00A358BB /* 1549.pdf */; };
@@ -1255,7 +1256,6 @@
 		7CE8C561145ABEBE000E8EEE /* 1149.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BF07145ABEBB000E8EEE /* 1149.pdf */; };
 		7CE8C562145ABEBE000E8EEE /* 1150.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BF08145ABEBB000E8EEE /* 1150.pdf */; };
 		7CE8C563145ABEBE000E8EEE /* 1151.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BF09145ABEBB000E8EEE /* 1151.pdf */; };
-		7CE8C564145ABEBE000E8EEE /* 1152.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BF0A145ABEBB000E8EEE /* 1152.pdf */; };
 		7CE8C565145ABEBE000E8EEE /* 1153.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BF0B145ABEBB000E8EEE /* 1153.pdf */; };
 		7CE8C566145ABEBE000E8EEE /* 1154.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BF0C145ABEBB000E8EEE /* 1154.pdf */; };
 		7CE8C567145ABEBE000E8EEE /* 1155.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BF0D145ABEBB000E8EEE /* 1155.pdf */; };
@@ -1751,6 +1751,7 @@
 		7C522E741485016F006524FF /* 1553.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1553.pdf; sourceTree = "<group>"; };
 		7C77DA6A149216280075FFDA /* ITest U Video.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ITest U Video.m4v"; sourceTree = "<group>"; };
 		7C847A0414D93D3700EDABF2 /* GCSEMaths.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = GCSEMaths.sqlite; sourceTree = "<group>"; };
+		7C98AFAA14E291C900EBAD97 /* 1152.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1152.pdf; sourceTree = "<group>"; };
 		7CC8287914B6145000E841BE /* Maths.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Maths.m4v; sourceTree = "<group>"; };
 		7CC980DC1483F17D00A358BB /* 291.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 291.pdf; sourceTree = "<group>"; };
 		7CC980DE1483F19D00A358BB /* 1549.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1549.pdf; sourceTree = "<group>"; };
@@ -3037,7 +3038,6 @@
 		7CE8BF07145ABEBB000E8EEE /* 1149.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1149.pdf; sourceTree = "<group>"; };
 		7CE8BF08145ABEBB000E8EEE /* 1150.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1150.pdf; sourceTree = "<group>"; };
 		7CE8BF09145ABEBB000E8EEE /* 1151.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1151.pdf; sourceTree = "<group>"; };
-		7CE8BF0A145ABEBB000E8EEE /* 1152.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1152.pdf; sourceTree = "<group>"; };
 		7CE8BF0B145ABEBB000E8EEE /* 1153.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1153.pdf; sourceTree = "<group>"; };
 		7CE8BF0C145ABEBB000E8EEE /* 1154.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1154.pdf; sourceTree = "<group>"; };
 		7CE8BF0D145ABEBB000E8EEE /* 1155.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1155.pdf; sourceTree = "<group>"; };
@@ -4961,7 +4961,7 @@
 				7CE8BF07145ABEBB000E8EEE /* 1149.pdf */,
 				7CE8BF08145ABEBB000E8EEE /* 1150.pdf */,
 				7CE8BF09145ABEBB000E8EEE /* 1151.pdf */,
-				7CE8BF0A145ABEBB000E8EEE /* 1152.pdf */,
+				7C98AFAA14E291C900EBAD97 /* 1152.pdf */,
 				7CE8BF0B145ABEBB000E8EEE /* 1153.pdf */,
 				7CE8BF0C145ABEBB000E8EEE /* 1154.pdf */,
 				7CE8BF0D145ABEBB000E8EEE /* 1155.pdf */,
@@ -6670,7 +6670,6 @@
 				7CE8C561145ABEBE000E8EEE /* 1149.pdf in Resources */,
 				7CE8C562145ABEBE000E8EEE /* 1150.pdf in Resources */,
 				7CE8C563145ABEBE000E8EEE /* 1151.pdf in Resources */,
-				7CE8C564145ABEBE000E8EEE /* 1152.pdf in Resources */,
 				7CE8C565145ABEBE000E8EEE /* 1153.pdf in Resources */,
 				7CE8C566145ABEBE000E8EEE /* 1154.pdf in Resources */,
 				7CE8C567145ABEBE000E8EEE /* 1155.pdf in Resources */,
@@ -7172,6 +7171,7 @@
 				7C77DA6B149216280075FFDA /* ITest U Video.m4v in Resources */,
 				7CC8287A14B6145000E841BE /* Maths.m4v in Resources */,
 				7C847A0514D93D3700EDABF2 /* GCSEMaths.sqlite in Resources */,
+				7C98AFAB14E291C900EBAD97 /* 1152.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
