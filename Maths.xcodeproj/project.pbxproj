@@ -15,6 +15,7 @@
 		7C522E7114850141006524FF /* 1550.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C522E7014850141006524FF /* 1550.pdf */; };
 		7C522E731485015C006524FF /* 1552.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C522E721485015C006524FF /* 1552.pdf */; };
 		7C522E751485016F006524FF /* 1553.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C522E741485016F006524FF /* 1553.pdf */; };
+		7C6A5A99150A2BEE00DA9D9A /* Maths.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A5A98150A2BEE00DA9D9A /* Maths.m4v */; };
 		7C77DA6B149216280075FFDA /* ITest U Video.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7C77DA6A149216280075FFDA /* ITest U Video.m4v */; };
 		7C98AFAB14E291C900EBAD97 /* 1152.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C98AFAA14E291C900EBAD97 /* 1152.pdf */; };
 		7CC980DD1483F17D00A358BB /* 291.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC980DC1483F17D00A358BB /* 291.pdf */; };
@@ -1749,6 +1750,7 @@
 		7C522E7014850141006524FF /* 1550.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1550.pdf; sourceTree = "<group>"; };
 		7C522E721485015C006524FF /* 1552.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1552.pdf; sourceTree = "<group>"; };
 		7C522E741485016F006524FF /* 1553.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1553.pdf; sourceTree = "<group>"; };
+		7C6A5A98150A2BEE00DA9D9A /* Maths.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Maths.m4v; sourceTree = "<group>"; };
 		7C77DA6A149216280075FFDA /* ITest U Video.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ITest U Video.m4v"; sourceTree = "<group>"; };
 		7C98AFAA14E291C900EBAD97 /* 1152.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1152.pdf; sourceTree = "<group>"; };
 		7CC980DC1483F17D00A358BB /* 291.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 291.pdf; sourceTree = "<group>"; };
@@ -3673,6 +3675,7 @@
 				7CD0B9DF145AB4B6004B8BF2 /* Icon-72.png */,
 				7CD0B9E4145AB4D9004B8BF2 /* Maths.png */,
 				7C77DA6A149216280075FFDA /* ITest U Video.m4v */,
+				7C6A5A98150A2BEE00DA9D9A /* Maths.m4v */,
 				7CD0B96C145AAFEC004B8BF2 /* Maths-Info.plist */,
 				7CD0B9EA145AB56C004B8BF2 /* Physics.png */,
 				7CD0B9EB145AB56C004B8BF2 /* Physics.m4v */,
@@ -7168,6 +7171,7 @@
 				7C77DA6B149216280075FFDA /* ITest U Video.m4v in Resources */,
 				7C98AFAB14E291C900EBAD97 /* 1152.pdf in Resources */,
 				7C3C1ED91508D20F00693E63 /* GCSEMaths.sqlite in Resources */,
+				7C6A5A99150A2BEE00DA9D9A /* Maths.m4v in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
