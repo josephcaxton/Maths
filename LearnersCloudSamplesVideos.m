@@ -102,8 +102,12 @@
 		
 		return [listofItems count];
 	}
+    else if(section == 1){
+        
+        return 2;
+    }
 	else {
-		return 2;
+		return 0;
 	}
 
     
