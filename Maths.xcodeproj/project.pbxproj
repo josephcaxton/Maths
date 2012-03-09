@@ -19,6 +19,7 @@
 		7C6A5A9B150A2DE100DA9D9A /* Maths.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A5A9A150A2DE100DA9D9A /* Maths.png */; };
 		7C6A5A9D150A301D00DA9D9A /* Physics.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A5A9C150A301D00DA9D9A /* Physics.m4v */; };
 		7C6A5A9F150A339E00DA9D9A /* English.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A5A9E150A339E00DA9D9A /* English.m4v */; };
+		7C6A5AA1150A36C400DA9D9A /* Chemistry.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A5AA0150A36C400DA9D9A /* Chemistry.m4v */; };
 		7C77DA6B149216280075FFDA /* ITest U Video.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7C77DA6A149216280075FFDA /* ITest U Video.m4v */; };
 		7C98AFAB14E291C900EBAD97 /* 1152.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C98AFAA14E291C900EBAD97 /* 1152.pdf */; };
 		7CC980DD1483F17D00A358BB /* 291.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC980DC1483F17D00A358BB /* 291.pdf */; };
@@ -64,7 +65,6 @@
 		7CD0B9F7145AB56C004B8BF2 /* Cough.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0B9EE145AB56C004B8BF2 /* Cough.aiff */; };
 		7CD0B9F8145AB56C004B8BF2 /* Clapping.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0B9EF145AB56C004B8BF2 /* Clapping.aiff */; };
 		7CD0B9F9145AB56C004B8BF2 /* Chemistry.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0B9F0145AB56C004B8BF2 /* Chemistry.png */; };
-		7CD0B9FA145AB56C004B8BF2 /* Chemistry.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0B9F1145AB56C004B8BF2 /* Chemistry.m4v */; };
 		7CD0B9FB145AB56C004B8BF2 /* ArrowWoodImpact.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0B9F2145AB56C004B8BF2 /* ArrowWoodImpact.aiff */; };
 		7CD0B9FD145AB58D004B8BF2 /* 45-movie1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0B9FC145AB58D004B8BF2 /* 45-movie1.png */; };
 		7CD0BA0A145AB663004B8BF2 /* FromFree.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0B9FE145AB662004B8BF2 /* FromFree.plist */; };
@@ -1754,6 +1754,7 @@
 		7C6A5A9A150A2DE100DA9D9A /* Maths.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Maths.png; sourceTree = "<group>"; };
 		7C6A5A9C150A301D00DA9D9A /* Physics.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Physics.m4v; sourceTree = "<group>"; };
 		7C6A5A9E150A339E00DA9D9A /* English.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = English.m4v; sourceTree = "<group>"; };
+		7C6A5AA0150A36C400DA9D9A /* Chemistry.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chemistry.m4v; sourceTree = "<group>"; };
 		7C77DA6A149216280075FFDA /* ITest U Video.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ITest U Video.m4v"; sourceTree = "<group>"; };
 		7C98AFAA14E291C900EBAD97 /* 1152.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1152.pdf; sourceTree = "<group>"; };
 		7CC980DC1483F17D00A358BB /* 291.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 291.pdf; sourceTree = "<group>"; };
@@ -1817,7 +1818,6 @@
 		7CD0B9EE145AB56C004B8BF2 /* Cough.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Cough.aiff; sourceTree = "<group>"; };
 		7CD0B9EF145AB56C004B8BF2 /* Clapping.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Clapping.aiff; sourceTree = "<group>"; };
 		7CD0B9F0145AB56C004B8BF2 /* Chemistry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chemistry.png; sourceTree = "<group>"; };
-		7CD0B9F1145AB56C004B8BF2 /* Chemistry.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chemistry.m4v; sourceTree = "<group>"; };
 		7CD0B9F2145AB56C004B8BF2 /* ArrowWoodImpact.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = ArrowWoodImpact.aiff; sourceTree = "<group>"; };
 		7CD0B9FC145AB58D004B8BF2 /* 45-movie1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "45-movie1.png"; sourceTree = "<group>"; };
 		7CD0B9FE145AB662004B8BF2 /* FromFree.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FromFree.plist; sourceTree = "<group>"; };
@@ -3680,11 +3680,11 @@
 				7C6A5A9C150A301D00DA9D9A /* Physics.m4v */,
 				7CD0B9EA145AB56C004B8BF2 /* Physics.png */,
 				7C6A5A9E150A339E00DA9D9A /* English.m4v */,
+				7C6A5AA0150A36C400DA9D9A /* Chemistry.m4v */,
 				7CD0B9EC145AB56C004B8BF2 /* English.png */,
 				7CD0B9EE145AB56C004B8BF2 /* Cough.aiff */,
 				7CD0B9EF145AB56C004B8BF2 /* Clapping.aiff */,
 				7CD0B9F0145AB56C004B8BF2 /* Chemistry.png */,
-				7CD0B9F1145AB56C004B8BF2 /* Chemistry.m4v */,
 				7CD0B9F2145AB56C004B8BF2 /* ArrowWoodImpact.aiff */,
 				7CD0B9FE145AB662004B8BF2 /* FromFree.plist */,
 				7CD0B9FF145AB662004B8BF2 /* From1500.plist */,
@@ -5509,7 +5509,6 @@
 				7CD0B9F7145AB56C004B8BF2 /* Cough.aiff in Resources */,
 				7CD0B9F8145AB56C004B8BF2 /* Clapping.aiff in Resources */,
 				7CD0B9F9145AB56C004B8BF2 /* Chemistry.png in Resources */,
-				7CD0B9FA145AB56C004B8BF2 /* Chemistry.m4v in Resources */,
 				7CD0B9FB145AB56C004B8BF2 /* ArrowWoodImpact.aiff in Resources */,
 				7CD0B9FD145AB58D004B8BF2 /* 45-movie1.png in Resources */,
 				7CD0BA0A145AB663004B8BF2 /* FromFree.plist in Resources */,
@@ -7172,6 +7171,7 @@
 				7C6A5A9B150A2DE100DA9D9A /* Maths.png in Resources */,
 				7C6A5A9D150A301D00DA9D9A /* Physics.m4v in Resources */,
 				7C6A5A9F150A339E00DA9D9A /* English.m4v in Resources */,
+				7C6A5AA1150A36C400DA9D9A /* Chemistry.m4v in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
