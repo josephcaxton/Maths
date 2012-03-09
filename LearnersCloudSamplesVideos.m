@@ -103,7 +103,7 @@
 		return [listofItems count];
 	}
 	else {
-		return 3;
+		return 2;
 	}
 
     
@@ -120,7 +120,7 @@
 //            }
 	
         else
-            return 40;
+            return 50;
 }
 
 
