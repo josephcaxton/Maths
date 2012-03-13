@@ -15,6 +15,7 @@
 		7C522E7114850141006524FF /* 1550.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C522E7014850141006524FF /* 1550.pdf */; };
 		7C522E731485015C006524FF /* 1552.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C522E721485015C006524FF /* 1552.pdf */; };
 		7C522E751485016F006524FF /* 1553.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C522E741485016F006524FF /* 1553.pdf */; };
+		7C579F46150F46110050DC9E /* 454.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C579F45150F46110050DC9E /* 454.pdf */; };
 		7C6A5A99150A2BEE00DA9D9A /* Maths.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A5A98150A2BEE00DA9D9A /* Maths.m4v */; };
 		7C6A5A9B150A2DE100DA9D9A /* Maths.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A5A9A150A2DE100DA9D9A /* Maths.png */; };
 		7C6A5A9D150A301D00DA9D9A /* Physics.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A5A9C150A301D00DA9D9A /* Physics.m4v */; };
@@ -572,7 +573,6 @@
 		7CE8C2A7145ABEBE000E8EEE /* 451.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BC4D145ABEB9000E8EEE /* 451.pdf */; };
 		7CE8C2A8145ABEBE000E8EEE /* 452.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BC4E145ABEB9000E8EEE /* 452.pdf */; };
 		7CE8C2A9145ABEBE000E8EEE /* 453.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BC4F145ABEB9000E8EEE /* 453.pdf */; };
-		7CE8C2AA145ABEBE000E8EEE /* 454.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BC50145ABEB9000E8EEE /* 454.pdf */; };
 		7CE8C2AB145ABEBE000E8EEE /* 455.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BC51145ABEB9000E8EEE /* 455.pdf */; };
 		7CE8C2AC145ABEBE000E8EEE /* 456.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BC52145ABEB9000E8EEE /* 456.pdf */; };
 		7CE8C2AD145ABEBE000E8EEE /* 457.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BC53145ABEB9000E8EEE /* 457.pdf */; };
@@ -1750,6 +1750,7 @@
 		7C522E7014850141006524FF /* 1550.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1550.pdf; sourceTree = "<group>"; };
 		7C522E721485015C006524FF /* 1552.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1552.pdf; sourceTree = "<group>"; };
 		7C522E741485016F006524FF /* 1553.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1553.pdf; sourceTree = "<group>"; };
+		7C579F45150F46110050DC9E /* 454.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 454.pdf; sourceTree = "<group>"; };
 		7C6A5A98150A2BEE00DA9D9A /* Maths.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Maths.m4v; sourceTree = "<group>"; };
 		7C6A5A9A150A2DE100DA9D9A /* Maths.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Maths.png; sourceTree = "<group>"; };
 		7C6A5A9C150A301D00DA9D9A /* Physics.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Physics.m4v; sourceTree = "<group>"; };
@@ -2354,7 +2355,6 @@
 		7CE8BC4D145ABEB9000E8EEE /* 451.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 451.pdf; sourceTree = "<group>"; };
 		7CE8BC4E145ABEB9000E8EEE /* 452.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 452.pdf; sourceTree = "<group>"; };
 		7CE8BC4F145ABEB9000E8EEE /* 453.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 453.pdf; sourceTree = "<group>"; };
-		7CE8BC50145ABEB9000E8EEE /* 454.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 454.pdf; sourceTree = "<group>"; };
 		7CE8BC51145ABEB9000E8EEE /* 455.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 455.pdf; sourceTree = "<group>"; };
 		7CE8BC52145ABEB9000E8EEE /* 456.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 456.pdf; sourceTree = "<group>"; };
 		7CE8BC53145ABEB9000E8EEE /* 457.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 457.pdf; sourceTree = "<group>"; };
@@ -4263,7 +4263,7 @@
 				7CE8BC4D145ABEB9000E8EEE /* 451.pdf */,
 				7CE8BC4E145ABEB9000E8EEE /* 452.pdf */,
 				7CE8BC4F145ABEB9000E8EEE /* 453.pdf */,
-				7CE8BC50145ABEB9000E8EEE /* 454.pdf */,
+				7C579F45150F46110050DC9E /* 454.pdf */,
 				7CE8BC51145ABEB9000E8EEE /* 455.pdf */,
 				7CE8BC52145ABEB9000E8EEE /* 456.pdf */,
 				7CE8BC53145ABEB9000E8EEE /* 457.pdf */,
@@ -5982,7 +5982,6 @@
 				7CE8C2A7145ABEBE000E8EEE /* 451.pdf in Resources */,
 				7CE8C2A8145ABEBE000E8EEE /* 452.pdf in Resources */,
 				7CE8C2A9145ABEBE000E8EEE /* 453.pdf in Resources */,
-				7CE8C2AA145ABEBE000E8EEE /* 454.pdf in Resources */,
 				7CE8C2AB145ABEBE000E8EEE /* 455.pdf in Resources */,
 				7CE8C2AC145ABEBE000E8EEE /* 456.pdf in Resources */,
 				7CE8C2AD145ABEBE000E8EEE /* 457.pdf in Resources */,
@@ -7172,6 +7171,7 @@
 				7C6A5A9D150A301D00DA9D9A /* Physics.m4v in Resources */,
 				7C6A5A9F150A339E00DA9D9A /* English.m4v in Resources */,
 				7C6A5AA1150A36C400DA9D9A /* Chemistry.m4v in Resources */,
+				7C579F46150F46110050DC9E /* 454.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
