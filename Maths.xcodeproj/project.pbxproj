@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C1CEF2A1538195F0006EC21 /* 70.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C1CEF291538195F0006EC21 /* 70.pdf */; };
 		7C462C361468076000E4F6AC /* 46.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C462C351468076000E4F6AC /* 46.pdf */; };
 		7C462C381468077900E4F6AC /* 256.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C462C371468077900E4F6AC /* 256.pdf */; };
 		7C462C3A1468078B00E4F6AC /* 283.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C462C391468078B00E4F6AC /* 283.pdf */; };
@@ -192,7 +193,6 @@
 		7CE8C127145ABEBE000E8EEE /* 67.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BACD145ABEB9000E8EEE /* 67.pdf */; };
 		7CE8C128145ABEBE000E8EEE /* 68.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BACE145ABEB9000E8EEE /* 68.pdf */; };
 		7CE8C129145ABEBE000E8EEE /* 69.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BACF145ABEB9000E8EEE /* 69.pdf */; };
-		7CE8C12A145ABEBE000E8EEE /* 70.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BAD0145ABEB9000E8EEE /* 70.pdf */; };
 		7CE8C12B145ABEBE000E8EEE /* 71.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BAD1145ABEB9000E8EEE /* 71.pdf */; };
 		7CE8C12C145ABEBE000E8EEE /* 72.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BAD2145ABEB9000E8EEE /* 72.pdf */; };
 		7CE8C12D145ABEBE000E8EEE /* 73.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BAD3145ABEB9000E8EEE /* 73.pdf */; };
@@ -1741,6 +1741,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C1CEF291538195F0006EC21 /* 70.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 70.pdf; sourceTree = "<group>"; };
 		7C462C351468076000E4F6AC /* 46.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 46.pdf; sourceTree = "<group>"; };
 		7C462C371468077900E4F6AC /* 256.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 256.pdf; sourceTree = "<group>"; };
 		7C462C391468078B00E4F6AC /* 283.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 283.pdf; sourceTree = "<group>"; };
@@ -1974,7 +1975,6 @@
 		7CE8BACD145ABEB9000E8EEE /* 67.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 67.pdf; sourceTree = "<group>"; };
 		7CE8BACE145ABEB9000E8EEE /* 68.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 68.pdf; sourceTree = "<group>"; };
 		7CE8BACF145ABEB9000E8EEE /* 69.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 69.pdf; sourceTree = "<group>"; };
-		7CE8BAD0145ABEB9000E8EEE /* 70.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 70.pdf; sourceTree = "<group>"; };
 		7CE8BAD1145ABEB9000E8EEE /* 71.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 71.pdf; sourceTree = "<group>"; };
 		7CE8BAD2145ABEB9000E8EEE /* 72.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 72.pdf; sourceTree = "<group>"; };
 		7CE8BAD3145ABEB9000E8EEE /* 73.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 73.pdf; sourceTree = "<group>"; };
@@ -3878,7 +3878,7 @@
 				7CE8BACD145ABEB9000E8EEE /* 67.pdf */,
 				7CE8BACE145ABEB9000E8EEE /* 68.pdf */,
 				7CE8BACF145ABEB9000E8EEE /* 69.pdf */,
-				7CE8BAD0145ABEB9000E8EEE /* 70.pdf */,
+				7C1CEF291538195F0006EC21 /* 70.pdf */,
 				7CE8BAD1145ABEB9000E8EEE /* 71.pdf */,
 				7CE8BAD2145ABEB9000E8EEE /* 72.pdf */,
 				7CE8BAD3145ABEB9000E8EEE /* 73.pdf */,
@@ -5601,7 +5601,6 @@
 				7CE8C127145ABEBE000E8EEE /* 67.pdf in Resources */,
 				7CE8C128145ABEBE000E8EEE /* 68.pdf in Resources */,
 				7CE8C129145ABEBE000E8EEE /* 69.pdf in Resources */,
-				7CE8C12A145ABEBE000E8EEE /* 70.pdf in Resources */,
 				7CE8C12B145ABEBE000E8EEE /* 71.pdf in Resources */,
 				7CE8C12C145ABEBE000E8EEE /* 72.pdf in Resources */,
 				7CE8C12D145ABEBE000E8EEE /* 73.pdf in Resources */,
@@ -7170,6 +7169,7 @@
 				7C6A5A9F150A339E00DA9D9A /* English.m4v in Resources */,
 				7C6A5AA1150A36C400DA9D9A /* Chemistry.m4v in Resources */,
 				7C579F46150F46110050DC9E /* 454.pdf in Resources */,
+				7C1CEF2A1538195F0006EC21 /* 70.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
