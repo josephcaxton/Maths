@@ -608,7 +608,8 @@ static NSString* const kAnalyticsAccountId = @"UA-31958684-1";
     NSString *DeviceTokenRemoveCh1 = [[deviceToken description] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
 
     NSString *DeviceToken = [DeviceTokenRemoveCh1 stringByReplacingOccurrencesOfString: @" " withString: @""];
-
+    
+    //NSLog(@"%@" , DeviceToken);
     
     NSURLConnection *conn;
     NSString *queryString = [NSString stringWithFormat:@"http://www.learnerscloud.com/services/ios/deviceToken.asmx/Update?UDID=%@&deviceToken=%@" , DeviceUDID, DeviceToken ];
