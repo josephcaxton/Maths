@@ -116,8 +116,8 @@ static NSString* const kAnalyticsAccountId = @"UA-31958684-1";
 	
 	NSString *AccessLevel =@"AccessLevel";
 	NSString *MyAccessLevel = (NSString *)[[NSUserDefaults standardUserDefaults] objectForKey:AccessLevel];
-	[[NSUserDefaults standardUserDefaults] setObject:@"2" forKey:@"AccessLevel"]; //For testing only
-	[[NSUserDefaults standardUserDefaults] synchronize];
+	//[[NSUserDefaults standardUserDefaults] setObject:@"2" forKey:@"AccessLevel"]; //For testing only
+	//[[NSUserDefaults standardUserDefaults] synchronize];
 	if (MyAccessLevel == nil) {
 		
 		NSDictionary *appDefaults  = [NSDictionary dictionaryWithObjectsAndKeys:@"1", AccessLevel, nil];
