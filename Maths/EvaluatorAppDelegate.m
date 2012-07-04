@@ -116,8 +116,8 @@ static NSString* const kAnalyticsAccountId = @"UA-31958684-1";
 	
 	NSString *AccessLevel =@"AccessLevel";
 	NSString *MyAccessLevel = (NSString *)[[NSUserDefaults standardUserDefaults] objectForKey:AccessLevel];
-	//[[NSUserDefaults standardUserDefaults] setObject:@"8" forKey:@"AccessLevel"]; //For testing only
-	//[[NSUserDefaults standardUserDefaults] synchronize];
+	[[NSUserDefaults standardUserDefaults] setObject:@"2" forKey:@"AccessLevel"]; //For testing only
+	[[NSUserDefaults standardUserDefaults] synchronize];
 	if (MyAccessLevel == nil) {
 		
 		NSDictionary *appDefaults  = [NSDictionary dictionaryWithObjectsAndKeys:@"1", AccessLevel, nil];
@@ -170,6 +170,27 @@ static NSString* const kAnalyticsAccountId = @"UA-31958684-1";
                                          withError:&error]) {
         NSLog(@"error in trackPageview");
     }
+    
+    
+    // Review
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    NSString *ReviewID = [prefs stringForKey:@"Review"];
+    if (ReviewID == nil) {
+        
+        NSString *ID = @"0";
+        [prefs setObject:ID forKey:@"Review"];
+        [prefs setObject:ID forKey:@"IHaveLeftReview"];
+        
+        [prefs synchronize];
+        
+    }
+    //for testing
+    /*NSString *ID = @"0";
+     [prefs setObject:ID forKey:@"Review"];
+     [prefs setObject:ID forKey:@"IHaveLeftReview"];
+     
+     [prefs synchronize];*/
+
 
 	
 	return YES;
