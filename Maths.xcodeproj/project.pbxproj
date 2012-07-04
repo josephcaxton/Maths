@@ -20,6 +20,17 @@
 		7C579F46150F46110050DC9E /* 454.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C579F45150F46110050DC9E /* 454.pdf */; };
 		7C659655159524FC004A5540 /* GCSEMaths.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5642D152F142100B498B9 /* GCSEMaths.sqlite */; };
 		7C6A5A9B150A2DE100DA9D9A /* Maths.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A5A9A150A2DE100DA9D9A /* Maths.png */; };
+		7C715B3515A4590100174FA0 /* shareIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C715B3415A4590100174FA0 /* shareIcon.png */; };
+		7C715B4715A460AE00174FA0 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C715B3A15A460AE00174FA0 /* FBDialog.bundle */; };
+		7C715B4815A460AE00174FA0 /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C715B4015A460AE00174FA0 /* libfacebook_ios_sdk.a */; };
+		7C715B4C15A4668000174FA0 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C715B4B15A4668000174FA0 /* Twitter.framework */; };
+		7C715B4E15A466E400174FA0 /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C715B4D15A466E400174FA0 /* mail.png */; };
+		7C715B5015A466FA00174FA0 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C715B4F15A466FA00174FA0 /* facebook.png */; };
+		7C715B5215A4671700174FA0 /* logoutfacebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C715B5115A4671700174FA0 /* logoutfacebook.png */; };
+		7C715B5415A4672D00174FA0 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C715B5315A4672D00174FA0 /* twitter.png */; };
+		7C715B5615A4675200174FA0 /* FollowUsOnTwitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C715B5515A4675200174FA0 /* FollowUsOnTwitter.png */; };
+		7C715B5815A4676900174FA0 /* LikeUsOnFaceBook.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C715B5715A4676900174FA0 /* LikeUsOnFaceBook.png */; };
+		7C715B5915A4704300174FA0 /* PopUpTableviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C715B4A15A463DC00174FA0 /* PopUpTableviewViewController.m */; };
 		7C77DA6B149216280075FFDA /* ITest U Video.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7C77DA6A149216280075FFDA /* ITest U Video.m4v */; };
 		7C98AFAB14E291C900EBAD97 /* 1152.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C98AFAA14E291C900EBAD97 /* 1152.pdf */; };
 		7CC980DD1483F17D00A358BB /* 291.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC980DC1483F17D00A358BB /* 291.pdf */; };
@@ -1765,6 +1776,31 @@
 		7C522E741485016F006524FF /* 1553.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1553.pdf; sourceTree = "<group>"; };
 		7C579F45150F46110050DC9E /* 454.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 454.pdf; sourceTree = "<group>"; };
 		7C6A5A9A150A2DE100DA9D9A /* Maths.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Maths.png; sourceTree = "<group>"; };
+		7C715B3415A4590100174FA0 /* shareIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shareIcon.png; sourceTree = "<group>"; };
+		7C715B3815A460AE00174FA0 /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
+		7C715B3915A460AE00174FA0 /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
+		7C715B3A15A460AE00174FA0 /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
+		7C715B3B15A460AE00174FA0 /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDialog.h; sourceTree = "<group>"; };
+		7C715B3C15A460AE00174FA0 /* FBFrictionlessRequestSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFrictionlessRequestSettings.h; sourceTree = "<group>"; };
+		7C715B3D15A460AE00174FA0 /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginDialog.h; sourceTree = "<group>"; };
+		7C715B3E15A460AE00174FA0 /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRequest.h; sourceTree = "<group>"; };
+		7C715B3F15A460AE00174FA0 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		7C715B4015A460AE00174FA0 /* libfacebook_ios_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfacebook_ios_sdk.a; sourceTree = "<group>"; };
+		7C715B4115A460AE00174FA0 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		7C715B4215A460AE00174FA0 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		7C715B4315A460AE00174FA0 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		7C715B4415A460AE00174FA0 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		7C715B4515A460AE00174FA0 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		7C715B4615A460AE00174FA0 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		7C715B4915A463DC00174FA0 /* PopUpTableviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopUpTableviewViewController.h; sourceTree = "<group>"; };
+		7C715B4A15A463DC00174FA0 /* PopUpTableviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopUpTableviewViewController.m; sourceTree = "<group>"; };
+		7C715B4B15A4668000174FA0 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		7C715B4D15A466E400174FA0 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
+		7C715B4F15A466FA00174FA0 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		7C715B5115A4671700174FA0 /* logoutfacebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoutfacebook.png; sourceTree = "<group>"; };
+		7C715B5315A4672D00174FA0 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		7C715B5515A4675200174FA0 /* FollowUsOnTwitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FollowUsOnTwitter.png; sourceTree = "<group>"; };
+		7C715B5715A4676900174FA0 /* LikeUsOnFaceBook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LikeUsOnFaceBook.png; sourceTree = "<group>"; };
 		7C77DA6A149216280075FFDA /* ITest U Video.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ITest U Video.m4v"; sourceTree = "<group>"; };
 		7C98AFAA14E291C900EBAD97 /* 1152.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1152.pdf; sourceTree = "<group>"; };
 		7CB5642D152F142100B498B9 /* GCSEMaths.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = GCSEMaths.sqlite; sourceTree = "<group>"; };
@@ -3538,6 +3574,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C715B4C15A4668000174FA0 /* Twitter.framework in Frameworks */,
 				7C045F70156BD4460065E2DC /* CFNetwork.framework in Frameworks */,
 				7CD0B99C145AB1A0004B8BF2 /* libsqlite3.0.dylib in Frameworks */,
 				7CD0B9AA145AB1F8004B8BF2 /* CoreData.framework in Frameworks */,
@@ -3551,6 +3588,7 @@
 				7CD0B967145AAFEC004B8BF2 /* Foundation.framework in Frameworks */,
 				7CD0B969145AAFEC004B8BF2 /* CoreGraphics.framework in Frameworks */,
 				7C045F6E156BD3EE0065E2DC /* libGoogleAnalytics.a in Frameworks */,
+				7C715B4815A460AE00174FA0 /* libfacebook_ios_sdk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3566,9 +3604,32 @@
 			name = Analytics;
 			sourceTree = "<group>";
 		};
+		7C715B3715A460AE00174FA0 /* facebook-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				7C715B3815A460AE00174FA0 /* Facebook.h */,
+				7C715B3915A460AE00174FA0 /* FBConnect.h */,
+				7C715B3A15A460AE00174FA0 /* FBDialog.bundle */,
+				7C715B3B15A460AE00174FA0 /* FBDialog.h */,
+				7C715B3C15A460AE00174FA0 /* FBFrictionlessRequestSettings.h */,
+				7C715B3D15A460AE00174FA0 /* FBLoginDialog.h */,
+				7C715B3E15A460AE00174FA0 /* FBRequest.h */,
+				7C715B3F15A460AE00174FA0 /* JSON.h */,
+				7C715B4015A460AE00174FA0 /* libfacebook_ios_sdk.a */,
+				7C715B4115A460AE00174FA0 /* NSObject+SBJSON.h */,
+				7C715B4215A460AE00174FA0 /* NSString+SBJSON.h */,
+				7C715B4315A460AE00174FA0 /* SBJSON.h */,
+				7C715B4415A460AE00174FA0 /* SBJsonBase.h */,
+				7C715B4515A460AE00174FA0 /* SBJsonParser.h */,
+				7C715B4615A460AE00174FA0 /* SBJsonWriter.h */,
+			);
+			path = "facebook-ios-sdk";
+			sourceTree = "<group>";
+		};
 		7CD0B955145AAFEC004B8BF2 = {
 			isa = PBXGroup;
 			children = (
+				7C715B3715A460AE00174FA0 /* facebook-ios-sdk */,
 				7C045F6A156BD3C90065E2DC /* Analytics */,
 				7CE8C74A145AC21C000E8EEE /* Maths.entitlements */,
 				7CD0B999145AB151004B8BF2 /* Settings.bundle */,
@@ -3601,6 +3662,7 @@
 			isa = PBXGroup;
 			children = (
 				7CD0B99B145AB1A0004B8BF2 /* libsqlite3.0.dylib */,
+				7C715B4B15A4668000174FA0 /* Twitter.framework */,
 				7C045F6F156BD4460065E2DC /* CFNetwork.framework */,
 				7CD0B9A9145AB1F8004B8BF2 /* CoreData.framework */,
 				7CD0B9A7145AB1E0004B8BF2 /* AudioToolbox.framework */,
@@ -3718,6 +3780,13 @@
 				7CD0BA09145AB663004B8BF2 /* Default-Landscape.png */,
 				7CD0BA16145AB695004B8BF2 /* Graph_Ipad.png */,
 				7CD0BA17145AB695004B8BF2 /* BlackBackGround.png */,
+				7C715B3415A4590100174FA0 /* shareIcon.png */,
+				7C715B4D15A466E400174FA0 /* mail.png */,
+				7C715B4F15A466FA00174FA0 /* facebook.png */,
+				7C715B5115A4671700174FA0 /* logoutfacebook.png */,
+				7C715B5315A4672D00174FA0 /* twitter.png */,
+				7C715B5515A4675200174FA0 /* FollowUsOnTwitter.png */,
+				7C715B5715A4676900174FA0 /* LikeUsOnFaceBook.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -3821,6 +3890,8 @@
 				7CD0BA6B145ABB14004B8BF2 /* Buy.h */,
 				7CD0BA6C145ABB14004B8BF2 /* Attribution.m */,
 				7CD0BA6D145ABB14004B8BF2 /* Attribution.h */,
+				7C715B4915A463DC00174FA0 /* PopUpTableviewViewController.h */,
+				7C715B4A15A463DC00174FA0 /* PopUpTableviewViewController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -7187,6 +7258,14 @@
 				7C6A5A9B150A2DE100DA9D9A /* Maths.png in Resources */,
 				7C579F46150F46110050DC9E /* 454.pdf in Resources */,
 				7C1CEF2A1538195F0006EC21 /* 70.pdf in Resources */,
+				7C715B3515A4590100174FA0 /* shareIcon.png in Resources */,
+				7C715B4715A460AE00174FA0 /* FBDialog.bundle in Resources */,
+				7C715B4E15A466E400174FA0 /* mail.png in Resources */,
+				7C715B5015A466FA00174FA0 /* facebook.png in Resources */,
+				7C715B5215A4671700174FA0 /* logoutfacebook.png in Resources */,
+				7C715B5415A4672D00174FA0 /* twitter.png in Resources */,
+				7C715B5615A4675200174FA0 /* FollowUsOnTwitter.png in Resources */,
+				7C715B5815A4676900174FA0 /* LikeUsOnFaceBook.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7197,6 +7276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C715B5915A4704300174FA0 /* PopUpTableviewViewController.m in Sources */,
 				7CD0B971145AAFEC004B8BF2 /* main.m in Sources */,
 				7CD0B9AD145AB25F004B8BF2 /* EvaluatorAppDelegate.m in Sources */,
 				7CD0B9B0145AB275004B8BF2 /* ActivityIndicator.m in Sources */,
@@ -7321,6 +7401,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/facebook-ios-sdk\"",
 				);
 				PRODUCT_NAME = "iTest U";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "150ECF15-89C2-4DEA-AF5E-5C3E9956E614";
@@ -7340,6 +7421,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/facebook-ios-sdk\"",
 				);
 				PRODUCT_NAME = "iTest U";
 				PROVISIONING_PROFILE = "";

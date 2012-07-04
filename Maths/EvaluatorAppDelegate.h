@@ -13,6 +13,7 @@
 #import "CustomStoreObserver.h"
 #import "GANTracker.h"
 #import <netinet/in.h>
+#import "FBConnect.h"
 
 
 @interface EvaluatorAppDelegate : NSObject <UIApplicationDelegate> {
@@ -35,6 +36,9 @@
 	UITableViewController *buyScreen;
 	NSThread *SecondThread;
 	
+    // this is to handle return from facebook
+    
+    Facebook *m_facebook;
 	
 }
 
@@ -55,6 +59,8 @@
 @property (nonatomic, retain) UIImageView *splashView;
 @property (nonatomic, retain) UITableViewController *buyScreen;
 @property (nonatomic, retain) NSThread *SecondThread;
+@property (nonatomic, retain)  Facebook *m_facebook;
+
 
 - (NSString *)applicationDocumentsDirectory;
 - (void)PlaySound:(NSString *)FileName;

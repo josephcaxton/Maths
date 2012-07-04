@@ -18,7 +18,7 @@ static NSString* const kAnalyticsAccountId = @"UA-31958684-1";
 
 @synthesize window;
 @synthesize	tabBarController,splashView;
-@synthesize AllocatedMarks,Difficulty,Topic,TypeOfQuestion,NumberOfQuestions,NumberOfQuestionsDisplayed,PossibleScores,ClientScores,buyScreen,SecondThread; 
+@synthesize AllocatedMarks,Difficulty,Topic,TypeOfQuestion,NumberOfQuestions,NumberOfQuestionsDisplayed,PossibleScores,ClientScores,buyScreen,SecondThread,m_facebook; 
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -704,6 +704,19 @@ static NSString* const kAnalyticsAccountId = @"UA-31958684-1";
     }    
     
 }
+
+// Pre iOS 4.2 support
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return [m_facebook handleOpenURL:url]; 
+}
+
+// For iOS 4.2+ support
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [m_facebook handleOpenURL:url]; 
+}
+
+
 
 
 
