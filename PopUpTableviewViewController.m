@@ -14,7 +14,7 @@
 
 @implementation PopUpTableviewViewController
 
-@synthesize m_popover,facebook,logoutFacebook,activityIndicator;
+@synthesize m_popover,facebook,logoutFacebook,activityIndicator,StartPage;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -121,7 +121,7 @@ self.contentSizeForViewInPopover = CGSizeMake(108,400);
        // UIImage* mailImage = [UIImage imageNamed:@"mail.png"];
        //cell.imageView.image = mailImage;
       
-      cell.textLabel.text = @"Like what you see here? Share this app with a friend";
+      cell.textLabel.text = @"Like what you see here? Share this app with a friend and get an upgrade to 250 questions free";
         cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;
         cell.textLabel.numberOfLines = 0;
         cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:17.0];
@@ -261,9 +261,9 @@ self.contentSizeForViewInPopover = CGSizeMake(108,400);
         MFMailComposeViewController *SendMailcontroller = [[MFMailComposeViewController alloc]init];
         SendMailcontroller.mailComposeDelegate = self;
         //[SendMailcontroller setToRecipients:SendTo];
-        [SendMailcontroller setSubject:@"Get LearnersCloud app on your iPhone, iPad Tourch, or iPad"];
+        [SendMailcontroller setSubject:@"Get LearnersCloud app on your iPhone, iPod Touch, or iPad"];
         
-        [SendMailcontroller setMessageBody:[NSString stringWithFormat:@"Checkout the free LearnersCloud Maths Q & A app. Its loaded with quality revision questions and answers from <a href=http://itunes.apple.com/us/app/gcse-maths-questions./id461348306?ls=1&mt=8>here at the app store</a> or do a search for LearnersCloud in the app store to view a list of all LearnersCloud apps. LearnersCloud is a top 20 winner of the BETT show award 2012. "] isHTML:YES];
+        [SendMailcontroller setMessageBody:[NSString stringWithFormat:@"Checkout the free LearnersCloud Maths Q & A app. Its loaded with quality revision questions and answers. For iPad version<a href=http://itunes.apple.com/us/app/gcse-maths-questions./id461348306?ls=1&mt=8> click here</a>. For iPhone version<a href=http://itunes.apple.com/us/app/gcse-maths-questions/id457831288?ls=1&mt=8>  click here</a>. Or search for LearnersCloud in the itunes app store to view a list of all LearnersCloud apps. Android apps available at Google play and Amazon.com. LearnersCloud is a top 20 winner of the BETT show award 2012. "] isHTML:YES];
         [self presentModalViewController:SendMailcontroller animated:YES];
         [SendMailcontroller release];
 		
@@ -300,16 +300,14 @@ self.contentSizeForViewInPopover = CGSizeMake(108,400);
             NSLog(@"error in trackEvent");
         }
 
-        // Not yet implemented
-        NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-         // Give user one free video.
-            if(![prefs objectForKey:@"AddOneFree"]){
-        
-                [prefs setObject:@"1" forKey:@"AddOneFree"];
-                [prefs synchronize];
-    
-                }
-        
+        // Upgrade users questions
+        NSString *MyAccessLevel = (NSString *)[[NSUserDefaults standardUserDefaults] objectForKey:@"AccessLevel"];
+        NSInteger AccessLevel = [MyAccessLevel intValue];
+        if(AccessLevel == 1){
+        [[NSUserDefaults standardUserDefaults] setObject:@"2" forKey:@"AccessLevel"]; 
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        [StartPage viewWillAppear:true];
+        }
     }
 	
 	[self becomeFirstResponder];
@@ -419,15 +417,13 @@ self.contentSizeForViewInPopover = CGSizeMake(108,400);
         NSLog(@"error in trackEvent");
     }
 
-    // not implemented yet
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    // Give user one free video.
-    if(![prefs objectForKey:@"AddOneFree"]){
-        
-        
-        [prefs setObject:@"1" forKey:@"AddOneFree"];
-        [prefs synchronize];
-        
+    // Upgrade users questions
+    NSString *MyAccessLevel = (NSString *)[[NSUserDefaults standardUserDefaults] objectForKey:@"AccessLevel"];
+    NSInteger AccessLevel = [MyAccessLevel intValue];
+    if(AccessLevel == 1){
+        [[NSUserDefaults standardUserDefaults] setObject:@"2" forKey:@"AccessLevel"]; 
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        [StartPage viewWillAppear:true];
     }
 
     
@@ -458,7 +454,7 @@ self.contentSizeForViewInPopover = CGSizeMake(108,400);
         [tweetSheet addURL:[NSURL URLWithString:UrlString]];
         [tweetSheet addImage:[UIImage imageNamed:@"Icon"]];
         
-        NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+       
         
         tweetSheet.completionHandler = ^(TWTweetComposeViewControllerResult result) { 
             NSError *error;
@@ -478,15 +474,16 @@ self.contentSizeForViewInPopover = CGSizeMake(108,400);
                     }
 
                     
-                    // Give user one free video not implemented yet
-                    if(![prefs objectForKey:@"AddOneFree"]){
-                        
-                        [prefs setObject:@"1" forKey:@"AddOneFree"];
-                        [prefs synchronize];
-                        
+                    // Upgrade users questions
+                    NSString *MyAccessLevel = (NSString *)[[NSUserDefaults standardUserDefaults] objectForKey:@"AccessLevel"];
+                    NSInteger AccessLevel = [MyAccessLevel intValue];
+                    if(AccessLevel == 1){
+                        [[NSUserDefaults standardUserDefaults] setObject:@"2" forKey:@"AccessLevel"]; 
+                        [[NSUserDefaults standardUserDefaults] synchronize];
+                        [StartPage viewWillAppear:true];
                     }
 
-                    
+                        
                     break;
                     
                 default:

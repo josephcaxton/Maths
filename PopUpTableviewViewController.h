@@ -13,6 +13,7 @@
 #import <Twitter/Twitter.h>
 #import "GANTracker.h"
 
+
 @interface PopUpTableviewViewController : UITableViewController<MFMailComposeViewControllerDelegate,FBSessionDelegate,FBDialogDelegate>{
 
    // NSMutableArray *listofItems;
@@ -22,6 +23,7 @@
     UIButton *logoutFacebook;
     
     UIActivityIndicatorView * activityIndicator;
+    UIViewController *StartPage;
 
 }
 //@property (nonatomic, retain) NSMutableArray *listofItems;
@@ -29,6 +31,8 @@
 @property (nonatomic, retain) Facebook *facebook;
 @property (nonatomic, retain) UIButton *logoutFacebook;
 @property (nonatomic, retain)  UIActivityIndicatorView * activityIndicator;
+@property (nonatomic, retain)  UIViewController *StartPage;
+
 
 - (void)AddProgress;
 
