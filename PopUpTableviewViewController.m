@@ -192,6 +192,7 @@ self.contentSizeForViewInPopover = CGSizeMake(108,400);
         cell.textLabel.backgroundColor =  mycolor;
         cell.textLabel.textColor = [UIColor blackColor];
         cell.textLabel.textAlignment = UITextAlignmentCenter;
+        [mycolor release];
 
     }
     else if (indexPath.section == 2 && indexPath.row == 1){
@@ -493,10 +494,11 @@ self.contentSizeForViewInPopover = CGSizeMake(108,400);
             [self dismissModalViewControllerAnimated:YES];
         };
 
-        [tweetSheet release];
+        
         [ activityIndicator stopAnimating];
         
 	    [self presentModalViewController:tweetSheet animated:YES];
+        [tweetSheet release];
     }
     else
     {
