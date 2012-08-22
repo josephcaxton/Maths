@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7C045F6E156BD3EE0065E2DC /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C045F6D156BD3EE0065E2DC /* libGoogleAnalytics.a */; };
 		7C045F70156BD4460065E2DC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C045F6F156BD4460065E2DC /* CFNetwork.framework */; };
+		7C0D1F4915E51F4E00999411 /* buttonbackgroud.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C0D1F4815E51F4E00999411 /* buttonbackgroud.png */; };
 		7C1CEF2A1538195F0006EC21 /* 70.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C1CEF291538195F0006EC21 /* 70.pdf */; };
 		7C462C361468076000E4F6AC /* 46.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C462C351468076000E4F6AC /* 46.pdf */; };
 		7C462C381468077900E4F6AC /* 256.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C462C371468077900E4F6AC /* 256.pdf */; };
@@ -1766,6 +1767,7 @@
 		7C045F6C156BD3DD0065E2DC /* GANTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GANTracker.h; sourceTree = "<group>"; };
 		7C045F6D156BD3EE0065E2DC /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalytics.a; sourceTree = "<group>"; };
 		7C045F6F156BD4460065E2DC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7C0D1F4815E51F4E00999411 /* buttonbackgroud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonbackgroud.png; sourceTree = "<group>"; };
 		7C1CEF291538195F0006EC21 /* 70.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 70.pdf; sourceTree = "<group>"; };
 		7C462C351468076000E4F6AC /* 46.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 46.pdf; sourceTree = "<group>"; };
 		7C462C371468077900E4F6AC /* 256.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 256.pdf; sourceTree = "<group>"; };
@@ -3780,6 +3782,7 @@
 				7CD0BA09145AB663004B8BF2 /* Default-Landscape.png */,
 				7CD0BA16145AB695004B8BF2 /* Graph_Ipad.png */,
 				7CD0BA17145AB695004B8BF2 /* BlackBackGround.png */,
+				7C0D1F4815E51F4E00999411 /* buttonbackgroud.png */,
 				7C715B3415A4590100174FA0 /* shareIcon.png */,
 				7C715B4D15A466E400174FA0 /* mail.png */,
 				7C715B4F15A466FA00174FA0 /* facebook.png */,
@@ -7266,6 +7269,7 @@
 				7C715B5415A4672D00174FA0 /* twitter.png in Resources */,
 				7C715B5615A4675200174FA0 /* FollowUsOnTwitter.png in Resources */,
 				7C715B5815A4676900174FA0 /* LikeUsOnFaceBook.png in Resources */,
+				7C0D1F4915E51F4E00999411 /* buttonbackgroud.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

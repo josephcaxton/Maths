@@ -116,7 +116,7 @@ static NSString* const kAnalyticsAccountId = @"UA-31958684-1";
 	
 	NSString *AccessLevel =@"AccessLevel";
 	NSString *MyAccessLevel = (NSString *)[[NSUserDefaults standardUserDefaults] objectForKey:AccessLevel];
-	//[[NSUserDefaults standardUserDefaults] setObject:@"2" forKey:@"AccessLevel"]; //For testing only
+	//[[NSUserDefaults standardUserDefaults] setObject:@"8" forKey:@"AccessLevel"]; //For testing only
 	//[[NSUserDefaults standardUserDefaults] synchronize];
 	if (MyAccessLevel == nil) {
 		
@@ -161,7 +161,7 @@ static NSString* const kAnalyticsAccountId = @"UA-31958684-1";
     if (![[GANTracker sharedTracker] trackEvent:@"Maths iPad Started"
                                          action:@"Launch iOS"
                                           label:@"Launch iOS"
-                                          value:99
+                                          value:1
                                       withError:&error]) {
         NSLog(@"error in trackEvent");
     }
@@ -630,7 +630,7 @@ static NSString* const kAnalyticsAccountId = @"UA-31958684-1";
 
     NSString *DeviceToken = [DeviceTokenRemoveCh1 stringByReplacingOccurrencesOfString: @" " withString: @""];
     
-    //NSLog(@"%@" , DeviceToken);
+    NSLog(@"%@" , DeviceToken);
     
     NSURLConnection *conn;
     NSString *queryString = [NSString stringWithFormat:@"http://www.learnerscloud.com/services/ios/deviceToken.asmx/Update?UDID=%@&deviceToken=%@" , DeviceUDID, DeviceToken ];
