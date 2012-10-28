@@ -34,10 +34,17 @@ static UIWebView *QuestionHeaderBox = nil;
 	QuestionHeaderBox =[[UIWebView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 400)];
 	QuestionHeaderBox.scalesPageToFit = YES;
 	
-	self.FileListTable = [[UITableView alloc] initWithFrame:CGRectMake(2, 260, SCREEN_WIDTH, SCREEN_HEIGHT - 170) style:UITableViewStyleGrouped];
+	self.FileListTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 260, SCREEN_WIDTH, SCREEN_HEIGHT - 170) style:UITableViewStyleGrouped];
 	FileListTable.delegate = self;
 	FileListTable.dataSource = self;
 	FileListTable.separatorStyle = UITableViewCellSeparatorStyleSingleLineEtched;
+    
+    [self.FileListTable setBackgroundView:nil];
+    NSString *BackImagePath = [[NSBundle mainBundle] pathForResource:@"Background" ofType:@"png"];
+	UIImage *BackImage = [[UIImage alloc] initWithContentsOfFile:BackImagePath];
+    self.FileListTable.backgroundColor = [UIColor colorWithPatternImage:BackImage];
+    [BackImage release];
+
 	
 	// Now I have added 1000 pdfs to the bundle. App is now ver slow
 	// I don't need this to go live, it is just for admin only so i comment out CheckExistingFiles
@@ -112,8 +119,12 @@ static UIWebView *QuestionHeaderBox = nil;
 			AnswerObjects=  [[NSMutableArray alloc] initWithArray:[[QItem_View Answers1] allObjects]];
 			
 			UIBarButtonItem *SendSupportMail = [[UIBarButtonItem alloc] initWithTitle:@"Report Problem" style: UIBarButtonItemStyleBordered target:self action:@selector(ReportProblem:)];
-			self.navigationItem.rightBarButtonItem = SendSupportMail;
+			self.navigationItem.leftBarButtonItem = SendSupportMail;
 			[SendSupportMail release];
+            
+            Continue = [[UIBarButtonItem alloc] initWithTitle:@"Continue" style: UIBarButtonItemStyleBordered target:self action:@selector(NextQuestion:)];
+			self.navigationItem.rightBarButtonItem = Continue;
+			[Continue release];
 			
 						
 		}
@@ -375,8 +386,8 @@ static UIWebView *QuestionHeaderBox = nil;
 	if (self.interfaceOrientation == UIInterfaceOrientationPortrait || self.interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown ) {
 		
 		QuestionHeaderBox.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 400);
-		self.FileListTable.frame = CGRectMake(2, 260, SCREEN_WIDTH, SCREEN_HEIGHT - 170);
-		 Continue.frame = CGRectMake(625, 0, 100, 44);
+		self.FileListTable.frame = CGRectMake(0, 260, SCREEN_WIDTH, SCREEN_HEIGHT - 170);
+		 //Continue.frame = CGRectMake(625, 0, 100, 44);
         
 		
 	}
@@ -385,7 +396,7 @@ static UIWebView *QuestionHeaderBox = nil;
 		
 		QuestionHeaderBox.frame = CGRectMake(140, 0,  SCREEN_HEIGHT - 182, 320);
 		self.FileListTable.frame = CGRectMake(0, 260, SCREEN_HEIGHT + 80, SCREEN_HEIGHT - 160);
-		 Continue.frame = CGRectMake(885, 0, 100, 44);
+		 //Continue.frame = CGRectMake(885, 0, 100, 44);
         
 	}
 	
@@ -417,7 +428,7 @@ static UIWebView *QuestionHeaderBox = nil;
 
 
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+/*- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
 	
 	NSString *title;
 	
@@ -444,7 +455,7 @@ static UIWebView *QuestionHeaderBox = nil;
 
 	
 	
-}
+}*/
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -469,17 +480,17 @@ static UIWebView *QuestionHeaderBox = nil;
   if (self.interfaceOrientation == UIInterfaceOrientationPortrait || self.interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
 			 
 			 
-            Continue.frame = CGRectMake(625, 0, 100, 44);
+           // Continue.frame = CGRectMake(625, 0, 100, 44);
 		 }
 		 else {
 			 
              
-			Continue.frame = CGRectMake(885, 0, 100, 44);
+			//Continue.frame = CGRectMake(885, 0, 100, 44);
 		 }
 		 if(ShowAnswer && RemoveContinueButton)
          {
-             
-             Continue.hidden = YES;
+            
+           //  Continue.hidden = YES;
          }
 
 }
@@ -567,12 +578,12 @@ static UIWebView *QuestionHeaderBox = nil;
 	
 	 else if(QItem_View !=nil && indexPath.row == [AnswerObjects count] && !ShowAnswer ){
 		 
-		 Continue = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+		/* Continue = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 		 [Continue setTitle:@"Continue" forState:UIControlStateNormal];
 		
          
 		 [Continue addTarget:self action:@selector(NextQuestion:) forControlEvents:UIControlEventTouchUpInside];
-		 [cell addSubview:Continue];
+		 [cell addSubview:Continue]; */
 		 
 		 [self AdjustOrientation];
 
@@ -584,13 +595,13 @@ static UIWebView *QuestionHeaderBox = nil;
 	 }
      else if (QItem_View !=nil && indexPath.row == [AnswerObjects count] && ShowAnswer && indexPath.section == 1){
          
-         [Continue removeFromSuperview];
+        /* [Continue removeFromSuperview];
          Continue = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 		 [Continue setTitle:@"Continue" forState:UIControlStateNormal];
          
          
 		 [Continue addTarget:self action:@selector(NextQuestion:) forControlEvents:UIControlEventTouchUpInside];
-		 [cell addSubview:Continue];
+		 [cell addSubview:Continue]; */
 		 
 		 [self AdjustOrientation];
          
@@ -737,21 +748,22 @@ static UIWebView *QuestionHeaderBox = nil;
 	
 }
 
-/*- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
 	
 	[textField resignFirstResponder];
 	
-	[UIView beginAnimations:nil context:NULL];
+	/*[UIView beginAnimations:nil context:NULL];
 	[UIView setAnimationDuration:0.3];
 	CGRect rect = self.view.frame;
 	rect.origin.y = 0;
 	rect.size.height = 450;
 	self.view.frame = rect;
-	[UIView commitAnimations];
-	
+	[UIView commitAnimations];*/
+    
+	[self NextQuestion:self];
 	
 	return YES;
-} */
+} 
 
 
 

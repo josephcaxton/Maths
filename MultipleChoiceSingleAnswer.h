@@ -53,8 +53,9 @@
 	NSMutableArray *SelectedAnswers;
 	NSMutableArray *AnswerCounter;
 	BOOL ShowAnswer;
-	UIButton *Continue;
+	UIBarButtonItem *Continue;
 	NSMutableArray *HighlightedAnswers;
+   
 
 }
 
@@ -81,13 +82,14 @@
 
 
 
+
 @property (nonatomic, retain) NSMutableArray *AnswerObjects;
 @property (nonatomic, retain) NSMutableArray *CorrectAnswers;
 @property (nonatomic, retain) NSMutableArray *MultichoiceAnswers;
 @property (nonatomic, retain) NSMutableArray *SelectedAnswers;
 @property (nonatomic, retain) NSMutableArray *AnswerCounter;
 @property (nonatomic, assign) BOOL ShowAnswer;
-@property (nonatomic, retain) UIButton *Continue;
+@property (nonatomic, retain) UIBarButtonItem *Continue;
 @property (nonatomic, retain) NSMutableArray *HighlightedAnswers;
 
 //@property (nonatomic, retain) IBOutlet UIWebView *QuestionItemBox;
