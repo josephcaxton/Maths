@@ -10,7 +10,6 @@
 		7C045F6E156BD3EE0065E2DC /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C045F6D156BD3EE0065E2DC /* libGoogleAnalytics.a */; };
 		7C045F70156BD4460065E2DC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C045F6F156BD4460065E2DC /* CFNetwork.framework */; };
 		7C1CEF2A1538195F0006EC21 /* 70.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C1CEF291538195F0006EC21 /* 70.pdf */; };
-		7C37D5E2162D5BFE00122A88 /* GCSEMaths.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7C37D5E1162D5BE600122A88 /* GCSEMaths.sqlite */; };
 		7C462C361468076000E4F6AC /* 46.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C462C351468076000E4F6AC /* 46.pdf */; };
 		7C462C381468077900E4F6AC /* 256.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C462C371468077900E4F6AC /* 256.pdf */; };
 		7C462C3A1468078B00E4F6AC /* 283.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C462C391468078B00E4F6AC /* 283.pdf */; };
@@ -23,6 +22,7 @@
 		7C715B4815A460AE00174FA0 /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C715B4015A460AE00174FA0 /* libfacebook_ios_sdk.a */; };
 		7C715B4C15A4668000174FA0 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C715B4B15A4668000174FA0 /* Twitter.framework */; };
 		7C715B5915A4704300174FA0 /* PopUpTableviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C715B4A15A463DC00174FA0 /* PopUpTableviewViewController.m */; };
+		7C93E8C81647FED600BFB6B6 /* GCSEMaths.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7C93E8C71647FEA000BFB6B6 /* GCSEMaths.sqlite */; };
 		7C98AFAB14E291C900EBAD97 /* 1152.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C98AFAA14E291C900EBAD97 /* 1152.pdf */; };
 		7CC980DD1483F17D00A358BB /* 291.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC980DC1483F17D00A358BB /* 291.pdf */; };
 		7CC980DF1483F19D00A358BB /* 1549.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC980DE1483F19D00A358BB /* 1549.pdf */; };
@@ -1780,7 +1780,6 @@
 		7C045F6D156BD3EE0065E2DC /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalytics.a; sourceTree = "<group>"; };
 		7C045F6F156BD4460065E2DC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		7C1CEF291538195F0006EC21 /* 70.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 70.pdf; sourceTree = "<group>"; };
-		7C37D5E1162D5BE600122A88 /* GCSEMaths.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = GCSEMaths.sqlite; sourceTree = "<group>"; };
 		7C462C351468076000E4F6AC /* 46.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 46.pdf; sourceTree = "<group>"; };
 		7C462C371468077900E4F6AC /* 256.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 256.pdf; sourceTree = "<group>"; };
 		7C462C391468078B00E4F6AC /* 283.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 283.pdf; sourceTree = "<group>"; };
@@ -1807,6 +1806,7 @@
 		7C715B4915A463DC00174FA0 /* PopUpTableviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopUpTableviewViewController.h; sourceTree = "<group>"; };
 		7C715B4A15A463DC00174FA0 /* PopUpTableviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopUpTableviewViewController.m; sourceTree = "<group>"; };
 		7C715B4B15A4668000174FA0 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		7C93E8C71647FEA000BFB6B6 /* GCSEMaths.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = GCSEMaths.sqlite; sourceTree = "<group>"; };
 		7C98AFAA14E291C900EBAD97 /* 1152.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1152.pdf; sourceTree = "<group>"; };
 		7CC980DC1483F17D00A358BB /* 291.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 291.pdf; sourceTree = "<group>"; };
 		7CC980DE1483F19D00A358BB /* 1549.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1549.pdf; sourceTree = "<group>"; };
@@ -5568,9 +5568,9 @@
 				7CE8C0E2145ABEBD000E8EEE /* 1624.pdf */,
 				7CE8C0E3145ABEBD000E8EEE /* 1625.pdf */,
 				7CE8C0E4145ABEBD000E8EEE /* 1626.pdf */,
+				7C93E8C71647FEA000BFB6B6 /* GCSEMaths.sqlite */,
 				7CE8C742145AC107000E8EEE /* DescriptiveAnswers.xml */,
 				7CE8C743145AC107000E8EEE /* Results.xml */,
-				7C37D5E1162D5BE600122A88 /* GCSEMaths.sqlite */,
 				7CE8C744145AC107000E8EEE /* AttributionIpad.pdf */,
 				7CE8C745145AC107000E8EEE /* copyrightlicense_agreement.pdf */,
 			);
@@ -5629,7 +5629,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C37D5E2162D5BFE00122A88 /* GCSEMaths.sqlite in Resources */,
+				7C93E8C81647FED600BFB6B6 /* GCSEMaths.sqlite in Resources */,
 				7CD0B96F145AAFEC004B8BF2 /* InfoPlist.strings in Resources */,
 				7CD0B99A145AB151004B8BF2 /* Settings.bundle in Resources */,
 				7CD0B9B5145AB29A004B8BF2 /* MainWindow.xib in Resources */,
@@ -7450,6 +7450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Maths/Maths.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph caxton (99S98QLWW3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joseph caxton (99S98QLWW3)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Maths/Maths-Prefix.pch";
@@ -7460,7 +7461,8 @@
 					"\"$(SRCROOT)/facebook-ios-sdk\"",
 				);
 				PRODUCT_NAME = "iTest U";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "150ECF15-89C2-4DEA-AF5E-5C3E9956E614";
+				PROVISIONING_PROFILE = "A7A595E0-6A6A-4382-8C4D-F544B876E12C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A7A595E0-6A6A-4382-8C4D-F544B876E12C";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
