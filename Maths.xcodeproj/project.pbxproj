@@ -7454,8 +7454,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Maths/Maths.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph caxton (99S98QLWW3)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joseph caxton (99S98QLWW3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Maths/Maths-Prefix.pch";
 				INFOPLIST_FILE = "Maths/Maths-Info.plist";
@@ -7465,8 +7465,8 @@
 					"\"$(SRCROOT)/facebook-ios-sdk\"",
 				);
 				PRODUCT_NAME = "iTest U";
-				PROVISIONING_PROFILE = "A7A595E0-6A6A-4382-8C4D-F544B876E12C";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A7A595E0-6A6A-4382-8C4D-F544B876E12C";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
