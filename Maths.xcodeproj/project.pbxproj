@@ -14,7 +14,6 @@
 		7C462C381468077900E4F6AC /* 256.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C462C371468077900E4F6AC /* 256.pdf */; };
 		7C462C3A1468078B00E4F6AC /* 283.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C462C391468078B00E4F6AC /* 283.pdf */; };
 		7C462C3C146807A000E4F6AC /* 424.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C462C3B146807A000E4F6AC /* 424.pdf */; };
-		7C51B64D165144D60039EB00 /* GCSEMaths.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7C51B64C165144C40039EB00 /* GCSEMaths.sqlite */; };
 		7C522E7114850141006524FF /* 1550.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C522E7014850141006524FF /* 1550.pdf */; };
 		7C522E731485015C006524FF /* 1552.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C522E721485015C006524FF /* 1552.pdf */; };
 		7C522E751485016F006524FF /* 1553.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C522E741485016F006524FF /* 1553.pdf */; };
@@ -35,6 +34,7 @@
 		7C68D7F31652A4FD00B94D8B /* 1129.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C68D7F21652A4FD00B94D8B /* 1129.pdf */; };
 		7C68D7F51652A5D600B94D8B /* 1584.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C68D7F41652A5D600B94D8B /* 1584.pdf */; };
 		7C68D7F71652A5FF00B94D8B /* 1602.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C68D7F61652A5FF00B94D8B /* 1602.pdf */; };
+		7C68D8291652AB7600B94D8B /* GCSEMaths.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7C68D8281652AB6300B94D8B /* GCSEMaths.sqlite */; };
 		7C715B4715A460AE00174FA0 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C715B3A15A460AE00174FA0 /* FBDialog.bundle */; };
 		7C715B4815A460AE00174FA0 /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C715B4015A460AE00174FA0 /* libfacebook_ios_sdk.a */; };
 		7C715B4C15A4668000174FA0 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C715B4B15A4668000174FA0 /* Twitter.framework */; };
@@ -1785,7 +1785,6 @@
 		7C462C371468077900E4F6AC /* 256.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 256.pdf; sourceTree = "<group>"; };
 		7C462C391468078B00E4F6AC /* 283.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 283.pdf; sourceTree = "<group>"; };
 		7C462C3B146807A000E4F6AC /* 424.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 424.pdf; sourceTree = "<group>"; };
-		7C51B64C165144C40039EB00 /* GCSEMaths.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = GCSEMaths.sqlite; sourceTree = "<group>"; };
 		7C522E7014850141006524FF /* 1550.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1550.pdf; sourceTree = "<group>"; };
 		7C522E721485015C006524FF /* 1552.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1552.pdf; sourceTree = "<group>"; };
 		7C522E741485016F006524FF /* 1553.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1553.pdf; sourceTree = "<group>"; };
@@ -1806,6 +1805,7 @@
 		7C68D7F21652A4FD00B94D8B /* 1129.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1129.pdf; sourceTree = "<group>"; };
 		7C68D7F41652A5D600B94D8B /* 1584.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1584.pdf; sourceTree = "<group>"; };
 		7C68D7F61652A5FF00B94D8B /* 1602.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1602.pdf; sourceTree = "<group>"; };
+		7C68D8281652AB6300B94D8B /* GCSEMaths.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = GCSEMaths.sqlite; sourceTree = "<group>"; };
 		7C715B3815A460AE00174FA0 /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
 		7C715B3915A460AE00174FA0 /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
 		7C715B3A15A460AE00174FA0 /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
@@ -5572,7 +5572,7 @@
 				7CE8C0E2145ABEBD000E8EEE /* 1624.pdf */,
 				7CE8C0E3145ABEBD000E8EEE /* 1625.pdf */,
 				7CE8C0E4145ABEBD000E8EEE /* 1626.pdf */,
-				7C51B64C165144C40039EB00 /* GCSEMaths.sqlite */,
+				7C68D8281652AB6300B94D8B /* GCSEMaths.sqlite */,
 				7CE8C742145AC107000E8EEE /* DescriptiveAnswers.xml */,
 				7CE8C743145AC107000E8EEE /* Results.xml */,
 				7CE8C744145AC107000E8EEE /* AttributionIpad.pdf */,
@@ -5633,7 +5633,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C51B64D165144D60039EB00 /* GCSEMaths.sqlite in Resources */,
+				7C68D8291652AB7600B94D8B /* GCSEMaths.sqlite in Resources */,
 				7CD0B96F145AAFEC004B8BF2 /* InfoPlist.strings in Resources */,
 				7CD0B99A145AB151004B8BF2 /* Settings.bundle in Resources */,
 				7CD0B9B5145AB29A004B8BF2 /* MainWindow.xib in Resources */,
