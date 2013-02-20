@@ -326,7 +326,7 @@ static UIWebView *QuestionHeaderBox = nil;
 	if (self.interfaceOrientation == UIInterfaceOrientationPortrait || self.interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown ) {
 		
 		QuestionHeaderBox.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 400);
-		self.FileListTable.frame = CGRectMake(0, 260, SCREEN_WIDTH, SCREEN_HEIGHT - 170);
+		self.FileListTable.frame = CGRectMake(0, 460, SCREEN_WIDTH, SCREEN_HEIGHT - 170);
 		
 		
 	}
@@ -405,6 +405,21 @@ static UIWebView *QuestionHeaderBox = nil;
     return nil;
 }
 */
+
+/*-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
+    
+    If(orientation == UIInterfaceOrientationPortrait || orientation == UIInterfaceOrientationPortraitUpsideDown ){
+        
+        
+    }
+    else
+    {
+        
+    }
+    
+}*/
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
