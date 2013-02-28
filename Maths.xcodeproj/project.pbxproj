@@ -46,6 +46,7 @@
 		7C937DB7165147170000E29B /* 1538.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C937DB6165147170000E29B /* 1538.pdf */; };
 		7C97C7FC16492BAC0053577F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C97C7FB16492BAC0053577F /* AVFoundation.framework */; };
 		7C98AFAB14E291C900EBAD97 /* 1152.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C98AFAA14E291C900EBAD97 /* 1152.pdf */; };
+		7CBD947216DE257900EC7BE1 /* restore.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBD947116DE257900EC7BE1 /* restore.png */; };
 		7CBE9CB91649282800B82C3F /* 947.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CBE9CB81649282800B82C3F /* 947.pdf */; };
 		7CC34FC916D6338C00EB5E8E /* GCSEMaths.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7CC34FC816D6337100EB5E8E /* GCSEMaths.sqlite */; };
 		7CC980DD1483F17D00A358BB /* 291.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC980DC1483F17D00A358BB /* 291.pdf */; };
@@ -1831,6 +1832,7 @@
 		7C937DB6165147170000E29B /* 1538.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1538.pdf; sourceTree = "<group>"; };
 		7C97C7FB16492BAC0053577F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7C98AFAA14E291C900EBAD97 /* 1152.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1152.pdf; sourceTree = "<group>"; };
+		7CBD947116DE257900EC7BE1 /* restore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restore.png; sourceTree = "<group>"; };
 		7CBE9CB81649282800B82C3F /* 947.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 947.pdf; sourceTree = "<group>"; };
 		7CC34FC816D6337100EB5E8E /* GCSEMaths.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = GCSEMaths.sqlite; sourceTree = "<group>"; };
 		7CC980DC1483F17D00A358BB /* 291.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 291.pdf; sourceTree = "<group>"; };
@@ -3789,6 +3791,7 @@
 		7CD0B992145AB0C5004B8BF2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7CBD947116DE257900EC7BE1 /* restore.png */,
 				7CFB2D25163554DC00F8F485 /* btn_show_answer.png */,
 				7CFB2D26163554DC00F8F485 /* btn_show_answer@2x.png */,
 				7CF1376A1632CDFB004F54E8 /* btn_start_test.png */,
@@ -7324,6 +7327,7 @@
 				7C40F476165E150D00D087E7 /* Icon-Small-50@2x.png in Resources */,
 				7CE13F05166F625D001D707B /* 1548.pdf in Resources */,
 				7C7146F816A07C1C0076E299 /* 573.pdf in Resources */,
+				7CBD947216DE257900EC7BE1 /* restore.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

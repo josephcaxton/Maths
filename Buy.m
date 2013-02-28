@@ -12,7 +12,7 @@
 
 @implementation Buy
 
-@synthesize ProductFromIstore,ProductsToIstore,ProductsToIStoreInArray,SortedDisplayProducts,observer;
+@synthesize ProductFromIstore,ProductsToIstore,ProductsToIStoreInArray,SortedDisplayProducts,observer,Restore;
 
 int dontShowPriceList = 0;
 #pragma mark -
@@ -46,6 +46,11 @@ int dontShowPriceList = 0;
 	[SortedDisplayProducts retain];
 	[ProductFromIstore release];
 	
+   /* NSLog(@"No of prodcuct = %i", [SortedDisplayProducts count]);
+    for (SKProduct *Product in response.products)
+    {
+        NSLog(@"product id: %@" , Product.productIdentifier);
+    } */
 	
 	[request release]; //should this be released?
 	[self.tableView reloadData];
@@ -252,7 +257,7 @@ int dontShowPriceList = 0;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
    
-    return [SortedDisplayProducts count];
+    return [SortedDisplayProducts count] + 1;
 	
 }
 
@@ -278,31 +283,51 @@ int dontShowPriceList = 0;
 		cell.textLabel.text = @"";
 	}
 	else{
+        if (indexPath.row ==  [SortedDisplayProducts count]){
+            if(!Restore){
+            Restore = [UIButton buttonWithType:UIButtonTypeCustom];
+            }
+            Restore.frame = CGRectMake(600, 2, 105, 39);
+            Restore.tag = indexPath.row + 1;
+            UIImage *RestoreImage = [UIImage imageNamed:@"restore.png"];
+            [Restore setBackgroundImage:RestoreImage forState:UIControlStateNormal];
+            [Restore addTarget:self action:@selector(BuyQuestion:) forControlEvents:UIControlEventTouchUpInside];
+            [cell.contentView addSubview:Restore];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            cell.textLabel.text = @"Restore Purchases";
+            cell.detailTextLabel.text = @"0.00";
+            
+        }
+        else{
+            
+            if ([SortedDisplayProducts count] > 0){
 		  
-	SKProduct *product = [SortedDisplayProducts objectAtIndex:indexPath.row];
+            SKProduct *product = [SortedDisplayProducts objectAtIndex:indexPath.row];
 	
-	NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
-	[numberFormatter setFormatterBehavior:NSNumberFormatterBehavior10_4];
-	[numberFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
-	[numberFormatter setLocale:product.priceLocale];
+            NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+            [numberFormatter setFormatterBehavior:NSNumberFormatterBehavior10_4];
+            [numberFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+            [numberFormatter setLocale:product.priceLocale];
 	
-	UIButton *BuyNow = [UIButton buttonWithType:UIButtonTypeCustom];  
+            UIButton *BuyNow = [UIButton buttonWithType:UIButtonTypeCustom];  
 	
-	//[BuyNow setTitle:@""  forState:UIControlStateNormal];
-	BuyNow.frame = CGRectMake(600, 2, 100, 39);
-	BuyNow.tag = indexPath.row + 1;
-	[BuyNow addTarget:self action:@selector(BuyQuestion:) forControlEvents:UIControlEventTouchUpInside];
+            //[BuyNow setTitle:@""  forState:UIControlStateNormal];
+            BuyNow.frame = CGRectMake(600, 2, 100, 39);
+            BuyNow.tag = indexPath.row + 1;
+            [BuyNow addTarget:self action:@selector(BuyQuestion:) forControlEvents:UIControlEventTouchUpInside];
 	
-	UIImage *buttonImageNormal = [UIImage imageNamed:@"buy_now.png"];
-	//UIImage *strechableButtonImageNormal = [buttonImageNormal stretchableImageWithLeftCapWidth:0 topCapHeight:0];
-	[BuyNow setBackgroundImage:buttonImageNormal forState:UIControlStateNormal];
+            UIImage *buttonImageNormal = [UIImage imageNamed:@"buy_now.png"];
+            //UIImage *strechableButtonImageNormal = [buttonImageNormal stretchableImageWithLeftCapWidth:0 topCapHeight:0];
+            [BuyNow setBackgroundImage:buttonImageNormal forState:UIControlStateNormal];
 	
-	[cell.contentView addSubview:BuyNow];
-	cell.selectionStyle = UITableViewCellSelectionStyleNone;
-	cell.detailTextLabel.text = [numberFormatter stringFromNumber:product.price];
-	cell.textLabel.text = [product localizedTitle];
+            [cell.contentView addSubview:BuyNow];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            cell.detailTextLabel.text = [numberFormatter stringFromNumber:product.price];
+            cell.textLabel.text = [product localizedTitle];
 	
-	[numberFormatter release];
+            [numberFormatter release];
+            }
+        }
 	}
     
     return cell;
@@ -364,6 +389,11 @@ int dontShowPriceList = 0;
 					SKPayment *payment7 = [SKPayment paymentWithProductIdentifier:@"com.LearnersCloud.iEvaluatorForiPad.Maths.1600"];
 					[[SKPaymentQueue defaultQueue] addPayment:payment7];
 					break;
+                case 8:
+					;
+					[[SKPaymentQueue defaultQueue] addTransactionObserver:observer];
+                    [[SKPaymentQueue defaultQueue]restoreCompletedTransactions];
+					break;
 					
 					
 			}
@@ -407,7 +437,12 @@ int dontShowPriceList = 0;
 					SKPayment *payment6 = [SKPayment paymentWithProductIdentifier:@"com.LearnersCloud.iEvaluatorForiPad.Maths.250To1600"];
 					[[SKPaymentQueue defaultQueue] addPayment:payment6];
 					
-					break;	
+					break;
+                case 7:
+					;
+					[[SKPaymentQueue defaultQueue] addTransactionObserver:observer];
+                    [[SKPaymentQueue defaultQueue]restoreCompletedTransactions];
+					break;
 					
 					
 			}
@@ -445,6 +480,12 @@ int dontShowPriceList = 0;
 					[[SKPaymentQueue defaultQueue] addPayment:payment5];
 					
 					break;
+                case 6:
+					;
+					[[SKPaymentQueue defaultQueue] addTransactionObserver:observer];
+                    [[SKPaymentQueue defaultQueue]restoreCompletedTransactions];
+					
+					break;
 			}
 			
 		case 4:
@@ -469,6 +510,12 @@ int dontShowPriceList = 0;
 					SKPayment *payment4 = [SKPayment paymentWithProductIdentifier:@"com.LearnersCloud.iEvaluatorForiPad.Maths.750To1600"];
 					[[SKPaymentQueue defaultQueue] addPayment:payment4];
 					break;
+                case 5:
+					;
+					[[SKPaymentQueue defaultQueue] addTransactionObserver:observer];
+                    [[SKPaymentQueue defaultQueue]restoreCompletedTransactions];
+
+					break;
 					
 			}
             
@@ -489,6 +536,11 @@ int dontShowPriceList = 0;
 					SKPayment *payment3 = [SKPayment paymentWithProductIdentifier:@"com.LearnersCloud.iEvaluatorForiPad.Maths.1000To1600"];
 					[[SKPaymentQueue defaultQueue] addPayment:payment3];
 					break;
+                case 4:
+					;
+					[[SKPaymentQueue defaultQueue] addTransactionObserver:observer];
+                    [[SKPaymentQueue defaultQueue]restoreCompletedTransactions];
+					break;
                 
 					
 			}
@@ -506,7 +558,11 @@ int dontShowPriceList = 0;
 					[[SKPaymentQueue defaultQueue] addPayment:payment2];
 					break;
                 
-                    
+                case 3:
+					;
+					[[SKPaymentQueue defaultQueue] addTransactionObserver:observer];
+                    [[SKPaymentQueue defaultQueue]restoreCompletedTransactions];
+					break;
 					
 			}
             
@@ -516,6 +572,11 @@ int dontShowPriceList = 0;
 					;
 					SKPayment *payment1 = [SKPayment paymentWithProductIdentifier:@"com.LearnersCloud.iEvaluatorForiPad.Maths.1500To1600"];
 					[[SKPaymentQueue defaultQueue] addPayment:payment1];
+					break;
+                case 2:
+					;
+					[[SKPaymentQueue defaultQueue] addTransactionObserver:observer];
+                    [[SKPaymentQueue defaultQueue]restoreCompletedTransactions];
 					break;
                 
                     
