@@ -88,21 +88,26 @@
         
         if([VideoFileName isEqualToString:@"Maths"]){
             
-            ServerLocation = @"http://learnerscloud.com/iosStream/maths/MathsTtrailerv6";
+            ServerLocation = @"http://learnerscloud.com/iosStreamv2/maths/MathsTtrailerv6";
         }
         else if ([VideoFileName isEqualToString:@"English"]){
             
-            ServerLocation = @"http://learnerscloud.com/iosStream/english/EnglishTrailerv5";
+            ServerLocation = @"http://learnerscloud.com/iosStreamv2/english/EnglishTrailerv5";
             
         }
         else if ([VideoFileName isEqualToString:@"Physics"]){
             
-            ServerLocation = @"http://learnerscloud.com/iosStream/Physics/PhysicsTrailerV5";
+            ServerLocation = @"http://learnerscloud.com/iosStreamv2/Physics/PhysicsTrailerV5";
             
         }
         else if ([VideoFileName isEqualToString:@"Chemistry"]){
             
-            ServerLocation = @"http://learnerscloud.com/iosStream/Chemistry/ChemistryPromoFINAL";
+            ServerLocation = @"http://learnerscloud.com/iosStreamv2/Chemistry/ChemistryPromoFINAL";
+            
+        }
+        else if ([VideoFileName isEqualToString:@"Biology"]){
+            
+            ServerLocation = @"http://learnerscloud.com/iosStreamv2/Biology/BIO-Trailer";
             
         }
         
@@ -110,17 +115,17 @@
         //Authentication Details here
         
         NSURLCredential *credential1 = [[NSURLCredential alloc]
-                                        initWithUser:@"Theta"
-                                        password:@"Ffk7acay@#"
+                                        initWithUser:@"iosuser"
+                                        password:@"letmein2"
                                         persistence: NSURLCredentialPersistenceForSession];
         self.credential = credential1;
         
-        NSString *DomainLocation = @"learnerscloud.com";
+        NSString *DomainLocation = @"www.learnerscloud.com";
         
         NSURLProtectionSpace *protectionSpace1 = [[NSURLProtectionSpace alloc]
                                                   initWithHost: DomainLocation
-                                                  port:80
-                                                  protocol:@"http"
+                                                  port:443
+                                                  protocol:@"https"
                                                   realm: DomainLocation
                                                   authenticationMethod:NSURLAuthenticationMethodDefault];
         self.protectionSpace = protectionSpace1;

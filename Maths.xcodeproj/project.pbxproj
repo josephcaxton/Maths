@@ -49,6 +49,9 @@
 		7CADFD0D16E8EDD80028A3C9 /* 1095.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CADFD0C16E8EDD80028A3C9 /* 1095.pdf */; };
 		7CBD947216DE257900EC7BE1 /* restore.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBD947116DE257900EC7BE1 /* restore.png */; };
 		7CBE9CB91649282800B82C3F /* 947.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CBE9CB81649282800B82C3F /* 947.pdf */; };
+		7CC263CB16F9CFE400868246 /* website_promo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC263C916F9CFE400868246 /* website_promo.png */; };
+		7CC263CC16F9CFE400868246 /* website_promo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC263CA16F9CFE400868246 /* website_promo@2x.png */; };
+		7CC263CE16F9D38100868246 /* Biology.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC263CD16F9D38100868246 /* Biology.png */; };
 		7CC34FC916D6338C00EB5E8E /* GCSEMaths.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7CC34FC816D6337100EB5E8E /* GCSEMaths.sqlite */; };
 		7CC980DD1483F17D00A358BB /* 291.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC980DC1483F17D00A358BB /* 291.pdf */; };
 		7CC980DF1483F19D00A358BB /* 1549.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC980DE1483F19D00A358BB /* 1549.pdf */; };
@@ -137,8 +140,6 @@
 		7CD8BF23163143C300804072 /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CD8BF1F163143C300804072 /* Default-Landscape@2x.png */; };
 		7CD8BF2A1631470200804072 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CD8BF281631470200804072 /* Background.png */; };
 		7CD8BF2B1631470200804072 /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CD8BF291631470200804072 /* Background@2x.png */; };
-		7CD8BF3F1631605200804072 /* website_promo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CD8BF3C1631605100804072 /* website_promo.png */; };
-		7CD8BF401631605200804072 /* website_promo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CD8BF3D1631605200804072 /* website_promo@2x.png */; };
 		7CD8BF411631605200804072 /* web_promo_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CD8BF3E1631605200804072 /* web_promo_btn.png */; };
 		7CD8BF441631606A00804072 /* buy_now.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CD8BF421631606A00804072 /* buy_now.png */; };
 		7CD8BF451631606A00804072 /* buy_now@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CD8BF431631606A00804072 /* buy_now@2x.png */; };
@@ -1835,6 +1836,9 @@
 		7CADFD0C16E8EDD80028A3C9 /* 1095.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1095.pdf; sourceTree = "<group>"; };
 		7CBD947116DE257900EC7BE1 /* restore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restore.png; sourceTree = "<group>"; };
 		7CBE9CB81649282800B82C3F /* 947.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 947.pdf; sourceTree = "<group>"; };
+		7CC263C916F9CFE400868246 /* website_promo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = website_promo.png; sourceTree = "<group>"; };
+		7CC263CA16F9CFE400868246 /* website_promo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "website_promo@2x.png"; sourceTree = "<group>"; };
+		7CC263CD16F9D38100868246 /* Biology.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Biology.png; sourceTree = "<group>"; };
 		7CC34FC816D6337100EB5E8E /* GCSEMaths.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = GCSEMaths.sqlite; sourceTree = "<group>"; };
 		7CC980DC1483F17D00A358BB /* 291.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 291.pdf; sourceTree = "<group>"; };
 		7CC980DE1483F19D00A358BB /* 1549.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1549.pdf; sourceTree = "<group>"; };
@@ -1970,8 +1974,6 @@
 		7CD8BF1F163143C300804072 /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x.png"; sourceTree = "<group>"; };
 		7CD8BF281631470200804072 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		7CD8BF291631470200804072 /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
-		7CD8BF3C1631605100804072 /* website_promo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = website_promo.png; sourceTree = "<group>"; };
-		7CD8BF3D1631605200804072 /* website_promo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "website_promo@2x.png"; sourceTree = "<group>"; };
 		7CD8BF3E1631605200804072 /* web_promo_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_promo_btn.png; sourceTree = "<group>"; };
 		7CD8BF421631606A00804072 /* buy_now.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buy_now.png; sourceTree = "<group>"; };
 		7CD8BF431631606A00804072 /* buy_now@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buy_now@2x.png"; sourceTree = "<group>"; };
@@ -3810,11 +3812,11 @@
 				7C40F471165E150D00D087E7 /* Icon-Small-50.png */,
 				7C40F472165E150D00D087E7 /* Icon-Small-50@2x.png */,
 				7CD8BF291631470200804072 /* Background@2x.png */,
-				7CD8BF3C1631605100804072 /* website_promo.png */,
-				7CD8BF3D1631605200804072 /* website_promo@2x.png */,
 				7CD8BF3E1631605200804072 /* web_promo_btn.png */,
 				7CD8BF421631606A00804072 /* buy_now.png */,
 				7CD8BF431631606A00804072 /* buy_now@2x.png */,
+				7CC263C916F9CFE400868246 /* website_promo.png */,
+				7CC263CA16F9CFE400868246 /* website_promo@2x.png */,
 				7CD8BF461631609000804072 /* header_bar.png */,
 				7CD8BF471631609100804072 /* share_intro.png */,
 				7CD8BF481631609100804072 /* share_intro@2x.png */,
@@ -3827,6 +3829,7 @@
 				7CD8BF54163160B100804072 /* icon_share_on_facebook.png */,
 				7CFB2D361635728900F8F485 /* Maths.png */,
 				7CFB2D371635728900F8F485 /* English.png */,
+				7CC263CD16F9D38100868246 /* Biology.png */,
 				7CFB2D381635728900F8F485 /* Physics.png */,
 				7CFB2D391635728900F8F485 /* Chemistry.png */,
 				7CD0B9EE145AB56C004B8BF2 /* Cough.aiff */,
@@ -7270,8 +7273,6 @@
 				7CD8BF23163143C300804072 /* Default-Landscape@2x.png in Resources */,
 				7CD8BF2A1631470200804072 /* Background.png in Resources */,
 				7CD8BF2B1631470200804072 /* Background@2x.png in Resources */,
-				7CD8BF3F1631605200804072 /* website_promo.png in Resources */,
-				7CD8BF401631605200804072 /* website_promo@2x.png in Resources */,
 				7CD8BF411631605200804072 /* web_promo_btn.png in Resources */,
 				7CD8BF441631606A00804072 /* buy_now.png in Resources */,
 				7CD8BF451631606A00804072 /* buy_now@2x.png in Resources */,
@@ -7328,6 +7329,9 @@
 				7C7146F816A07C1C0076E299 /* 573.pdf in Resources */,
 				7CBD947216DE257900EC7BE1 /* restore.png in Resources */,
 				7CADFD0D16E8EDD80028A3C9 /* 1095.pdf in Resources */,
+				7CC263CB16F9CFE400868246 /* website_promo.png in Resources */,
+				7CC263CC16F9CFE400868246 /* website_promo@2x.png in Resources */,
+				7CC263CE16F9D38100868246 /* Biology.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7458,8 +7462,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Maths/Maths.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph caxton (99S98QLWW3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joseph caxton (99S98QLWW3)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Maths/Maths-Prefix.pch";
 				INFOPLIST_FILE = "Maths/Maths-Info.plist";
@@ -7469,8 +7473,8 @@
 					"\"$(SRCROOT)/facebook-ios-sdk\"",
 				);
 				PRODUCT_NAME = GCSE;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "EEC9E383-C732-4783-B38B-798A54EA10C1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EEC9E383-C732-4783-B38B-798A54EA10C1";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
