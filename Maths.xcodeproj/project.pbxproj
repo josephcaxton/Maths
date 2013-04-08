@@ -46,6 +46,7 @@
 		7C937DB7165147170000E29B /* 1538.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C937DB6165147170000E29B /* 1538.pdf */; };
 		7C97C7FC16492BAC0053577F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C97C7FB16492BAC0053577F /* AVFoundation.framework */; };
 		7C98AFAB14E291C900EBAD97 /* 1152.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C98AFAA14E291C900EBAD97 /* 1152.pdf */; };
+		7C9F4F531712D3280007DCD7 /* 789.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C9F4F521712D3280007DCD7 /* 789.pdf */; };
 		7CADFD0D16E8EDD80028A3C9 /* 1095.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CADFD0C16E8EDD80028A3C9 /* 1095.pdf */; };
 		7CB5526A1712CA7E006AA4D8 /* 810.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CB552691712CA7D006AA4D8 /* 810.pdf */; };
 		7CBD947216DE257900EC7BE1 /* restore.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBD947116DE257900EC7BE1 /* restore.png */; };
@@ -923,7 +924,6 @@
 		7CE8C3F6145ABEBE000E8EEE /* 786.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BD9C145ABEBA000E8EEE /* 786.pdf */; };
 		7CE8C3F7145ABEBE000E8EEE /* 787.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BD9D145ABEBA000E8EEE /* 787.pdf */; };
 		7CE8C3F8145ABEBE000E8EEE /* 788.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BD9E145ABEBA000E8EEE /* 788.pdf */; };
-		7CE8C3F9145ABEBE000E8EEE /* 789.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BD9F145ABEBA000E8EEE /* 789.pdf */; };
 		7CE8C3FA145ABEBE000E8EEE /* 790.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BDA0145ABEBA000E8EEE /* 790.pdf */; };
 		7CE8C3FB145ABEBE000E8EEE /* 791.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BDA1145ABEBA000E8EEE /* 791.pdf */; };
 		7CE8C3FC145ABEBE000E8EEE /* 792.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8BDA2145ABEBA000E8EEE /* 792.pdf */; };
@@ -1833,6 +1833,7 @@
 		7C937DB6165147170000E29B /* 1538.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1538.pdf; sourceTree = "<group>"; };
 		7C97C7FB16492BAC0053577F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7C98AFAA14E291C900EBAD97 /* 1152.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1152.pdf; sourceTree = "<group>"; };
+		7C9F4F521712D3280007DCD7 /* 789.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 789.pdf; sourceTree = "<group>"; };
 		7CADFD0C16E8EDD80028A3C9 /* 1095.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1095.pdf; sourceTree = "<group>"; };
 		7CB552691712CA7D006AA4D8 /* 810.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 810.pdf; sourceTree = "<group>"; };
 		7CBD947116DE257900EC7BE1 /* restore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restore.png; sourceTree = "<group>"; };
@@ -2757,7 +2758,6 @@
 		7CE8BD9C145ABEBA000E8EEE /* 786.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 786.pdf; sourceTree = "<group>"; };
 		7CE8BD9D145ABEBA000E8EEE /* 787.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 787.pdf; sourceTree = "<group>"; };
 		7CE8BD9E145ABEBA000E8EEE /* 788.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 788.pdf; sourceTree = "<group>"; };
-		7CE8BD9F145ABEBA000E8EEE /* 789.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 789.pdf; sourceTree = "<group>"; };
 		7CE8BDA0145ABEBA000E8EEE /* 790.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 790.pdf; sourceTree = "<group>"; };
 		7CE8BDA1145ABEBA000E8EEE /* 791.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 791.pdf; sourceTree = "<group>"; };
 		7CE8BDA2145ABEBA000E8EEE /* 792.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 792.pdf; sourceTree = "<group>"; };
@@ -4740,7 +4740,7 @@
 				7CE8BD9C145ABEBA000E8EEE /* 786.pdf */,
 				7CE8BD9D145ABEBA000E8EEE /* 787.pdf */,
 				7CE8BD9E145ABEBA000E8EEE /* 788.pdf */,
-				7CE8BD9F145ABEBA000E8EEE /* 789.pdf */,
+				7C9F4F521712D3280007DCD7 /* 789.pdf */,
 				7CE8BDA0145ABEBA000E8EEE /* 790.pdf */,
 				7CE8BDA1145ABEBA000E8EEE /* 791.pdf */,
 				7CE8BDA2145ABEBA000E8EEE /* 792.pdf */,
@@ -6421,7 +6421,6 @@
 				7CE8C3F6145ABEBE000E8EEE /* 786.pdf in Resources */,
 				7CE8C3F7145ABEBE000E8EEE /* 787.pdf in Resources */,
 				7CE8C3F8145ABEBE000E8EEE /* 788.pdf in Resources */,
-				7CE8C3F9145ABEBE000E8EEE /* 789.pdf in Resources */,
 				7CE8C3FA145ABEBE000E8EEE /* 790.pdf in Resources */,
 				7CE8C3FB145ABEBE000E8EEE /* 791.pdf in Resources */,
 				7CE8C3FC145ABEBE000E8EEE /* 792.pdf in Resources */,
@@ -7332,6 +7331,7 @@
 				7CC263CC16F9CFE400868246 /* website_promo@2x.png in Resources */,
 				7CC263CE16F9D38100868246 /* Biology.png in Resources */,
 				7CB5526A1712CA7E006AA4D8 /* 810.pdf in Resources */,
+				7C9F4F531712D3280007DCD7 /* 789.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
