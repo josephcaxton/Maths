@@ -569,16 +569,10 @@ static NSString* const kAnalyticsAccountId = @"UA-31958684-1";
 
 - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     
-    //NSString *str = [NSString stringWithFormat:@"Device Token=%@",deviceToken];
-    //NSLog(@"%@",str);
-
+   
     
-    // Add the Device Token to our database.
-    
-   // NSString *Raw_DeviceToken = [NSString stringWithFormat:@"%@",deviceToken];
-    
-    NSString *DeviceUDID = [NSString 
-                            stringWithFormat:@"%@",[UIDevice currentDevice].uniqueIdentifier];
+   // NSString *DeviceUDID = [NSString stringWithFormat:@"%@",[UIDevice currentDevice].uniqueIdentifier];
+      NSString *DeviceUDID = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
     
     NSString *DeviceTokenRemoveCh1 = [[deviceToken description] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
 
