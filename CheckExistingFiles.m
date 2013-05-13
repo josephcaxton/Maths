@@ -31,7 +31,7 @@
 			
 			[DataError show];
 			
-			[DataError release];
+			//[DataError release];
 			NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
 			
 			
@@ -81,7 +81,7 @@
 		
 		ListofPdfsNotInDataBase =[NSArray arrayWithArray:ListofpdfsMissing];
 		
-		[ListofpdfsMissing release];
+		//[ListofpdfsMissing release];
 		
     }
 	
@@ -120,10 +120,10 @@
 		aFetchedResultsController.delegate = self;
 		self.fetchedResultsController = aFetchedResultsController;
 		
-		[aFetchedResultsController release];
-		[fetchRequest release];
-		[sortDescriptor release];
-		[sortDescriptors release];
+		//[aFetchedResultsController release];
+		//[fetchRequest release];
+		//[sortDescriptor release];
+		//[sortDescriptors release];
 	}
 	
 	return fetchedResultsController;
@@ -131,10 +131,10 @@
 
 
 - (void)dealloc {
-	[ListofPdfsNotInDataBase release];
-	[fetchedResultsController release];
-	[managedObjectContext release];
-	[super dealloc];
+	//[ListofPdfsNotInDataBase release];
+	//[fetchedResultsController release];
+	//[managedObjectContext release];
+	//[super dealloc];
 }
 
 @end

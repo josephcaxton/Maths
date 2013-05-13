@@ -71,8 +71,8 @@
 - (void)setOneTopic:(Topics *)newTopic {
 
 	if (newTopic != OneTopic) {
-		[OneTopic release];
-		OneTopic = [newTopic retain];
+		//[OneTopic release];
+		OneTopic = newTopic;
 		
 		
 	} 
@@ -83,9 +83,9 @@
 
 - (void)dealloc {
 	
-	[OneTopic release];
-	[lblDescription release];
-    [super dealloc];
+	//[OneTopic release];
+	//[lblDescription release];
+    //[super dealloc];
 }
 
 

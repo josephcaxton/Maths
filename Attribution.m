@@ -101,8 +101,8 @@
 
 
 - (void)dealloc {
-	[WebBox release];
-    [super dealloc];
+	//[WebBox release];
+    //[super dealloc];
 }
 
 

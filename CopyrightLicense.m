@@ -116,9 +116,9 @@
 
 
 - (void)dealloc {
-	[WebBox release];
+	//[WebBox release];
 
-    [super dealloc];
+    //[super dealloc];
 }
 
 

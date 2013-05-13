@@ -28,7 +28,7 @@ static UIWebView *WebBox = nil;
 		//WebBox.scalesPageToFit = YES;
 		[self.contentView addSubview:WebBox];
 		WebBox.delegate = nil;
-		[WebBox	 release];
+		//[WebBox	 release];
 	}
     return self;
 }
@@ -36,8 +36,8 @@ static UIWebView *WebBox = nil;
 - (void)setHTMLText:(NSString *)HtmlValue {
 	
 	if (HtmlValue != HTMLText) {
-		[HTMLText release];
-		HTMLText = [HtmlValue retain];
+		//[HTMLText release];
+		HTMLText = HtmlValue;
 		
 		
 	} 
@@ -64,8 +64,8 @@ static UIWebView *WebBox = nil;
 
 - (void)dealloc {
 	
-	[HTMLText release];
-    [super dealloc];
+	//[HTMLText release];
+    //[super dealloc];
 }
 
 

@@ -70,7 +70,7 @@
 		
 		[PaymentError show];
 		
-		[PaymentError release];
+		//[PaymentError release];
 		
 	}
 	[[SKPaymentQueue defaultQueue] finishTransaction: transaction];
@@ -326,7 +326,7 @@
 	
 	[ [SKPaymentQueue defaultQueue] removeTransactionObserver: self];
 	
-	[super dealloc];
+	//[super dealloc];
 	
 }
 

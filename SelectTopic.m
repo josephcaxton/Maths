@@ -29,21 +29,19 @@
     label.font = [UIFont fontWithName:@"Helvetica-Bold" size:24.0];
     self.navigationItem.titleView = label;
     [label sizeToFit];
-    [label release];
-    
+     
     [self.tableView setBackgroundView:nil];
     NSString *BackImagePath = [[NSBundle mainBundle] pathForResource:@"Background" ofType:@"png"];
 	UIImage *BackImage = [[UIImage alloc] initWithContentsOfFile:BackImagePath];
     self.tableView.backgroundColor = [UIColor colorWithPatternImage:BackImage];
-    [BackImage release];
+  
 
 	
 	if (UserConfigure) {
 		
 		UIBarButtonItem *Back = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(Back:)];
 		self.navigationItem.leftBarButtonItem = Back;
-		[Back release];
-	}
+			}
 	
     	
 }
@@ -71,7 +69,7 @@
 		
 		[DataError show];
 		
-		[DataError release];
+		
 		NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
 		
 		
@@ -138,7 +136,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
 	
@@ -223,10 +221,7 @@
 		aFetchedResultsController.delegate = self;
 		self.fetchedResultsController = aFetchedResultsController;
 		
-		[aFetchedResultsController release];
-		[fetchRequest release];
-		[sortDescriptor release];
-		[sortDescriptors release];
+	
 	}
 	
 	return fetchedResultsController;
@@ -266,8 +261,7 @@
 									 message delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"OK" otherButtonTitles:nil];
 		
 		[actionSheet showInView:self.tabBarController.view];
-		[message release];
-		[actionSheet release];
+		
 		
 	}
 	
@@ -303,7 +297,7 @@
 			[self.navigationController pushViewController:M_view animated:YES];
 			
 			
-			[M_view release]; 
+			
 			
 			
 		}
@@ -318,7 +312,7 @@
 			
 			[self.navigationController pushViewController:M_view animated:YES];
 			
-			[M_view release];
+			
 		}
 		
 		else if ([str isEqualToString:@"True or False"])
@@ -333,7 +327,7 @@
 			
 			[self.navigationController pushViewController:T_view animated:YES];
 			
-			[T_view release];
+			
 			
 			
 			
@@ -351,7 +345,7 @@
 			
 			[self.navigationController pushViewController:T_view animated:YES];
 			
-			[T_view release];
+			
 			
 			
 		}
@@ -366,7 +360,7 @@
 			
 			[self.navigationController pushViewController:D_view animated:YES];
 			
-			[D_view release];
+			
 			
 			
 		}
@@ -381,7 +375,7 @@
 			
 			[self.navigationController pushViewController:F_view animated:YES];
 			
-			[F_view release];
+			
 			
 		}
 		
@@ -415,13 +409,6 @@
 }
 
 
-- (void)dealloc {
-	
-	//[fetchedResultsController release];
-	[managedObjectContext release];
-	
-    [super dealloc];
-}
 
 
 @end

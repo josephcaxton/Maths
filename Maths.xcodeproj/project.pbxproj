@@ -10,6 +10,7 @@
 		7C045F6E156BD3EE0065E2DC /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C045F6D156BD3EE0065E2DC /* libGoogleAnalytics.a */; };
 		7C045F70156BD4460065E2DC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C045F6F156BD4460065E2DC /* CFNetwork.framework */; };
 		7C1CEF2A1538195F0006EC21 /* 70.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C1CEF291538195F0006EC21 /* 70.pdf */; };
+		7C3F9F94173CF1EA0033B46B /* SelectNumberofQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F9F93173CF1EA0033B46B /* SelectNumberofQuestionsViewController.m */; };
 		7C40F473165E150D00D087E7 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C40F46F165E150D00D087E7 /* Icon-72.png */; };
 		7C40F474165E150D00D087E7 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C40F470165E150D00D087E7 /* Icon-72@2x.png */; };
 		7C40F475165E150D00D087E7 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C40F471165E150D00D087E7 /* Icon-Small-50.png */; };
@@ -44,6 +45,8 @@
 		7C715B4815A460AE00174FA0 /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C715B4015A460AE00174FA0 /* libfacebook_ios_sdk.a */; };
 		7C715B4C15A4668000174FA0 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C715B4B15A4668000174FA0 /* Twitter.framework */; };
 		7C715B5915A4704300174FA0 /* PopUpTableviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C715B4A15A463DC00174FA0 /* PopUpTableviewViewController.m */; };
+		7C7370B8173E634600819A3A /* Testimonial.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C7370B7173E634600819A3A /* Testimonial.png */; };
+		7C7370BC173E64D200819A3A /* TrailerPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7370BA173E63AD00819A3A /* TrailerPlayer.m */; };
 		7C937DB7165147170000E29B /* 1538.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C937DB6165147170000E29B /* 1538.pdf */; };
 		7C97C7FC16492BAC0053577F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C97C7FB16492BAC0053577F /* AVFoundation.framework */; };
 		7C98AFAB14E291C900EBAD97 /* 1152.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C98AFAA14E291C900EBAD97 /* 1152.pdf */; };
@@ -1783,6 +1786,8 @@
 		7C045F6D156BD3EE0065E2DC /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalytics.a; sourceTree = "<group>"; };
 		7C045F6F156BD4460065E2DC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		7C1CEF291538195F0006EC21 /* 70.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 70.pdf; sourceTree = "<group>"; };
+		7C3F9F92173CF1EA0033B46B /* SelectNumberofQuestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectNumberofQuestionsViewController.h; sourceTree = "<group>"; };
+		7C3F9F93173CF1EA0033B46B /* SelectNumberofQuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectNumberofQuestionsViewController.m; sourceTree = "<group>"; };
 		7C40F46F165E150D00D087E7 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		7C40F470165E150D00D087E7 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
 		7C40F471165E150D00D087E7 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
@@ -1831,6 +1836,9 @@
 		7C715B4915A463DC00174FA0 /* PopUpTableviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopUpTableviewViewController.h; sourceTree = "<group>"; };
 		7C715B4A15A463DC00174FA0 /* PopUpTableviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopUpTableviewViewController.m; sourceTree = "<group>"; };
 		7C715B4B15A4668000174FA0 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		7C7370B7173E634600819A3A /* Testimonial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Testimonial.png; sourceTree = "<group>"; };
+		7C7370B9173E63AC00819A3A /* TrailerPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrailerPlayer.h; sourceTree = "<group>"; };
+		7C7370BA173E63AD00819A3A /* TrailerPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrailerPlayer.m; sourceTree = "<group>"; };
 		7C937DB6165147170000E29B /* 1538.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1538.pdf; sourceTree = "<group>"; };
 		7C97C7FB16492BAC0053577F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7C98AFAA14E291C900EBAD97 /* 1152.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1152.pdf; sourceTree = "<group>"; };
@@ -3844,6 +3852,7 @@
 				7CD0BA04145AB663004B8BF2 /* From250.plist */,
 				7CD0BA16145AB695004B8BF2 /* Graph_Ipad.png */,
 				7CD0BA17145AB695004B8BF2 /* BlackBackGround.png */,
+				7C7370B7173E634600819A3A /* Testimonial.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -3945,6 +3954,10 @@
 				7CD0BA6D145ABB14004B8BF2 /* Attribution.h */,
 				7C715B4915A463DC00174FA0 /* PopUpTableviewViewController.h */,
 				7C715B4A15A463DC00174FA0 /* PopUpTableviewViewController.m */,
+				7C3F9F92173CF1EA0033B46B /* SelectNumberofQuestionsViewController.h */,
+				7C3F9F93173CF1EA0033B46B /* SelectNumberofQuestionsViewController.m */,
+				7C7370B9173E63AC00819A3A /* TrailerPlayer.h */,
+				7C7370BA173E63AD00819A3A /* TrailerPlayer.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -7332,6 +7345,7 @@
 				7CC263CE16F9D38100868246 /* Biology.png in Resources */,
 				7CB5526A1712CA7E006AA4D8 /* 810.pdf in Resources */,
 				7C9F4F531712D3280007DCD7 /* 789.pdf in Resources */,
+				7C7370B8173E634600819A3A /* Testimonial.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7342,6 +7356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C7370BC173E64D200819A3A /* TrailerPlayer.m in Sources */,
 				7CFB2D5016359C4600F8F485 /* Reachability.m in Sources */,
 				7CF137691632C309004F54E8 /* TransparentToolBar.m in Sources */,
 				7C715B5915A4704300174FA0 /* PopUpTableviewViewController.m in Sources */,
@@ -7390,6 +7405,7 @@
 				7CD0BA81145ABB14004B8BF2 /* AdminDashBoard.m in Sources */,
 				7CD0BA84145ABC2E004B8BF2 /* CopyrightLicense.m in Sources */,
 				7CD0BA87145ABC4C004B8BF2 /* HelpVideo.m in Sources */,
+				7C3F9F94173CF1EA0033B46B /* SelectNumberofQuestionsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7461,6 +7477,7 @@
 		7CD0B98D145AAFED004B8BF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = Maths/Maths.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph caxton (99S98QLWW3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joseph caxton (99S98QLWW3)";
@@ -7483,6 +7500,7 @@
 		7CD0B98E145AAFED004B8BF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = Maths/Maths.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";

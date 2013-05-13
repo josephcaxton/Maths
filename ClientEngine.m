@@ -40,14 +40,14 @@ int ToReviewQuestions = 0;
     label.font = [UIFont fontWithName:@"Helvetica-Bold" size:24.0];
     self.navigationItem.titleView = label;
     [label sizeToFit];
-    [label release];
+    //[label release];
 
 	
     [self.tableView setBackgroundView:nil];
     NSString *BackImagePath = [[NSBundle mainBundle] pathForResource:@"Background" ofType:@"png"];
 	UIImage *BackImage = [[UIImage alloc] initWithContentsOfFile:BackImagePath];
     self.tableView.backgroundColor = [UIColor colorWithPatternImage:BackImage];
-    [BackImage release];
+    //[BackImage release];
 
 	
 	EvaluatorAppDelegate *appDelegate = (EvaluatorAppDelegate *)[UIApplication sharedApplication].delegate;
@@ -77,7 +77,7 @@ int ToReviewQuestions = 0;
 		
 		[DataError show];
 		
-		[DataError release];
+		//[DataError release];
 		NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
 		
 		
@@ -117,7 +117,7 @@ int ToReviewQuestions = 0;
 		
 		[DataError show];
 		
-		[DataError release];
+		//[DataError release];
 		NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
 		
 		
@@ -216,7 +216,7 @@ int ToReviewQuestions = 0;
 		
 		[DataError show];
 		
-		[DataError release];
+		//[DataError release];
 		NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
 		
 		
@@ -236,7 +236,7 @@ int ToReviewQuestions = 0;
 	
 	CollectedObjects = [fetchedResultsController fetchedObjects];
 	SelectedArrays = [[NSMutableArray alloc]init];
-	NSMutableArray *Basket = [[CollectedObjects mutableCopy]autorelease];
+	NSMutableArray *Basket = [CollectedObjects mutableCopy];
 	
 	
 	
@@ -277,9 +277,9 @@ int ToReviewQuestions = 0;
 		
 		QuestionItems *QI = (QuestionItems *)[PopBox objectAtIndex:i];
 		
-		//NSLog(@"Object %i to Index %i", i+1, i);
-		[NumberCounter insertObject: [NSNumber numberWithInt:i+1] atIndex:i];  // this is just for numbering 
+		[NumberCounter insertObject: [NSNumber numberWithInteger:i+1] atIndex:i];  // this is just for numbering 
 		
+        
 		//Exclude Descriptive Question Marks
 		NSString *Desc = [NSString stringWithFormat:@"%@",[QI.QuestionHeader1.QuestionTemplate valueForKey:@"Description"]];
 		if(![Desc isEqualToString:@"Descriptive Type"]){
@@ -289,8 +289,8 @@ int ToReviewQuestions = 0;
 		
 		}
 	}
-	
-	appDelegate.PossibleScores = [NSNumber numberWithInt:Counter];
+    
+  	appDelegate.PossibleScores = [NSNumber numberWithInt:Counter];
 	appDelegate.NumberOfQuestionsDisplayed = [NSNumber numberWithInt:[PopBox count]];
 	
 	//Start the timer
@@ -327,7 +327,7 @@ int ToReviewQuestions = 0;
 	
 	UIBarButtonItem *time = [[UIBarButtonItem alloc] initWithTitle:[NSString stringWithFormat:@"%i h : %i m : %i s",Hours,mins,seconds] style:UIBarButtonItemStylePlain target:nil action:nil  ];
 	self.navigationItem.rightBarButtonItem =time;
-	[time release];
+	//[time release];
 	//self.navigationItem.title = [NSString stringWithFormat:@"%i h : %i m : %i s",Hours,mins,seconds];
 	
 }
@@ -363,7 +363,7 @@ int ToReviewQuestions = 0;
 		[formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
 		//[formatter setTimeStyle:NSDateFormatterFullStyle];
 		NSString *now = [formatter stringFromDate:[NSDate date]];
-		[formatter release];
+		//[formatter release];
 		
 		
 		NSString *TextStart = @"<Result Date = ";
@@ -410,7 +410,7 @@ int ToReviewQuestions = 0;
 		
 		[Finished  show];
 		
-		[Finished  release];
+		//[Finished  release];
 		
 		ToReviewQuestions = 1;
 		
@@ -513,7 +513,7 @@ int ToReviewQuestions = 0;
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
     
 	cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -562,7 +562,7 @@ int ToReviewQuestions = 0;
 			
 			//cell.textLabel.text = [NSString stringWithFormat:@"Question   %@", [QI Question]];      //indexPath.row +1];     //[FileName objectAtIndex:0]];  //indexPath.row +1]; //[QI Question];
 			
-			cell.textLabel.text = [NSString stringWithFormat:@"Question %i",[[NumberCounter objectAtIndex:indexPath.row]intValue]]; // Just numbering here
+			cell.textLabel.text = [NSString stringWithFormat:@"Question %i",[[NumberCounter objectAtIndex:indexPath.row] integerValue]]; // Just numbering here
 			
 			// it was suggested we remove the marks as all marks at the moment is 1 for each question.
 			// But a problem was created. When you scroll down some of the cells come up with text from 
@@ -605,7 +605,7 @@ int ToReviewQuestions = 0;
 		[PopBox removeObjectAtIndex:indexPath.row];
 		[NumberCounter removeObjectAtIndex:indexPath.row];
 		[self.navigationController pushViewController:M_view animated:YES];
-		[M_view release];
+		//[M_view release];
 	}
 	else if([TemplateType isEqualToString:@"Multiple Choice Multiple Answer"]){
 		
@@ -619,7 +619,7 @@ int ToReviewQuestions = 0;
 		[PopBox removeObjectAtIndex:indexPath.row];
 		[NumberCounter removeObjectAtIndex:indexPath.row];
 		[self.navigationController pushViewController:M_view animated:YES];
-		[M_view release];
+		//[M_view release];
 		
 	}
 	else if([TemplateType isEqualToString:@"Descriptive Type"]){
@@ -633,7 +633,7 @@ int ToReviewQuestions = 0;
 		[PopBox removeObjectAtIndex:indexPath.row];
 		[NumberCounter removeObjectAtIndex:indexPath.row];
 		[self.navigationController pushViewController:D_view animated:YES];
-		[D_view release];
+		//[D_view release];
 		
 		
 	}
@@ -650,7 +650,7 @@ int ToReviewQuestions = 0;
 		[PopBox removeObjectAtIndex:indexPath.row];
 		[NumberCounter removeObjectAtIndex:indexPath.row];
 		[self.navigationController pushViewController:T_view animated:YES];
-		[T_view release];
+		//[T_view release];
 		
 		
 	}
@@ -667,7 +667,7 @@ int ToReviewQuestions = 0;
 		[PopBox removeObjectAtIndex:indexPath.row];
 		[NumberCounter removeObjectAtIndex:indexPath.row];
 		[self.navigationController pushViewController:T_view animated:YES];
-		[T_view release];
+		//[T_view release];
 		
 	}
 	else if ([TemplateType isEqualToString:@"Fill the Blanks"]){
@@ -684,7 +684,7 @@ int ToReviewQuestions = 0;
 		[PopBox removeObjectAtIndex:indexPath.row];
 		[NumberCounter removeObjectAtIndex:indexPath.row];
 		[self.navigationController pushViewController:F_view animated:YES];
-		[F_view release];
+		//[F_view release];
 		
 		
 	}
@@ -703,7 +703,7 @@ int ToReviewQuestions = 0;
 	ToReviewQuestions = 1;
 	[self.navigationController pushViewController:C_view animated:YES];
 	
-	[C_view release];
+	//[C_view release];
 }
 
 
@@ -754,10 +754,10 @@ int ToReviewQuestions = 0;
 		
 		
 		
-		[aFetchedResultsController release];
-		[fetchRequest release];
-		[sortDescriptor release];
-		[sortDescriptors release];
+		//[aFetchedResultsController release];
+		//[fetchRequest release];
+		//[sortDescriptor release];
+		//[sortDescriptors release];
 	}
 	
 	return fetchedResultsController;
@@ -786,10 +786,10 @@ int ToReviewQuestions = 0;
 		aFetchedResultsController.delegate = self;
 		self.fetchedResultsController_Topics = aFetchedResultsController;
 		
-		[aFetchedResultsController release];
-		[fetchRequest release];
-		[sortDescriptor release];
-		[sortDescriptors release];
+		//[aFetchedResultsController release];
+		//[fetchRequest release];
+		//[sortDescriptor release];
+		//[sortDescriptors release];
 	}
 	
 	return fetchedResultsController_Topics;
@@ -817,10 +817,10 @@ int ToReviewQuestions = 0;
 		aFetchedResultsController.delegate = self;
 		self.fetchedResultsController_QT = aFetchedResultsController;
 		
-		[aFetchedResultsController release];
-		[fetchRequest release];
-		[sortDescriptor release];
-		[sortDescriptors release];
+		//[aFetchedResultsController release];
+		//[fetchRequest release];
+		//[sortDescriptor release];
+		//[sortDescriptors release];
 	}
 	
 	return fetchedResultsController_QT;
@@ -845,10 +845,10 @@ int ToReviewQuestions = 0;
 	//[fetchedResultsController release];
 	//[fetchedResultsController_Topics release];
 	//[fetchedResultsController_QT release];
-	[managedObjectContext release];
+	//[managedObjectContext release];
 	//[SelectedTopic release];
-	[QuestionTemplate release];
-	[ListofQuestions release];
+	//[QuestionTemplate release];
+	//[ListofQuestions release];
 	//[DifficultyColumn release];
 	//[DifficultyValue release];
 	//[DifficultyPredicate release];
@@ -861,10 +861,10 @@ int ToReviewQuestions = 0;
 	//[AccessLevelColumn release];
 	//[AccessLevelValue release];
 	//[AccessLevelPredicate release];
-	[PopBox release];
-	[UnchangedArray release];
-	[timer release];
-	[NumberCounter release];
+	//[PopBox release];
+	//[UnchangedArray release];
+	//[timer release];
+	//[NumberCounter release];
 	//[CollectedObjects release];
 	//[SelectedArrays release];
 	
@@ -874,7 +874,7 @@ int ToReviewQuestions = 0;
 	
 	
 	
-    [super dealloc];
+   // [super dealloc];
 }
 
 

@@ -18,7 +18,7 @@ static NSString* const kAnalyticsAccountId = @"UA-31958684-1";
 
 @synthesize window;
 @synthesize	tabBarController,splashView;
-@synthesize AllocatedMarks,Difficulty,Topic,TypeOfQuestion,NumberOfQuestions,NumberOfQuestionsDisplayed,PossibleScores,ClientScores,buyScreen,SecondThread,m_facebook; 
+@synthesize AllocatedMarks,Difficulty,Topic,TypeOfQuestion,DomainName,NumberOfQuestions,NumberOfQuestionsDisplayed,PossibleScores,ClientScores,buyScreen,SecondThread,m_facebook;
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -31,7 +31,7 @@ static NSString* const kAnalyticsAccountId = @"UA-31958684-1";
     [viewControllers removeObjectAtIndex:2];
     [tabBarController setViewControllers:viewControllers];
 
-    
+    DomainName = @"http://learnerscloud.com";
     //Copy database over if the database is not there on the device.Test
 	
 	[self CopyDataBase];
@@ -49,7 +49,7 @@ static NSString* const kAnalyticsAccountId = @"UA-31958684-1";
 		
 		[ContextError show];
 	
-		[ContextError release];
+	
 		
 		return NO;
 	}
@@ -61,14 +61,14 @@ static NSString* const kAnalyticsAccountId = @"UA-31958684-1";
 	
 	NSString *Top = [[NSString alloc] initWithFormat:@"All"];
 	self.Topic = Top;
-	[Top release];
+	//[Top release];
 	
 	NSString *TOQ = [[NSString alloc] initWithFormat:@"All"];
 	self.TypeOfQuestion = TOQ;
-	[TOQ release];
+	//[TOQ release];
 	
-	NumberOfQuestions = [NSNumber numberWithInt:1];
-	NumberOfQuestionsDisplayed = [NSNumber numberWithInt: 0];
+	NumberOfQuestions = [NSNumber numberWithInteger:10];
+	NumberOfQuestionsDisplayed = [NSNumber numberWithInt:0];
 	PossibleScores =[NSNumber numberWithInt: 0];
 	ClientScores = [NSNumber numberWithInt: 0];
 	
@@ -203,7 +203,7 @@ static NSString* const kAnalyticsAccountId = @"UA-31958684-1";
 	NSString *audioPath = [[NSBundle mainBundle] pathForResource:FileName ofType:@"aiff"];
 	NSURL *audioURL = [NSURL fileURLWithPath:audioPath];
 	SystemSoundID soundId;
-	AudioServicesCreateSystemSoundID((CFURLRef)audioURL, &soundId);
+	AudioServicesCreateSystemSoundID((__bridge CFURLRef)audioURL, &soundId);
 	AudioServicesPlaySystemSound(soundId);
 
 }
@@ -275,7 +275,7 @@ static NSString* const kAnalyticsAccountId = @"UA-31958684-1";
 			
 			[ContextError show];
 			
-			[ContextError release];
+			//[ContextError release];
             NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
             
         } 
@@ -300,7 +300,7 @@ static NSString* const kAnalyticsAccountId = @"UA-31958684-1";
 	DescriptiveAnswersXML = [[NSBundle mainBundle] pathForResource:@"DescriptiveAnswers" ofType:@"xml"];
 	
 	NSFileManager *fileManager = [NSFileManager defaultManager];
-	NSError *error=[[[NSError alloc]init] autorelease]; 
+	NSError *error=[[NSError alloc]init]; 
 	
 	BOOL success=[fileManager fileExistsAtPath:DevicePath];
 	// if the database does not exist on the phone copy database,DescriptiveAnswer.xml and Results.xml to phone
@@ -505,7 +505,7 @@ static NSString* const kAnalyticsAccountId = @"UA-31958684-1";
 		
 		[CoordinatorError show];
 		
-		[CoordinatorError release];
+		//[CoordinatorError release];
 		
 		
 		/*
@@ -678,23 +678,6 @@ static NSString* const kAnalyticsAccountId = @"UA-31958684-1";
     
     [[GANTracker sharedTracker] stopTracker];
     
-    [managedObjectContext release];
-    [managedObjectModel release];
-    [persistentStoreCoordinator release];
-    
-    [tabBarController release];
-	[window release];
-	
-	[AllocatedMarks release];
-	[Difficulty release];
-	[Topic release];
-	[TypeOfQuestion release];
-	[NumberOfQuestions release];
-	[NumberOfQuestionsDisplayed release];
-	[PossibleScores release];
-	[ClientScores release];
-	
-    [super dealloc];
 }
 
 
