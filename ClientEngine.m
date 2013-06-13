@@ -554,13 +554,13 @@ int ToReviewQuestions = 0;
 			cell.textLabel.text = [NSString stringWithFormat:@"No questions in criteria"];  
 		}
 		else {
-		
-			//QuestionItems *QI = (QuestionItems *)[PopBox objectAtIndex:indexPath.row];
-			//Show only the Filename without extension.
-			//NSString *FullFileName = [NSString stringWithFormat:@"%@",[QI Question]];
-			//NSArray *FileName = [FullFileName componentsSeparatedByString:@"."];
+		//Show only the Filename without extension.
+			/*QuestionItems *QI = (QuestionItems *)[PopBox objectAtIndex:indexPath.row];
 			
-			//cell.textLabel.text = [NSString stringWithFormat:@"Question   %@", [QI Question]];      //indexPath.row +1];     //[FileName objectAtIndex:0]];  //indexPath.row +1]; //[QI Question];
+			NSString *FullFileName = [NSString stringWithFormat:@"%@",[QI Question]];
+			NSArray *FileName = [FullFileName componentsSeparatedByString:@"."];
+			
+			cell.textLabel.text = [NSString stringWithFormat:@"Question   %@", [FileName objectAtIndex:0]]; */   //indexPath.row +1];     //[QI Question]];  //indexPath.row +1]; //[QI Question];
 			
 			cell.textLabel.text = [NSString stringWithFormat:@"Question %i",[[NumberCounter objectAtIndex:indexPath.row] integerValue]]; // Just numbering here
 			
