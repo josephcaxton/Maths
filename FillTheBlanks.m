@@ -634,7 +634,7 @@ static UIWebView *QuestionHeaderBox = nil;
     // increase the size of the answer cell, but ignore the the continue button cell 
     if (indexPath.row != [AnswerObjects count] && ShowAnswer && indexPath.section == 1 ) {
         
-		return 120;
+		return 140;
 		
 	}
     else if (ShowAnswer && indexPath.section == 0){

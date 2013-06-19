@@ -555,12 +555,12 @@ int ToReviewQuestions = 0;
 		}
 		else {
 		//Show only the Filename without extension.
-			/*QuestionItems *QI = (QuestionItems *)[PopBox objectAtIndex:indexPath.row];
+		/*	QuestionItems *QI = (QuestionItems *)[PopBox objectAtIndex:indexPath.row];
 			
 			NSString *FullFileName = [NSString stringWithFormat:@"%@",[QI Question]];
 			NSArray *FileName = [FullFileName componentsSeparatedByString:@"."];
 			
-			cell.textLabel.text = [NSString stringWithFormat:@"Question   %@", [FileName objectAtIndex:0]]; */   //indexPath.row +1];     //[QI Question]];  //indexPath.row +1]; //[QI Question];
+			cell.textLabel.text = [NSString stringWithFormat:@"Question   %@", [FileName objectAtIndex:0]]; */  //indexPath.row +1];     //[QI Question]];  //indexPath.row +1]; //[QI Question];
 			
 			cell.textLabel.text = [NSString stringWithFormat:@"Question %i",[[NumberCounter objectAtIndex:indexPath.row] integerValue]]; // Just numbering here
 			

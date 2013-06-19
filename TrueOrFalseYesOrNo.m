@@ -282,6 +282,23 @@ static UIWebView *QuestionHeaderBox = nil;
 	
 }
 
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // increase the size of the answer cell
+    if(indexPath.row == 3){
+        
+        return 65.0;
+    }
+    
+    else{
+
+    
+    return 44;
+    }
+}
+
+
 /*- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
 	
 	NSString *title;
@@ -319,7 +336,7 @@ static UIWebView *QuestionHeaderBox = nil;
 	}
 	else if (QItem_View && ShowAnswer){
 		
-		count = [AnswerControls count];
+		count = [AnswerControls count] + 2;
 	}
 	
 	else {
@@ -437,7 +454,7 @@ static UIWebView *QuestionHeaderBox = nil;
                 //[FormatedString appendFormat:@"<br/>"];
                 [FormatedString appendString:Reason]; 
                 [FormatedString appendString:@"</font></p>"];
-                [self configureCell:cell HTMLStr:FormatedString];
+                [self configureCell:cell HTMLStr:FormatedString];  // dont know why this is not going into the cell i had to add one to AnswerControls to make it make sense.
                
                 
             }
@@ -473,12 +490,6 @@ static UIWebView *QuestionHeaderBox = nil;
 	
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // increase the size of the answer cell
-    
-	return 44;
-}
 
 
 
