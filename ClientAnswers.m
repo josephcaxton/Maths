@@ -36,6 +36,13 @@
     self.tableView.backgroundColor = [UIColor colorWithPatternImage:BackImage];
     //[BackImage release];
 
+    //Back to previous screen
+    UIButton *backbtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [backbtn setBackgroundImage:[UIImage imageNamed:@"back_arrow40.png"] forState:UIControlStateNormal];
+    [backbtn addTarget:self action:@selector(goBack:) forControlEvents:UIControlEventTouchUpInside];
+    backbtn.frame=CGRectMake(0.0, 0.0, 64.0, 40.0);
+    UIBarButtonItem *GoBack = [[UIBarButtonItem alloc] initWithCustomView:backbtn];
+    self.navigationItem.leftBarButtonItem = GoBack;
 	
 	PopBox = [FullDataArray mutableCopy];
 	NumberCounter = [[NSMutableArray alloc]init];
@@ -98,7 +105,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
     
     QuestionItems *QI = (QuestionItems *)[PopBox objectAtIndex:indexPath.row];
@@ -108,8 +115,9 @@
 	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 	//cell.textLabel.text = [NSString stringWithFormat:@"Answer   %@",[FileName objectAtIndex:0]];
 	cell.textLabel.text = [NSString stringWithFormat:@"Question %i Answer" ,[[NumberCounter objectAtIndex:indexPath.row]intValue]]; // Just numbering here
-	cell.detailTextLabel.text = [NSString stringWithFormat:@"Mark(s): %@", QI.AllocatedMark];
-    
+	//cell.detailTextLabel.text = [NSString stringWithFormat:@"Mark(s): %@", QI.AllocatedMark];
+    NSString *TopicName = [QI.QuestionHeader1.QuestionHeader_Topic valueForKey:@"TopicName"];
+    cell.detailTextLabel.text = TopicName;
     return cell;
 }
 
@@ -172,8 +180,8 @@
 		
 		// Remove this Object from the PopBox
 		
-		[PopBox removeObjectAtIndex:indexPath.row];
-		[NumberCounter removeObjectAtIndex:indexPath.row];
+		//[PopBox removeObjectAtIndex:indexPath.row];
+		//[NumberCounter removeObjectAtIndex:indexPath.row];
 		[self.navigationController pushViewController:M_view animated:YES];
 		//[M_view release];
 	}
@@ -186,8 +194,8 @@
 		M_view.ShowAnswer = YES;
 		// Remove this Object from the PopBox
 		
-		[PopBox removeObjectAtIndex:indexPath.row];
-		[NumberCounter removeObjectAtIndex:indexPath.row];
+		//[PopBox removeObjectAtIndex:indexPath.row];
+		//[NumberCounter removeObjectAtIndex:indexPath.row];
 		[self.navigationController pushViewController:M_view animated:YES];
 		//[M_view release];
 		
@@ -201,8 +209,8 @@
 		D_view.QItem_View = SelectedItem;
 		D_view.ShowAnswer = YES;
 		
-		[PopBox removeObjectAtIndex:indexPath.row];
-		[NumberCounter removeObjectAtIndex:indexPath.row];
+		//[PopBox removeObjectAtIndex:indexPath.row];
+		//[NumberCounter removeObjectAtIndex:indexPath.row];
 		[self.navigationController pushViewController:D_view animated:YES];
 		//[D_view release];
 		
@@ -218,8 +226,8 @@
 		T_view.ShowAnswer = YES;
 		// Remove this Object from the PopBox
 		
-		[PopBox removeObjectAtIndex:indexPath.row];
-		[NumberCounter removeObjectAtIndex:indexPath.row];
+		//[PopBox removeObjectAtIndex:indexPath.row];
+		//[NumberCounter removeObjectAtIndex:indexPath.row];
 		[self.navigationController pushViewController:T_view animated:YES];
 		//[T_view release];
 		
@@ -235,8 +243,8 @@
 		T_view.ShowAnswer = YES;
 		// Remove this Object from the PopBox
 		
-		[PopBox removeObjectAtIndex:indexPath.row];
-		[NumberCounter removeObjectAtIndex:indexPath.row];
+		//[PopBox removeObjectAtIndex:indexPath.row];
+		//[NumberCounter removeObjectAtIndex:indexPath.row];
 		[self.navigationController pushViewController:T_view animated:YES];
 		//[T_view release];
 		
@@ -254,8 +262,8 @@
 		
 		// Remove this Object from the PopBox
 		
-		[PopBox removeObjectAtIndex:indexPath.row];
-		[NumberCounter removeObjectAtIndex:indexPath.row];
+		//[PopBox removeObjectAtIndex:indexPath.row];
+		//[NumberCounter removeObjectAtIndex:indexPath.row];
 		[self.navigationController pushViewController:F_view animated:YES];
 		//[F_view release];
 		
@@ -265,6 +273,11 @@
 	
 	
 	
+}
+
+-(void)goBack:(id)sender {
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 

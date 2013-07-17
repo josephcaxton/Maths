@@ -76,6 +76,6 @@
 -(void)loadDocument:(NSString*)documentName inView:(UIWebView*)webView;
 -(IBAction)ShowCorrectAnswer:(id)sender;
 //-(IBAction)AddNewLine:(id)sender;
-
+-(IBAction)StopTest:(id)sender;
 
 @end

@@ -14,20 +14,21 @@
 - (void)tabBar:(UITabBar *)theTabBar didSelectItem:(UITabBarItem *)item  {
 	
 	NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
-	NSString *activetab = [def objectForKey:@"activeTab"];
+	/*NSString *activetab = [def objectForKey:@"activeTab"];
 	
 	EvaluatorAppDelegate *appDelegate = (EvaluatorAppDelegate *)[UIApplication sharedApplication].delegate;
 
 	
 	
-	if([item.title isEqualToString:@"Results"] &&  ![activetab isEqualToString:@"Results"]){ //||[item.title isEqualToString:@"Videos"]
+	if([item.title isEqualToString:@"Results"]){ //||[item.title isEqualToString:@"Videos"]
+		
+		//appDelegate.SecondThread = [[NSThread alloc]initWithTarget:self selector:@selector(ShowActivity) object:nil];
+		//[appDelegate.SecondThread start];
+       
+        
 		
 		
-		appDelegate.SecondThread = [[NSThread alloc]initWithTarget:self selector:@selector(ShowActivity) object:nil];
-		[appDelegate.SecondThread start];
-		
-		
-	}
+	} */
 	
 	[def setValue:item.title forKey:@"activeTab"];
 	[def synchronize];
@@ -52,6 +53,15 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations.
+    
+    NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+	NSString *activetab = [def objectForKey:@"activeTab"];
+    if([activetab isEqualToString:@"Results"]){
+        
+        return NO;
+        
+    }
+       
     return YES;
 }
 

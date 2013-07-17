@@ -12,7 +12,7 @@
 
 @implementation Start
 
-@synthesize FirstView, SecondView,FirstTable,SecondTable,Sound,ShowAnswers,logoView,Copyright,WebText,StartPractice,btnStartTest,Instruction,popover,TVHeaderImageView;
+@synthesize FirstView, SecondView,FirstTable,SecondTable,Sound,ShowAnswers,logoView,Copyright,WebText,StartPractice,btnStartTest,Instruction,popover,TVHeaderImageView,DifficultybtnLock,TopicbtnLock,TypeofquestionbtnLock;
 
 
 #define SCREEN_WIDTH 768
@@ -178,6 +178,9 @@
 			self.Sound.frame =  CGRectMake(640.0, 10.0, 40.0, 45.0);
 			self.ShowAnswers.frame = CGRectMake(595.0, 10.0, 40.0, 45.0);
 			self.btnStartTest.frame = CGRectMake(265, 12.5, 156, 45);
+            DifficultybtnLock.frame = CGRectMake(680, 2, 36, 35);
+            TopicbtnLock.frame = CGRectMake(680, 2, 36, 35);
+            TypeofquestionbtnLock.frame = CGRectMake(680, 2, 36, 35);
 		}
 		
 		else {
@@ -188,6 +191,10 @@
 			self.Sound.frame = CGRectMake(900.0, 10.0, 40.0, 45.0);
 			self.ShowAnswers.frame = CGRectMake(855.0, 10.0, 40.0, 45.0);
 			self.btnStartTest.frame = CGRectMake(400, 12.5, 156, 45);
+             DifficultybtnLock.frame = CGRectMake(950, 2, 35, 35);
+            TopicbtnLock.frame = CGRectMake(950, 2, 35, 35);
+            TypeofquestionbtnLock.frame = CGRectMake(950, 2, 35, 35);
+            
 		}
 
 	}
@@ -233,7 +240,19 @@
 	}
 	else
 	{
-		
+		NSString *AccessLevel = (NSString *)[[NSUserDefaults standardUserDefaults] objectForKey:@"AccessLevel"];
+        
+        if([AccessLevel intValue] == 1){
+            
+            NSString *message = [[NSString alloc] initWithFormat:@"You are using the free version of this app. To unlock all question filters and get unlimited access to over 1000 exam-standard questions, buy in-app today."];
+            
+            UIAlertView *alert =[[UIAlertView alloc] initWithTitle:@"Welcome to LearnersCloud"
+                                                           message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            
+            [alert show];
+            
+        }
+
 		
 		[self.FirstView removeFromSuperview];
 		[self.view addSubview:SecondView];
@@ -277,19 +296,7 @@
 
 -(IBAction)StartTest:(id)sender{
 	
-	NSString *AccessLevel = (NSString *)[[NSUserDefaults standardUserDefaults] objectForKey:@"AccessLevel"];
-	
-	if([AccessLevel intValue] == 1){
 		
-		NSString *message = [[NSString alloc] initWithFormat:@"You are using the free version of the app. The app will only deliver a maximum of 250 questions depending on your search criteria and does not necessarily have all types of questions."];
-		
-		UIAlertView *alert =[[UIAlertView alloc] initWithTitle:@"Important Notice"
-													   message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-		
-		[alert show];
-		
-	}
-	
 	
 	ClientEngine *ce_view = [[ClientEngine alloc] initWithStyle:UITableViewStyleGrouped];
 	
@@ -320,10 +327,15 @@
 	
 	if (sender==1) {
 		
-		UIBarButtonItem *Practice = [[UIBarButtonItem alloc] initWithTitle:@"Start Practice Questions" style:UIBarButtonItemStylePlain target:self action:@selector(Practice:)];
-		self.navigationItem.rightBarButtonItem = Practice;
+        /*UIButton *Startbtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [Startbtn setBackgroundImage:[UIImage imageNamed:@"practice_questions50.png"] forState:UIControlStateNormal];
+        [Startbtn addTarget:self action:@selector(Practice:) forControlEvents:UIControlEventTouchUpInside];
+        Startbtn.frame=CGRectMake(0.0, 0.0, 187.0, 50.0);
+        UIBarButtonItem *StartTestbarButton = [[UIBarButtonItem alloc] initWithCustomView:Startbtn];
+		self.navigationItem.rightBarButtonItem = StartTestbarButton; */
 		
 		self.navigationItem.leftBarButtonItem = nil;
+        self.navigationItem.rightBarButtonItem = nil;
 		
 		EvaluatorAppDelegate *appDelegate = (EvaluatorAppDelegate *)[UIApplication sharedApplication].delegate;
 		BOOL PlaySound = [[NSUserDefaults standardUserDefaults] boolForKey:@"PlaySound"];
@@ -341,7 +353,7 @@
         
         // create a toolbar where we can place some buttons
         TransparentToolBar* toolbar = [[TransparentToolBar alloc]
-                              initWithFrame:CGRectMake(0, 0, 150, 45)];
+                              initWithFrame:CGRectMake(0, 0, 170, 45)];
        
         
         
@@ -349,8 +361,14 @@
         NSMutableArray* buttons = [[NSMutableArray alloc] initWithCapacity:3];
         
         // Create Share button
+        UIButton *Sharebtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [Sharebtn setBackgroundImage:[UIImage imageNamed:@"share40.png"] forState:UIControlStateNormal];
+        [Sharebtn addTarget:self action:@selector(share:) forControlEvents:UIControlEventTouchUpInside];
+        Sharebtn.frame=CGRectMake(0.0, 0.0, 61.0, 40.0);
+        UIBarButtonItem *ShareButton = [[UIBarButtonItem alloc] initWithCustomView:Sharebtn];
 
-        UIBarButtonItem *ShareButton = [[UIBarButtonItem alloc] initWithTitle:@"Share" style: UIBarButtonItemStyleBordered target:self action:@selector(share:)];
+
+       // UIBarButtonItem *ShareButton = [[UIBarButtonItem alloc] initWithTitle:@"Share" style: UIBarButtonItemStyleBordered target:self action:@selector(share:)];
         
         [buttons addObject:ShareButton];
 
@@ -364,7 +382,13 @@
 
         
         //Start button
-        UIBarButtonItem *StartTest = [[UIBarButtonItem alloc] initWithTitle:@"Start Test" style:UIBarButtonItemStyleBordered target:self action:@selector(StartTest:)];
+        UIButton *Startbtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [Startbtn setBackgroundImage:[UIImage imageNamed:@"start_test40.png"] forState:UIControlStateNormal];
+        [Startbtn addTarget:self action:@selector(StartTest:) forControlEvents:UIControlEventTouchUpInside];
+        Startbtn.frame=CGRectMake(0.0, 0.0, 86.0, 40.0);
+        UIBarButtonItem *StartTest = [[UIBarButtonItem alloc] initWithCustomView:Startbtn];
+        
+        //UIBarButtonItem *StartTest = [[UIBarButtonItem alloc] initWithTitle:@"Start Test" style:UIBarButtonItemStyleBordered target:self action:@selector(StartTest:)];
         
         [buttons addObject:StartTest ];
         
@@ -382,9 +406,17 @@
        
         //_____
 		
-		UIBarButtonItem *Back = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(Practice:)];
-		self.navigationItem.leftBarButtonItem = Back;
+        UIButton *Startback = [UIButton buttonWithType:UIButtonTypeCustom];
+         [Startback setBackgroundImage:[UIImage imageNamed:@"back_arrow40.png"] forState:UIControlStateNormal];
+         [Startback addTarget:self action:@selector(Practice:) forControlEvents:UIControlEventTouchUpInside];
+        Startback.frame=CGRectMake(0.0, 0.0, 64.0, 40.0);
+         UIBarButtonItem *Back = [[UIBarButtonItem alloc] initWithCustomView:Startback];
+
 		
+        //UIBarButtonItem *Back = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(Practice:)];
+		self.navigationItem.leftBarButtonItem = Back;
+        
+       
 		
 		
 		
@@ -639,38 +671,110 @@
 	else {
             [tableView setBackgroundView:nil];
             [cell setBackgroundColor:[UIColor whiteColor]];
-			EvaluatorAppDelegate *appDelegate = (EvaluatorAppDelegate *)[UIApplication sharedApplication].delegate;	
+			EvaluatorAppDelegate *appDelegate = (EvaluatorAppDelegate *)[UIApplication sharedApplication].delegate;
+            NSString *MyAccessLevel = (NSString *)[[NSUserDefaults standardUserDefaults] objectForKey:@"AccessLevel"];
+        
 		switch (indexPath.row) {
                 
                 case 0:
             {
                
-                //NSString *textval = [NSString stringWithFormat:@"%d", [appDelegate.NumberOfQuestions integerValue]];
-                //cell.detailTextLabel.text = textval;
                 cell.textLabel.text = @"Number of questions";
                 cell.detailTextLabel.text = [appDelegate.NumberOfQuestions stringValue];
-                
                 break;
             }
 				case 1:
             {
-					//cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+                if ([MyAccessLevel intValue] <= 2){
+                   
+                        cell.userInteractionEnabled = NO;
+                        cell.textLabel.enabled = NO;
+                        cell.textLabel.text = @"Difficulty";
+                     
+                    
+                    UIImage *imgLock = [UIImage imageNamed:@"Padlock.png"];
+                   DifficultybtnLock = [UIButton buttonWithType:UIButtonTypeCustom];
+                    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+                    if (orientation == UIDeviceOrientationPortrait || orientation == UIDeviceOrientationPortraitUpsideDown)
+                    {
+                        DifficultybtnLock.frame = CGRectMake(680, 2, 36, 35);
+                    }
+                    else{
+                        
+                        DifficultybtnLock.frame = CGRectMake(950, 2, 35, 35);
+                    }
+                    
+                    [DifficultybtnLock setBackgroundImage:imgLock forState:UIControlStateNormal];
+                    [cell addSubview:DifficultybtnLock ];
+
+                }
+                else{
+
 					cell.textLabel.text = @"Difficulty";
 					cell.detailTextLabel.text = appDelegate.Difficulty;
+                }
 					break;
             }
 				case 2:
             {
-					//cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
-					cell.textLabel.text = @"Topic";
+                if ([MyAccessLevel intValue] <= 2){
+                    cell.userInteractionEnabled = NO;
+                    cell.textLabel.enabled = NO;
+                    cell.textLabel.text = @"Topic";
+                    
+                    UIImage *imgLock = [UIImage imageNamed:@"Padlock.png"];
+                    TopicbtnLock = [UIButton buttonWithType:UIButtonTypeCustom];
+                    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+                    if (orientation == UIDeviceOrientationPortrait || orientation == UIDeviceOrientationPortraitUpsideDown)
+                    {
+                        TopicbtnLock.frame = CGRectMake(680, 2, 36, 35);
+                    }
+                    else{
+                        
+                       TopicbtnLock.frame = CGRectMake(950, 2, 35, 35);
+                    }
+                    
+                    [TopicbtnLock setBackgroundImage:imgLock forState:UIControlStateNormal];
+                    [cell addSubview:TopicbtnLock ];
+
+                }
+                else{
+                    cell.textLabel.text = @"Topic";
 					cell.detailTextLabel.text = appDelegate.Topic;
+                }
+
+					
 					break;
             }
 				case 3:
             {
-					//cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+                if ([MyAccessLevel intValue] <= 2){
+                    cell.userInteractionEnabled = NO;
+                    cell.textLabel.enabled = NO;
+                    cell.textLabel.text = @"Type of question";
+                    
+                    UIImage *imgLock = [UIImage imageNamed:@"Padlock.png"];
+                    TypeofquestionbtnLock = [UIButton buttonWithType:UIButtonTypeCustom];
+                    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+                    if (orientation == UIDeviceOrientationPortrait || orientation == UIDeviceOrientationPortraitUpsideDown)
+                    {
+                        TypeofquestionbtnLock.frame = CGRectMake(680, 2, 36, 35);
+                    }
+                    else{
+                        
+                        TypeofquestionbtnLock.frame = CGRectMake(950, 2, 35, 35);
+                    }
+                    
+                    [TypeofquestionbtnLock setBackgroundImage:imgLock forState:UIControlStateNormal];
+                    [cell addSubview:TypeofquestionbtnLock ];
+                    
+
+                }
+                else {
+
 					cell.textLabel.text = @"Type of question";
 					cell.detailTextLabel.text = appDelegate.TypeOfQuestion;
+                }
 					break;
             }
 				case 4:
@@ -871,8 +975,8 @@
 }
 
 - (IBAction)share:(id)sender{
-    UIBarButtonItem *Barbutton = (UIBarButtonItem*)sender;
-    UIView *button = [Barbutton valueForKey:@"view"];
+    UIButton *button = (UIButton*)sender;
+   
     
     PopUpTableviewViewController *tableViewController = [[PopUpTableviewViewController alloc] initWithStyle:UITableViewStylePlain];
     
@@ -881,7 +985,6 @@
     tableViewController.m_popover = popover;
     tableViewController.StartPage = self;
     [popover setPopoverContentSize:CGSizeMake(420, 380) animated:YES];
-    
     [popover presentPopoverFromRect:CGRectMake(button.frame.size.width / 2, button.frame.size.height / 1, 1, 1) inView:button permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
     
     

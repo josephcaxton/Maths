@@ -18,7 +18,7 @@ static NSString* const kAnalyticsAccountId = @"UA-31958684-1";
 
 @synthesize window;
 @synthesize	tabBarController,splashView;
-@synthesize AllocatedMarks,Difficulty,Topic,TypeOfQuestion,DomainName,NumberOfQuestions,NumberOfQuestionsDisplayed,PossibleScores,ClientScores,buyScreen,SecondThread,m_facebook;
+@synthesize AllocatedMarks,Difficulty,Topic,TypeOfQuestion,DomainName,NumberOfQuestions,NumberOfQuestionsDisplayed,PossibleScores,ClientScores,buyScreen,SecondThread,m_facebook,FinishTestNow;
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -72,6 +72,8 @@ static NSString* const kAnalyticsAccountId = @"UA-31958684-1";
 	NumberOfQuestionsDisplayed = [NSNumber numberWithInt:0];
 	PossibleScores =[NSNumber numberWithInt: 0];
 	ClientScores = [NSNumber numberWithInt: 0];
+    FinishTestNow = NO;
+
 	
 	//Track tourches on TabBar
 	//UILongPressGestureRecognizer *gr = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(touched)];
@@ -119,15 +121,22 @@ static NSString* const kAnalyticsAccountId = @"UA-31958684-1";
 	
 	NSString *AccessLevel =@"AccessLevel";
 	NSString *MyAccessLevel = (NSString *)[[NSUserDefaults standardUserDefaults] objectForKey:AccessLevel];
-	//[[NSUserDefaults standardUserDefaults] setObject:@"8" forKey:@"AccessLevel"]; //For testing only
-	//[[NSUserDefaults standardUserDefaults] synchronize];
-	if (MyAccessLevel == nil || [MyAccessLevel intValue] == 1) {
+	[[NSUserDefaults standardUserDefaults] setObject:@"8" forKey:@"AccessLevel"]; //For testing only
+	[[NSUserDefaults standardUserDefaults] synchronize];
+	if (MyAccessLevel == nil || [MyAccessLevel intValue] == 2) {
 		
-		NSDictionary *appDefaults  = [NSDictionary dictionaryWithObjectsAndKeys:@"2", AccessLevel, nil];
-		[[NSUserDefaults standardUserDefaults] registerDefaults:appDefaults];
+		[[NSUserDefaults standardUserDefaults] setObject:@"1" forKey:@"AccessLevel"];
 		[[NSUserDefaults standardUserDefaults] synchronize];
 	}
-	
+	// We are changing pricing all those who have brought will have full access
+    if ([MyAccessLevel intValue] > 2) {
+		
+		[[NSUserDefaults standardUserDefaults] setObject:@"8" forKey:@"AccessLevel"];
+		[[NSUserDefaults standardUserDefaults] synchronize];
+	}
+    
+   // NSString *MyAccessLevel1 = (NSString *)[[NSUserDefaults standardUserDefaults] objectForKey:@"AccessLevel"];
+   // NSLog(@"%@", MyAccessLevel1);
 	// apple store transaction observer
 	//CustomStoreObserver *observer = [[CustomStoreObserver alloc] init];
 	//[[SKPaymentQueue defaultQueue] addTransactionObserver:observer];
