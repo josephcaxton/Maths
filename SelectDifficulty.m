@@ -138,21 +138,21 @@
 			}
 			
 			break;
-//		case 2:
-//			
-//			cell.textLabel.text = @"Foundation & Higher";
-//			if ([appDelegate.Difficulty  isEqualToString: @"Foundation & Higher" ]) {
-//				
-//				cell.accessoryType = UITableViewCellAccessoryCheckmark;
-//			}
-//			else {
-//				
-//				cell.accessoryType =UITableViewCellAccessoryNone;
-//				
-//			}
-//			
-//			
-//			break;
+		case 2:
+			
+			cell.textLabel.text = @"Foundation & Higher";
+			if ([appDelegate.Difficulty  isEqualToString: @"Foundation & Higher" ]) {
+				
+				cell.accessoryType = UITableViewCellAccessoryCheckmark;
+			}
+			else {
+				
+				cell.accessoryType =UITableViewCellAccessoryNone;
+				
+			}
+			
+			
+			break;
 		case 1:
 			
 			cell.textLabel.text = @"Higher";

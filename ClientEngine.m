@@ -582,10 +582,10 @@ int ToReviewQuestions = 0;
 		return [NSNumber numberWithInt:1];
 	}	
 	
-//	else if ([appDelegate.Difficulty isEqualToString:@"Foundation & Higher"]){
-//		
-//		return [NSNumber numberWithInt:0];
-//	}
+	else if ([appDelegate.Difficulty isEqualToString:@"Foundation & Higher"]){
+		
+		return [NSNumber numberWithInt:0];
+	}
 	
 	else if([appDelegate.Difficulty isEqualToString:@"Higher"]){
 		
