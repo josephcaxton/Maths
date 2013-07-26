@@ -649,8 +649,7 @@ static UIWebView *QuestionHeaderBox = nil;
 			BOOL ShowMyAnswer = [[NSUserDefaults standardUserDefaults] boolForKey:@"ShowMyAnswers"];
 			
 			if (ShowMyAnswer == YES){
-				
-				
+                
 				ShowAnswer = TRUE;
 				[tableView reloadData];
 				

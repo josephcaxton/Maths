@@ -63,7 +63,6 @@
 		7C8BE815178C31EC001A807A /* start_test40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BE814178C31EC001A807A /* start_test40.png */; };
 		7C8BE817178C4D45001A807A /* report_problem40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BE816178C4D45001A807A /* report_problem40.png */; };
 		7C8BE819178C57E6001A807A /* btn_start_test.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BE818178C57E5001A807A /* btn_start_test.png */; };
-		7C8BE81B178C6120001A807A /* GCSEMaths.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BE81A178C6106001A807A /* GCSEMaths.sqlite */; };
 		7C937DB7165147170000E29B /* 1538.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C937DB6165147170000E29B /* 1538.pdf */; };
 		7C93B681178802F500AC4C99 /* Padlock.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C93B680178802F500AC4C99 /* Padlock.png */; };
 		7C97C7FC16492BAC0053577F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C97C7FB16492BAC0053577F /* AVFoundation.framework */; };
@@ -118,6 +117,7 @@
 		7CC997FA17705CCD00A19B86 /* 1609.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC997F817705CCD00A19B86 /* 1609.pdf */; };
 		7CC997FC17705DDF00A19B86 /* 168.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC997FB17705DDF00A19B86 /* 168.pdf */; };
 		7CC9984E1770698D00A19B86 /* 1465.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC9984D1770698D00A19B86 /* 1465.pdf */; };
+		7CCF414D17A28E2D00BBAB25 /* GCSEMaths.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7CCF414C17A28E0200BBAB25 /* GCSEMaths.sqlite */; };
 		7CD0B965145AAFEC004B8BF2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD0B964145AAFEC004B8BF2 /* UIKit.framework */; };
 		7CD0B967145AAFEC004B8BF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD0B966145AAFEC004B8BF2 /* Foundation.framework */; };
 		7CD0B969145AAFEC004B8BF2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD0B968145AAFEC004B8BF2 /* CoreGraphics.framework */; };
@@ -1875,7 +1875,6 @@
 		7C8BE814178C31EC001A807A /* start_test40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start_test40.png; sourceTree = "<group>"; };
 		7C8BE816178C4D45001A807A /* report_problem40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = report_problem40.png; sourceTree = "<group>"; };
 		7C8BE818178C57E5001A807A /* btn_start_test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_start_test.png; sourceTree = "<group>"; };
-		7C8BE81A178C6106001A807A /* GCSEMaths.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = GCSEMaths.sqlite; sourceTree = "<group>"; };
 		7C937DB6165147170000E29B /* 1538.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1538.pdf; sourceTree = "<group>"; };
 		7C93B680178802F500AC4C99 /* Padlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Padlock.png; sourceTree = "<group>"; };
 		7C97C7FB16492BAC0053577F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -1930,6 +1929,7 @@
 		7CC997F817705CCD00A19B86 /* 1609.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1609.pdf; sourceTree = "<group>"; };
 		7CC997FB17705DDF00A19B86 /* 168.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 168.pdf; sourceTree = "<group>"; };
 		7CC9984D1770698D00A19B86 /* 1465.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1465.pdf; sourceTree = "<group>"; };
+		7CCF414C17A28E0200BBAB25 /* GCSEMaths.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = GCSEMaths.sqlite; sourceTree = "<group>"; };
 		7CD0B960145AAFEC004B8BF2 /* GCSE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCSE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD0B964145AAFEC004B8BF2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7CD0B966145AAFEC004B8BF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -5730,7 +5730,7 @@
 				7CE8C0E2145ABEBD000E8EEE /* 1624.pdf */,
 				7CE8C0E3145ABEBD000E8EEE /* 1625.pdf */,
 				7CE8C0E4145ABEBD000E8EEE /* 1626.pdf */,
-				7C8BE81A178C6106001A807A /* GCSEMaths.sqlite */,
+				7CCF414C17A28E0200BBAB25 /* GCSEMaths.sqlite */,
 				7CE8C742145AC107000E8EEE /* DescriptiveAnswers.xml */,
 				7CE8C743145AC107000E8EEE /* Results.xml */,
 				7CE8C744145AC107000E8EEE /* AttributionIpad.pdf */,
@@ -5886,7 +5886,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C8BE81B178C6120001A807A /* GCSEMaths.sqlite in Resources */,
+				7CCF414D17A28E2D00BBAB25 /* GCSEMaths.sqlite in Resources */,
 				7CD0B96F145AAFEC004B8BF2 /* InfoPlist.strings in Resources */,
 				7CD0B99A145AB151004B8BF2 /* Settings.bundle in Resources */,
 				7CD0B9B5145AB29A004B8BF2 /* MainWindow.xib in Resources */,
