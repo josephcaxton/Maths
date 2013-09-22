@@ -12,7 +12,7 @@
 
 @implementation Buy
 
-@synthesize ProductFromIstore,ProductsToIstore,ProductsToIStoreInArray,SortedDisplayProducts,observer,Restore,pass;
+@synthesize ProductFromIstore,ProductsToIstore,ProductsToIStoreInArray,SortedDisplayProducts,observer,Restore,pass,selectedproduct;
 
 int dontShowPriceList = 0;
 #pragma mark -
@@ -219,7 +219,7 @@ int dontShowPriceList = 0;
 			
 		} */
 		
-		if ([AccessLevel intValue] == 8){
+		if ([AccessLevel intValue] > 2){
 			
 			UIAlertView *Alert = [[UIAlertView alloc] initWithTitle: @"You already have all our products" 
 															message: @"Press the Questions button to start" delegate: self 
@@ -352,12 +352,12 @@ int dontShowPriceList = 0;
             
             if ([SortedDisplayProducts count] > 0){
 		  
-            SKProduct *product = [SortedDisplayProducts objectAtIndex:indexPath.row];
+            selectedproduct = [SortedDisplayProducts objectAtIndex:indexPath.row];
 	
             NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
             [numberFormatter setFormatterBehavior:NSNumberFormatterBehavior10_4];
             [numberFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
-            [numberFormatter setLocale:product.priceLocale];
+            [numberFormatter setLocale:selectedproduct.priceLocale];
 	
             UIButton *BuyNow = [UIButton buttonWithType:UIButtonTypeCustom];  
 	
@@ -372,8 +372,8 @@ int dontShowPriceList = 0;
 	
             [cell.contentView addSubview:BuyNow];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
-            cell.detailTextLabel.text = [numberFormatter stringFromNumber:product.price];
-            cell.textLabel.text = [product localizedTitle];
+            cell.detailTextLabel.text = [numberFormatter stringFromNumber:selectedproduct.price];
+            cell.textLabel.text = [selectedproduct localizedTitle];
 	
             //[numberFormatter release];
             }
@@ -401,17 +401,17 @@ int dontShowPriceList = 0;
 			switch (myTag) {
 				case 1:
                 {
-					SKPayment *payment1 = [SKPayment paymentWithProductIdentifier:@"com.LearnersCloud.iEvaluatorForiPad.Maths.250"];
-					[[SKPaymentQueue defaultQueue] addPayment:payment1];
+					SKPayment *payment7 = [SKPayment paymentWithProduct:selectedproduct];
+					[[SKPaymentQueue defaultQueue] addPayment:payment7];
 					break;
 				}
 				case 2:
                 {
-					SKPayment *payment2 = [SKPayment paymentWithProductIdentifier:@"com.LearnersCloud.iEvaluatorForiPad.Maths.500"];
-					[[SKPaymentQueue defaultQueue] addPayment:payment2];
+					[[SKPaymentQueue defaultQueue] addTransactionObserver:observer];
+                    [[SKPaymentQueue defaultQueue]restoreCompletedTransactions];
 					break;
                 }
-				case 3:
+				/*case 3:
                 {
 					SKPayment *payment3 = [SKPayment paymentWithProductIdentifier:@"com.LearnersCloud.iEvaluatorForiPad.Maths.750"];
 					[[SKPaymentQueue defaultQueue] addPayment:payment3];
@@ -447,7 +447,7 @@ int dontShowPriceList = 0;
 					[[SKPaymentQueue defaultQueue] addTransactionObserver:observer];
                     [[SKPaymentQueue defaultQueue]restoreCompletedTransactions];
 					break;
-				}
+				}*/
 					
 			}
 			
@@ -457,19 +457,19 @@ int dontShowPriceList = 0;
 			switch (myTag) {
 				case 1:
                 {
-					SKPayment *payment1 = [SKPayment paymentWithProductIdentifier:@"com.LearnersCloud.iEvaluatorForiPad.Maths.250To500"];
-					[[SKPaymentQueue defaultQueue] addPayment:payment1];
+					SKPayment *payment6 = [SKPayment paymentWithProduct:selectedproduct];
+					[[SKPaymentQueue defaultQueue] addPayment:payment6];
 					
 					break;
+
                 }
 				case 2:
                 {
-					SKPayment *payment2 = [SKPayment paymentWithProductIdentifier:@"com.LearnersCloud.iEvaluatorForiPad.Maths.250To750"];
-					[[SKPaymentQueue defaultQueue] addPayment:payment2];
-					
+					[[SKPaymentQueue defaultQueue] addTransactionObserver:observer];
+                    [[SKPaymentQueue defaultQueue]restoreCompletedTransactions];
 					break;
                 }
-				case 3:
+				/*case 3:
                 {
 					SKPayment *payment3 = [SKPayment paymentWithProductIdentifier:@"com.LearnersCloud.iEvaluatorForiPad.Maths.250To1040"];
 					[[SKPaymentQueue defaultQueue] addPayment:payment3];
@@ -504,10 +504,10 @@ int dontShowPriceList = 0;
                     [[SKPaymentQueue defaultQueue]restoreCompletedTransactions];
 					break;
 					
-				}
+				}*/
 			}
 			
-		case 3: 
+		/*case 3:
 			
 			switch (myTag) {
 				case 1:
@@ -659,7 +659,7 @@ int dontShowPriceList = 0;
                     
                     
 					
-			}
+			}*/
 
  
 			

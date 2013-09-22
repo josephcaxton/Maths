@@ -57,11 +57,16 @@
 	// Second View and Children --- don't add to subview yet
 	CGRect SecondFrame = CGRectMake(0,40, SCREEN_WIDTH, SCREEN_HEIGHT);
 	self.SecondView = [[UIView alloc] initWithFrame:SecondFrame];
-	 self.SecondView.backgroundColor = [UIColor colorWithPatternImage:BackImage];
+   self.SecondView.backgroundColor = [UIColor colorWithPatternImage:BackImage];
 	//QuestionPickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0,20,SCREEN_WIDTH,180)];
     //CustomDataSource = [[CustomPickerDataSource_Num_Questions alloc] init];
 	CGRect SecondTableframe = CGRectMake(0 ,0, SCREEN_WIDTH, 700);
     self.SecondTable = [[UITableView alloc] initWithFrame:SecondTableframe style:UITableViewStyleGrouped];
+    
+    self.SecondTable.backgroundColor = [UIColor clearColor];
+    self.SecondTable.opaque = NO;
+    self.SecondTable.backgroundView = nil;
+   
 	//[self.view addSubview:SecondView];
 	//[self AddStartButton:2];
    
@@ -621,7 +626,8 @@
                     UIImage *StartImage = [[UIImage alloc] initWithContentsOfFile:StartImageLocation];
 
 					
-					StartPractice = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+					StartPractice = [UIButton buttonWithType:UIButtonTypeCustom];
+                    
 					[StartPractice setImage:StartImage forState:UIControlStateNormal];
 
 					StartPractice.frame = CGRectMake(95, 620, 600, 62);
