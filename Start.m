@@ -65,7 +65,7 @@
     
     self.SecondTable.backgroundColor = [UIColor clearColor];
     self.SecondTable.opaque = NO;
-    self.SecondTable.backgroundView = nil;
+    //self.SecondTable.backgroundView = nil;
    
 	//[self.view addSubview:SecondView];
 	//[self AddStartButton:2];
@@ -179,26 +179,28 @@
 			
 			self.SecondView.frame = CGRectMake(0,0, SCREEN_WIDTH, SCREEN_HEIGHT);
 			self.SecondTable.frame = CGRectMake(0 ,0, SCREEN_WIDTH, 700);
+            btnStartTest.center = CGPointMake(self.SecondTable.center.x, 25);
 			//self.QuestionPickerView.frame = CGRectMake(0,0,SCREEN_WIDTH,180);
-			self.Sound.frame =  CGRectMake(640.0, 10.0, 40.0, 45.0);
-			self.ShowAnswers.frame = CGRectMake(595.0, 10.0, 40.0, 45.0);
-			self.btnStartTest.frame = CGRectMake(265, 12.5, 156, 45);
-            DifficultybtnLock.frame = CGRectMake(680, 2, 36, 35);
-            TopicbtnLock.frame = CGRectMake(680, 2, 36, 35);
-            TypeofquestionbtnLock.frame = CGRectMake(680, 2, 36, 35);
+			//self.Sound.frame =  CGRectMake(640.0, 5.0, 40.0, 45.0);
+			//self.ShowAnswers.frame = CGRectMake(595.0, 5.0, 40.0, 45.0);
+			//self.btnStartTest.frame = CGRectMake(265, 12.5, 156, 45);
+            //DifficultybtnLock.frame = CGRectMake(680, 2, 36, 35);
+            //TopicbtnLock.frame = CGRectMake(680, 2, 36, 35);
+            //TypeofquestionbtnLock.frame = CGRectMake(680, 2, 36, 35);
 		}
 		
 		else {
 			
 			self.SecondView.frame = CGRectMake(0,0, SCREEN_HEIGHT + 80, SCREEN_WIDTH);
 			self.SecondTable.frame = CGRectMake(0 ,0, SCREEN_HEIGHT + 80, SCREEN_WIDTH);
+             btnStartTest.center = CGPointMake(self.SecondTable.center.x, 45);
 			//self.QuestionPickerView.frame = CGRectMake(0,0,SCREEN_HEIGHT + 80,180);
-			self.Sound.frame = CGRectMake(900.0, 10.0, 40.0, 45.0);
-			self.ShowAnswers.frame = CGRectMake(855.0, 10.0, 40.0, 45.0);
-			self.btnStartTest.frame = CGRectMake(400, 12.5, 156, 45);
-             DifficultybtnLock.frame = CGRectMake(950, 2, 35, 35);
-            TopicbtnLock.frame = CGRectMake(950, 2, 35, 35);
-            TypeofquestionbtnLock.frame = CGRectMake(950, 2, 35, 35);
+			//self.Sound.frame = CGRectMake(900.0, 5.0, 40.0, 45.0);
+			//self.ShowAnswers.frame = CGRectMake(855.0, 5.0, 40.0, 45.0);
+			//self.btnStartTest.frame = CGRectMake(400, 12.5, 156, 45);
+            //DifficultybtnLock.frame = CGRectMake(950, 2, 35, 35);
+            //TopicbtnLock.frame = CGRectMake(950, 2, 35, 35);
+            //TypeofquestionbtnLock.frame = CGRectMake(950, 2, 35, 35);
             
 		}
 
@@ -282,7 +284,7 @@
 		
 		SecondTable.delegate = self;
 		SecondTable.dataSource = self;
-		SecondTable.separatorStyle = UITableViewCellSeparatorStyleSingleLineEtched;
+		//SecondTable.separatorStyle = UITableViewCellSeparatorStyleSingleLineEtched;
 		SecondTable.tag = 2;
 		[self.SecondView addSubview:SecondTable];
 		
@@ -699,19 +701,11 @@
                      
                     
                     UIImage *imgLock = [UIImage imageNamed:@"Padlock.png"];
-                   DifficultybtnLock = [UIButton buttonWithType:UIButtonTypeCustom];
-                    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
-                    if (orientation == UIDeviceOrientationPortrait || orientation == UIDeviceOrientationPortraitUpsideDown)
-                    {
-                        DifficultybtnLock.frame = CGRectMake(680, 2, 36, 35);
-                    }
-                    else{
-                        
-                        DifficultybtnLock.frame = CGRectMake(950, 2, 35, 35);
-                    }
-                    
+                    DifficultybtnLock = [UIButton buttonWithType:UIButtonTypeCustom];
+                    DifficultybtnLock.frame = CGRectMake(0, 2, 36, 35);
                     [DifficultybtnLock setBackgroundImage:imgLock forState:UIControlStateNormal];
-                    [cell addSubview:DifficultybtnLock ];
+                    cell.accessoryView = DifficultybtnLock;
+                    //[cell addSubview:DifficultybtnLock ];
 
                 }
                 else{
@@ -735,18 +729,10 @@
                     
                     UIImage *imgLock = [UIImage imageNamed:@"Padlock.png"];
                     TopicbtnLock = [UIButton buttonWithType:UIButtonTypeCustom];
-                    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
-                    if (orientation == UIDeviceOrientationPortrait || orientation == UIDeviceOrientationPortraitUpsideDown)
-                    {
-                        TopicbtnLock.frame = CGRectMake(680, 2, 36, 35);
-                    }
-                    else{
-                        
-                       TopicbtnLock.frame = CGRectMake(950, 2, 35, 35);
-                    }
-                    
+                    TopicbtnLock.frame = CGRectMake(0, 2, 36, 35);
                     [TopicbtnLock setBackgroundImage:imgLock forState:UIControlStateNormal];
-                    [cell addSubview:TopicbtnLock ];
+                    cell.accessoryView = TopicbtnLock;
+                    //[cell addSubview:TopicbtnLock ];
 
                 }
                 else{
@@ -771,18 +757,10 @@
                     
                     UIImage *imgLock = [UIImage imageNamed:@"Padlock.png"];
                     TypeofquestionbtnLock = [UIButton buttonWithType:UIButtonTypeCustom];
-                    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
-                    if (orientation == UIDeviceOrientationPortrait || orientation == UIDeviceOrientationPortraitUpsideDown)
-                    {
-                        TypeofquestionbtnLock.frame = CGRectMake(680, 2, 36, 35);
-                    }
-                    else{
-                        
-                        TypeofquestionbtnLock.frame = CGRectMake(950, 2, 35, 35);
-                    }
-                    
+                    TypeofquestionbtnLock.frame = CGRectMake(0, 2, 36, 35);
                     [TypeofquestionbtnLock setBackgroundImage:imgLock forState:UIControlStateNormal];
-                    [cell addSubview:TypeofquestionbtnLock ];
+                    cell.accessoryView =TypeofquestionbtnLock;
+                    //[cell addSubview:TypeofquestionbtnLock ];
                     
 
                 }
@@ -802,7 +780,7 @@
             {
 							if (Sound == nil) {
 							
-								Sound =[[UISwitch alloc] initWithFrame:CGRectMake(640.0, 10.0, 40.0, 45.0)];
+								Sound =[[UISwitch alloc] initWithFrame:CGRectMake(0, 5.0, 40.0, 45.0)];
 								
 							}
 							
@@ -821,7 +799,8 @@
 					}
 					Sound.tag = 1;
 					[Sound addTarget:self action:@selector(switchAction:) forControlEvents:UIControlEventValueChanged];
-					[cell addSubview:Sound];
+                    cell.accessoryView = Sound;
+					//[cell addSubview:Sound];
 					break;
             }
 
@@ -830,7 +809,7 @@
 					
 					if (ShowAnswers == nil) {
 						
-						ShowAnswers =[[UISwitch alloc] initWithFrame:CGRectMake(595.0, 10.0, 40.0, 45.0)];
+						ShowAnswers =[[UISwitch alloc] initWithFrame:CGRectMake(0, 5.0, 40.0, 45.0)];
 						
 					}
 									
@@ -849,7 +828,8 @@
 				}
 				ShowAnswers.tag = 2;
 				[ShowAnswers addTarget:self action:@selector(switchAction:) forControlEvents:UIControlEventValueChanged];
-				[cell.contentView addSubview:ShowAnswers];
+                cell.accessoryView =ShowAnswers;
+				//[cell.contentView addSubview:ShowAnswers];
 				break;
             }
                 case 6:
@@ -873,21 +853,23 @@
             }
 				case 7:
             {
-					
+					UIImage *StartImage = [UIImage imageNamed:@"btn_start_test.png"];
 					if (btnStartTest == nil) {
 						
-						UIImage *StartImage = [UIImage imageNamed:@"btn_start_test.png"];
+						
 						btnStartTest = [UIButton buttonWithType:UIButtonTypeCustom];
                         
                         [btnStartTest setBackgroundImage:StartImage forState:UIControlStateNormal];
-                        
-                        
-						//btnStartTest.frame = CGRectMake(45, 0, 680, 44);
+                       
+                       
 					}
 									
 				cell.selectionStyle = UITableViewCellSelectionStyleNone;
 				[btnStartTest addTarget:self action:@selector(StartTest:) forControlEvents:UIControlEventTouchUpInside];
+                // Put this button at the center of the cell
+                 btnStartTest.frame = CGRectMake((tableView.bounds.size.width/2) - (StartImage.size.width/2), cell.contentView.center.y, 156, 45);
 				[cell.contentView addSubview:btnStartTest];
+                
 				
 				break;
             }
