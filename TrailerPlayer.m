@@ -117,6 +117,8 @@
         
         
         moviePlayerViewController = [[MPMoviePlayerViewController alloc] initWithContentURL:fileURL];
+        
+        
         moviePlayerViewController.moviePlayer.movieSourceType = MPMovieSourceTypeStreaming;
         
         [[NSNotificationCenter defaultCenter] addObserver:self

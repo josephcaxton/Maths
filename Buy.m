@@ -333,10 +333,11 @@ int dontShowPriceList = 0;
 		cell.textLabel.text = @"";
 	}
 	else{
-        if (indexPath.row ==  [SortedDisplayProducts count]){
-            if(!Restore){
+        if (indexPath.row ==  [SortedDisplayProducts count] && [SortedDisplayProducts count] > 0){
+            if(!Restore ){
             Restore = [UIButton buttonWithType:UIButtonTypeCustom];
             }
+            
             Restore.frame = CGRectMake(600, 2, 105, 39);
             Restore.tag = indexPath.row + 1;
             UIImage *RestoreImage = [UIImage imageNamed:@"restore.png"];

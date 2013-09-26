@@ -88,7 +88,7 @@ static UIWebView *QuestionHeaderBox = nil;
 		{
 			
 			
-			CGRect frame = CGRectMake(5, 5, 250, 30);
+			CGRect frame = CGRectMake(40, 5, 250, 30);
 			self.Answer1 =[[UITextField alloc] initWithFrame:frame];
 			self.Answer2 =[[UITextField alloc] initWithFrame:frame];
 			self.Answer3 =[[UITextField alloc] initWithFrame:frame];

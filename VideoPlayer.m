@@ -64,7 +64,7 @@
 
 
 
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
@@ -139,7 +139,11 @@
         
         NSURL    *fileURL =   [NSURL URLWithString:Finalpath];
         
+        UIGraphicsBeginImageContext(CGSizeMake(1,1));
         moviePlayerViewController = [[MPMoviePlayerViewController alloc] initWithContentURL:fileURL];
+        
+        UIGraphicsEndImageContext();
+        
         moviePlayerViewController.moviePlayer.movieSourceType = MPMovieSourceTypeStreaming;
         
         [[NSNotificationCenter defaultCenter] addObserver:self
