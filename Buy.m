@@ -72,7 +72,7 @@ int dontShowPriceList = 0;
     [self.navigationController.navigationBar setBackgroundImage:HeaderBackImage forBarMetrics:UIBarMetricsDefault];
     //[HeaderBackImage release];
     
-    UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(0,0,185,55)];
+    UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(0,0,self.navigationItem.titleView.frame.origin.x,55)];
     label.textColor = [UIColor whiteColor];
     label.backgroundColor = [UIColor clearColor];
     label.text = self.navigationItem.title;
@@ -102,20 +102,22 @@ int dontShowPriceList = 0;
                 
                 numberOfTaps = 0;
                 
-                NSString *myTitle = @"Password";
-                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:myTitle message:@"\n \n" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
-        
-        
-                pass = [[UITextField alloc] initWithFrame:CGRectMake(12.0, 60.0, 260.0, 30.0)];
-                pass.placeholder = @"Password";
-        
-                [pass setBackgroundColor:[UIColor whiteColor]];
-                pass.enablesReturnKeyAutomatically = YES;
-                [pass setReturnKeyType:UIReturnKeyDone];
-                [pass setDelegate:self];
-                [alertView addSubview:pass];
-        
+                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Password"
+                                                                    message:[NSString stringWithFormat:@"Enter details"]
+                                                                   delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK",nil];
+                
+                [alertView setAlertViewStyle:UIAlertViewStyleSecureTextInput];
                 [alertView show];
+                
+
+              
+                
+               pass = [alertView textFieldAtIndex:0];
+               pass.placeholder = @"Password";
+               pass.enablesReturnKeyAutomatically = NO;
+               [pass setDelegate:self];
+                
+
 
     }
         
@@ -127,9 +129,10 @@ int dontShowPriceList = 0;
     
     if (buttonIndex == 1){
         
+        //NSLog(@"Pass %@", pass.text);
         if([[pass.text lowercaseString] isEqualToString:@"1ravenroade181hb"]){
             
-            //NSLog(@"Pass");
+            
             [[NSUserDefaults standardUserDefaults] setObject:@"8" forKey:@"AccessLevel"]; //For testing only
             [[NSUserDefaults standardUserDefaults] synchronize];
 
@@ -154,11 +157,9 @@ int dontShowPriceList = 0;
 }
 
 - (BOOL)isDataSourceAvailable{
-    static BOOL checkNetwork = YES;
+   
 	BOOL _isDataSourceAvailable;
-    if (checkNetwork) { // Since checking the reachability of a host can be expensive, cache the result and perform the reachability check once.
-		// checkNetwork = NO; don't cache
-		
+    
         Boolean success;    
         const char *host_name = "www.apple.com"; // my data source host name
 		
@@ -167,7 +168,7 @@ int dontShowPriceList = 0;
         success = SCNetworkReachabilityGetFlags(reachability, &flags);
         _isDataSourceAvailable = success && (flags & kSCNetworkFlagsReachable) && !(flags & kSCNetworkFlagsConnectionRequired);
         CFRelease(reachability);
-    }
+    
     return _isDataSourceAvailable;
 }
 

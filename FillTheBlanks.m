@@ -511,7 +511,7 @@ static UIWebView *QuestionHeaderBox = nil;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-	NSInteger count;
+	NSInteger count = 0;
 	
 	if (QItem_View){
 		
@@ -522,8 +522,10 @@ static UIWebView *QuestionHeaderBox = nil;
 		
 		count = [fileList count];
 	}
-	
-	return count; 
+    
+    
+            return count;
+       
 	
 }
 

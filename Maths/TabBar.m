@@ -14,9 +14,9 @@
 - (void)tabBar:(UITabBar *)theTabBar didSelectItem:(UITabBarItem *)item  {
 	
 	NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
-	/*NSString *activetab = [def objectForKey:@"activeTab"];
-	
-	EvaluatorAppDelegate *appDelegate = (EvaluatorAppDelegate *)[UIApplication sharedApplication].delegate;
+	//NSString *activetab = [def objectForKey:@"activeTab"];
+	//NSLog(@"Tab bar title = %@", activetab);
+	/*EvaluatorAppDelegate *appDelegate = (EvaluatorAppDelegate *)[UIApplication sharedApplication].delegate;
 
 	
 	
@@ -64,6 +64,23 @@
        
     return YES;
 }
+
+// This is used from ios6
+-(NSUInteger)supportedInterfaceOrientations{
+    
+    NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+	NSString *activetab = [def objectForKey:@"activeTab"];
+    if([activetab isEqualToString:@"Results"]){
+        
+        return UIInterfaceOrientationMaskPortrait;
+        
+    }
+    
+    return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscapeLeft;
+
+    
+}
+
 
 
 - (void)didReceiveMemoryWarning {

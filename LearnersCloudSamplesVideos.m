@@ -32,6 +32,8 @@
     
     
     
+    
+    
     UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(0,0,185,55)];
     label.textColor = [UIColor whiteColor];
     label.backgroundColor = [UIColor clearColor];
@@ -234,7 +236,7 @@
         {
 			VideoPlayer *VP1 = [[VideoPlayer alloc] initWithNibName:nil bundle:nil];
 			VP1.VideoFileName =@"Maths";
-			VP1.hidesBottomBarWhenPushed = YES;
+			//VP1.hidesBottomBarWhenPushed = YES;
 			[self.navigationController pushViewController:VP1 animated:YES];
 			
 			break;
@@ -243,7 +245,7 @@
         {
 			VideoPlayer *VP2 = [[VideoPlayer	alloc] initWithNibName:nil bundle:nil];
 			VP2.VideoFileName =@"English";
-			VP2.hidesBottomBarWhenPushed = YES;
+			//VP2.hidesBottomBarWhenPushed = YES;
 			[self.navigationController pushViewController:VP2 animated:YES];
 			
 			break;
@@ -253,7 +255,7 @@
 			
 			VideoPlayer *VP3 = [[VideoPlayer	alloc] initWithNibName:nil bundle:nil];
 			VP3.VideoFileName =@"Physics";
-			VP3.hidesBottomBarWhenPushed = YES;
+			//VP3.hidesBottomBarWhenPushed = YES;
 			[self.navigationController pushViewController:VP3 animated:YES];
 			
 			
@@ -266,7 +268,7 @@
         {
 			VideoPlayer *VP4 = [[VideoPlayer	alloc] initWithNibName:nil bundle:nil];
 			VP4.VideoFileName =@"Chemistry";
-			VP4.hidesBottomBarWhenPushed = YES;
+			//VP4.hidesBottomBarWhenPushed = YES;
 			[self.navigationController pushViewController:VP4 animated:YES];
 			
 			
@@ -278,7 +280,7 @@
         {
 			VideoPlayer *VP5 = [[VideoPlayer	alloc] initWithNibName:nil bundle:nil];
 			VP5.VideoFileName =@"Biology";
-			VP5.hidesBottomBarWhenPushed = YES;
+			//VP5.hidesBottomBarWhenPushed = YES;
 			[self.navigationController pushViewController:VP5 animated:YES];
 			
 			
@@ -291,7 +293,7 @@
             TrailerPlayer *VP6 = [[TrailerPlayer	alloc] initWithNibName:nil bundle:nil];
             VP6.VideoFileName =@"TESTIMONIALSTUDENTS";
             VP6.ServerLocation = @"http://learnerscloud.com/iosStreamv2/Trailers/";
-            VP6.hidesBottomBarWhenPushed = YES;
+            //VP6.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:VP6 animated:YES];
         
             
