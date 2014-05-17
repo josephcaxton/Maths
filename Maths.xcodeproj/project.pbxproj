@@ -1724,7 +1724,7 @@
 		7CFB2D5016359C4600F8F485 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFB2D4F16359BEB00F8F485 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7CFBCD4D1770998800A8B975 /* 1174.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CFBCD4C1770998800A8B975 /* 1174.pdf */; };
 		7CFBCD4F1770999D00A8B975 /* 1193.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CFBCD4E1770999D00A8B975 /* 1193.pdf */; };
-		CD81ED6818A83BD400FC551E /* GCSEMaths.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CD81ED6718A83BAC00FC551E /* GCSEMaths.sqlite */; };
+		CD421F56192784F500EBC95C /* GCSEMaths.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CD421F55192784BE00EBC95C /* GCSEMaths.sqlite */; };
 		CD81ED6B18A83C2B00FC551E /* NumberOfQuestionsToChoose.m in Sources */ = {isa = PBXBuildFile; fileRef = CD81ED6A18A83C2B00FC551E /* NumberOfQuestionsToChoose.m */; };
 /* End PBXBuildFile section */
 
@@ -3605,7 +3605,7 @@
 		7CFB2D4F16359BEB00F8F485 /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Maths/Reachability.m; sourceTree = "<group>"; };
 		7CFBCD4C1770998800A8B975 /* 1174.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1174.pdf; sourceTree = "<group>"; };
 		7CFBCD4E1770999D00A8B975 /* 1193.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1193.pdf; sourceTree = "<group>"; };
-		CD81ED6718A83BAC00FC551E /* GCSEMaths.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = GCSEMaths.sqlite; sourceTree = "<group>"; };
+		CD421F55192784BE00EBC95C /* GCSEMaths.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = GCSEMaths.sqlite; sourceTree = "<group>"; };
 		CD81ED6918A83C2B00FC551E /* NumberOfQuestionsToChoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberOfQuestionsToChoose.h; sourceTree = "<group>"; };
 		CD81ED6A18A83C2B00FC551E /* NumberOfQuestionsToChoose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberOfQuestionsToChoose.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -5552,7 +5552,7 @@
 				7CE8C0E2145ABEBD000E8EEE /* 1624.pdf */,
 				7CE8C0E3145ABEBD000E8EEE /* 1625.pdf */,
 				7CE8C0E4145ABEBD000E8EEE /* 1626.pdf */,
-				CD81ED6718A83BAC00FC551E /* GCSEMaths.sqlite */,
+				CD421F55192784BE00EBC95C /* GCSEMaths.sqlite */,
 				7CE8C742145AC107000E8EEE /* DescriptiveAnswers.xml */,
 				7CE8C743145AC107000E8EEE /* Results.xml */,
 				7CE8C744145AC107000E8EEE /* AttributionIpad.pdf */,
@@ -5713,7 +5713,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD81ED6818A83BD400FC551E /* GCSEMaths.sqlite in Resources */,
+				CD421F56192784F500EBC95C /* GCSEMaths.sqlite in Resources */,
 				7CD0B96F145AAFEC004B8BF2 /* InfoPlist.strings in Resources */,
 				7CD0B99A145AB151004B8BF2 /* Settings.bundle in Resources */,
 				7CD0B9B5145AB29A004B8BF2 /* MainWindow.xib in Resources */,
