@@ -7519,8 +7519,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = Maths/Maths.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph caxton (99S98QLWW3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joseph caxton (99S98QLWW3)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Maths/Maths-Prefix.pch";
 				INFOPLIST_FILE = "Maths/Maths-Info.plist";
@@ -7533,7 +7533,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = GCSE;
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AB8FDDC8-F994-4377-9267-42E72C9928F3";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "88B51BD2-959D-4EAE-840E-951A2235DACC";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
@@ -7546,8 +7546,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = Maths/Maths.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Theta Computer Services Limited (9RNCM436XC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Theta Computer Services Limited (9RNCM436XC)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Maths/Maths-Prefix.pch";
 				INFOPLIST_FILE = "Maths/Maths-Info.plist";
@@ -7559,8 +7559,8 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = GCSE;
-				PROVISIONING_PROFILE = "E5C2527C-EC9C-45A0-B6C0-0E77508D1E29";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E5C2527C-EC9C-45A0-B6C0-0E77508D1E29";
+				PROVISIONING_PROFILE = "DCBE74EB-2CEF-465A-8CEC-3337338DF644";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DCBE74EB-2CEF-465A-8CEC-3337338DF644";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
